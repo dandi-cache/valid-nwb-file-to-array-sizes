@@ -29,7 +29,8 @@ A one-off mistake by whoever ran the setup is not a guidance defect, and neither
 
 Write the correction as the instruction the next reader follows, not as a story about this incident.
 Name the rule, and give just enough of the failure to show why the rule exists.
-The template's [`dandi-s3-network-inputs` skill](https://github.com/dandi-cache/cache-template/blob/main/.claude/skills/dandi-s3-network-inputs/SKILL.md) is what that looks like after the fact, a short set of rules distilled from two pull requests of debugging.
+`.claude/skills/dandi-s3-network-inputs/SKILL.md` is what that looks like after the fact, a short set of rules distilled from two pull requests of debugging.
+When a cache keeps a skill that survives setup, amend it here as well as upstream, so this repository stops repeating the mistake before the template pull request lands.
 
 ## Commits and PRs
 

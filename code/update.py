@@ -10,20 +10,21 @@ external links. That is the same tree `valid-nwb-file-to-number-of-datasets` cou
 
 What this cache does that its siblings do not:
 
-- It records failures. A file that could not be walked gets a row whose `walk_status` says why,
-  rather than being left out. A retryable status is selected again by a later run, after every
-  content ID that has never been tried, so a slow file cannot hold up the rest of the archive.
+- It publishes failures. A file that could not be walked gets a row whose `walk_status` says why,
+  rather than being left out, under the `RETRY` policy. A retryable status is selected again by a
+  later run, after every content ID that has never been tried, so a slow file cannot hold up the
+  rest of the archive.
 - It bounds each file with a timeout. `get_storage_size()` on a chunked array reads the chunk index
   over HTTP, and a file with a large index can take far longer than its neighbours. The walk runs
-  in a child process so a stuck read can be stopped without leaving `h5py` in a broken state.
+  through `run_isolated`, in a child process, so a stuck read can be stopped without leaving
+  `h5py` in a broken state.
 
-Everything shared with the other caches -- the argument parsing, the logging, the batch cap, the
-error logs, the output paths and testing mode -- comes from `dandi_cache_utils`, which the runtime
-image carries.
+Everything shared with the other caches -- the argument parsing, the logging, the frontier and its
+retries, the batch cap, the timeout, the error logs, the output paths and testing mode -- comes
+from `dandi_cache_utils`, which the runtime image carries.
 """
 
 import math
-import multiprocessing
 
 import dandi_cache_utils as dandi_cache
 
@@ -59,13 +60,20 @@ _LAYOUTS = {0: "compact", 1: "contiguous", 2: "chunked", 3: "virtual"}
 
 
 class WalkFailed(Exception):
-    """A file that could not be walked, carrying the status and reason to record for it."""
+    """A file that could not be walked, carrying the status and reason to record for it.
 
-    def __init__(self, status: str, reason: str, /, *, object_size_bytes: int | None = None) -> None:
-        super().__init__(f"{status}: {reason}")
+    Every field is passed through to `Exception`, which is what lets it cross back from the child
+    process intact: an exception is pickled as its class and its `args`.
+    """
+
+    def __init__(self, status: str, reason: str, object_size_bytes: int | None = None) -> None:
+        super().__init__(status, reason, object_size_bytes)
         self.status = status
         self.reason = reason
         self.object_size_bytes = object_size_bytes
+
+    def __str__(self) -> str:
+        return f"{self.status}: {self.reason}"
 
 
 def describe_dtype(array) -> str:
@@ -138,7 +146,7 @@ def describe_array(path: str, array) -> dict:
 
 
 def walk_arrays(content_id: str) -> dict:
-    """HEAD the blob, then stream it and describe every array. Runs in the child process."""
+    """HEAD the blob, then stream it and describe every array. Runs in a child process."""
     import botocore.exceptions
     import h5py
 
@@ -179,66 +187,23 @@ def walk_arrays(content_id: str) -> dict:
     }
 
 
-def _walk_in_child(content_id: str, connection) -> None:
-    """Child-process entry point: send back the record, or the failure as a status and reason."""
-    try:
-        connection.send(("ok", walk_arrays(content_id)))
-    except WalkFailed as failure:
-        connection.send(("failed", (failure.status, failure.reason, failure.object_size_bytes)))
-    except BaseException as error:  # noqa: BLE001 -- everything the walk raises becomes a recorded reason
-        connection.send(("failed", ("error", f"{type(error).__name__}: {error}", None)))
-    finally:
-        connection.close()
-
-
 def measure_file(content_id: str, item) -> dict:
-    """Walk one file in a child process, stopping it at `WALK_TIMEOUT_SECONDS`."""
+    """Walk one file in a child process, stopped at `WALK_TIMEOUT_SECONDS`."""
     item.stage = "reading the NWB file"
-    # `fork`, so the child inherits the imported library rather than importing it again per file.
-    context = multiprocessing.get_context("fork")
-    receiver, sender = context.Pipe(duplex=False)
-    child = context.Process(target=_walk_in_child, args=(content_id, sender), daemon=True)
-    child.start()
-    sender.close()
-    try:
-        if not receiver.poll(WALK_TIMEOUT_SECONDS):
-            raise WalkFailed("timeout", f"walk exceeded {WALK_TIMEOUT_SECONDS} s")
-        try:
-            outcome, payload = receiver.recv()
-        except EOFError as error:
-            child.join(5)
-            raise WalkFailed("error", f"walker exited with code {child.exitcode}") from error
-    finally:
-        if child.is_alive():
-            child.kill()
-        child.join(5)
-        receiver.close()
-
-    if outcome == "ok":
-        return payload
-    status, reason, object_size_bytes = payload
-    raise WalkFailed(status, reason, object_size_bytes=object_size_bytes)
+    return dandi_cache.run_isolated(walk_arrays, arguments=(content_id,), timeout_seconds=WALK_TIMEOUT_SECONDS)
 
 
-def failure_record(failure: WalkFailed) -> dict:
-    """The row recorded for a file that could not be walked."""
-    return {
-        "walk_status": failure.status,
-        "reason": failure.reason,
-        "object_size_bytes": failure.object_size_bytes,
-    }
-
-
-def select_batch(valid_content_ids: list[str], records: dict, limit: int | None) -> list[str]:
-    """Never-tried content IDs first, in order, then retryable failures, capped at `limit`."""
-    untried = dandi_cache.select_new(valid_content_ids, records)
-    retryable = sorted(
-        content_id
-        for content_id, record in records.items()
-        if isinstance(record, dict) and record.get("walk_status") in RETRYABLE
-    )
-    batch = untried + retryable
-    return batch if limit is None else batch[:limit]
+def failure_record(content_id: str, scope) -> dict:
+    """The row published for a file that could not be walked, from what the walk raised."""
+    exception = scope.exception
+    if isinstance(exception, WalkFailed):
+        status, reason, object_size_bytes = exception.status, exception.reason, exception.object_size_bytes
+    elif isinstance(exception, TimeoutError):
+        # The walk's own limit, or a read that timed out inside it. Either may clear on a later run.
+        status, reason, object_size_bytes = "timeout", str(exception), None
+    else:
+        status, reason, object_size_bytes = "error", f"{type(exception).__name__}: {exception}", None
+    return {"walk_status": status, "reason": reason, "object_size_bytes": object_size_bytes}
 
 
 def main() -> None:
@@ -248,26 +213,16 @@ def main() -> None:
     validity = dataset.read_input()
     valid_content_ids = [content_id for content_id, is_valid in validity.items() if is_valid is True]
 
-    records = dataset.read_output_lookup()
-    batch = select_batch(valid_content_ids, records, dataset.limit(arguments.limit))
-
-    def _record_failure(content_id: str, scope) -> None:
-        # The runner leaves a failure unrecorded (`SKIP`), so the batch counts it as failed rather
-        # than new and an all-failure batch does not queue another run. The row is written here
-        # instead, so the reason is published and a retryable one is selected again later.
-        exception = scope.exception
-        if isinstance(exception, WalkFailed):
-            records[content_id] = failure_record(exception)
-        else:
-            records[content_id] = failure_record(WalkFailed("error", f"{type(exception).__name__}: {exception}"))
-
     dandi_cache.run_incremental_update(
         dataset,
-        batch=batch,
-        recorded=records,
+        candidates=valid_content_ids,
         process=measure_file,
-        on_failure=dandi_cache.SKIP,
-        on_error=_record_failure,
+        limit=dataset.limit(arguments.limit),
+        # The failure is published with its reason, and a timeout or an error is tried again once
+        # every content ID never tried has had its turn. A Zarr asset is published and left alone.
+        on_failure=dandi_cache.RETRY,
+        failure_value=failure_record,
+        retry_when=lambda record: record["walk_status"] in RETRYABLE,
         stages={"reading the NWB file": "file_read_errors.txt"},
         describe=lambda record: f"{record['n_arrays']} arrays, {record['total_storage_bytes'] / 1e6:.1f} MB stored",
         checkpoint_every=50,
