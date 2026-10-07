@@ -1,0 +1,16 @@
+# This cache's own processing dependencies, in one place: the container installs them, and
+# `uv run --project envs` recreates the same set locally for debugging.
+#
+# Streaming a content-addressed blob and walking its arrays is what the `:nwb` base image is for, and
+# it carries that whole stack (h5py, remfile, boto3), so nothing is listed here.
+
+[project]
+name = "valid-nwb-file-to-array-sizes"
+version = "0.1.0"
+requires-python = ">=3.13"
+dependencies = []
+
+[project.optional-dependencies]
+# Only for running outside the container: inside it, the library comes from the base image, and
+# installing it again from git would silently replace the version that image was built with.
+local = ["dandi-cache-utils[nwb,s3] @ git+https://github.com/dandi-cache/dandi-cache-utils.git"]

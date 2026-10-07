@@ -1,0 +1,54 @@
+name: Build and Upload Container
+
+# The build itself -- tagging per ref so a branch build no longer overwrites `:latest`, the
+# registry login, and the check that the image really did come from the shared base -- is in the
+# shared action.
+
+permissions:
+  contents: read
+  packages: read
+
+on:
+  push:
+    branches: [ main ]
+    # `code/`, `cache.toml` and the committed description are not baked into the image, but the
+    # build is where they are checked against the library it carries, so a change to any of them
+    # rebuilds. Without them a script change reached the next scheduled update unchecked.
+    paths:
+      - "envs/pyproject.toml"
+      - "containers/**"
+      - "code/**"
+      - "cache.toml"
+      - "dataset_description.json"
+      - ".github/workflows/build_and_upload_docker_image.yml"
+  pull_request:
+    paths:
+      - "envs/pyproject.toml"
+      - "containers/**"
+      - "code/**"
+      - "cache.toml"
+      - "dataset_description.json"
+      - ".github/workflows/build_and_upload_docker_image.yml"
+  repository_dispatch:
+    # Sent by dandi-cache-utils when it publishes a new base image. This image is built `FROM` that
+    # base and `FROM` resolves at build time, so without this the cache would keep whatever base it
+    # was last built on until its own Dockerfile or dependencies happened to change.
+    types: [ base-image-published ]
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  BuildAndPush:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+    steps:
+      - uses: dandi-cache/dandi-cache-action/build-and-publish-image@v5
+        with:
+          token: ${{ secrets._GITHUB_API_KEY }}
+          mail-username: ${{ secrets.MAIL_USERNAME }}
+          mail-password: ${{ secrets.MAIL_PASSWORD }}

@@ -1,0 +1,53 @@
+name: Update
+
+# What stays here is what is genuinely this cache's own: when it runs, and what a manual dispatch
+# can change. The gate against redundant queued runs, the runner's environment, the registry login,
+# the image, the pipeline and the failure notification are all in the shared action.
+
+permissions:
+  contents: read
+  packages: read
+
+on:
+  # No schedule yet. This cache runs only when dispatched by hand until its validation sample has
+  # passed and the archive-wide storage of its output is settled; see "Validation" in the README.
+  # Enabling it is adding a `schedule:` here and removing `chain: false` below.
+  workflow_dispatch:
+    inputs:
+      testing:
+        description: "Testing mode: process the cache.toml testing_limit of items into testing_-prefixed files, leaving the real cache untouched."
+        required: false
+        type: boolean
+        default: false
+      limit:
+        description: "Cap on the content IDs walked this run, overriding the limit in cache.toml. The run still publishes the complete cache; the rest waits for the next one."
+        required: false
+        type: string
+        default: ""
+
+# Serialize all runs across every ref: an in-progress update is never cancelled, and a run
+# triggered while one is executing waits in the queue. The action then skips the queued run once it
+# starts, because the update it would perform has just been done.
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+
+jobs:
+  Update:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: read
+    # So a hung network read cannot burn a full six hours.
+    timeout-minutes: 330
+    steps:
+      - uses: dandi-cache/dandi-cache-action@v5
+        with:
+          token: ${{ secrets._GITHUB_API_KEY }}
+          testing: ${{ inputs.testing || false }}
+          limit: ${{ inputs.limit || '' }}
+          # A dispatched run never queues the next one while the cache is limited to its validation
+          # sample, so a full batch cannot turn into an archive-wide walk on its own.
+          chain: false
+          mail-username: ${{ secrets.MAIL_USERNAME }}
+          mail-password: ${{ secrets.MAIL_PASSWORD }}
