@@ -1,0 +1,32 @@
+# The complete declarative description of this cache, read by both the shared orchestration and this
+# cache's own update code, so the two cannot disagree.
+
+[cache]
+name = "valid-nwb-file-to-array-sizes"
+
+# Upstream cache, registered as a DataLad input subdataset and pinned in every run's provenance,
+# so each result records the exact input commit it was computed from.
+#
+# `lookup` because this cache reads it as one `{content_id: is_valid}` mapping and selects the
+# entries marked valid.
+[[inputs]]
+name = "content-id-to-valid-nwb-file"
+
+# Streaming each file and reading every chunked array's index is heavy enough that a run advances
+# the backlog by a bounded batch.
+#
+# Sized from the 200-file validation sample, timed one file at a time and resampled: a run of 200
+# takes about 154 minutes typically and 263 at the 99th percentile, inside the job's 330-minute
+# timeout with margin. Most files take seconds; the cost is the few with hundreds of thousands of
+# chunks, whose index is read over HTTP one node at a time.
+[operations.update]
+limit = 200
+# A testing run streams whole NWB files from the archive, so two is enough to exercise the read,
+# the walk, the timeout, the error routing and the write.
+testing_limit = 2
+
+# The published branches describe this repository as a BIDS study dataset, rendered from this
+# section on every run.
+[description]
+title = "valid-nwb-file-to-array-sizes"
+authors = ["Cody Baker"]
