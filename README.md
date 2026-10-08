@@ -23,7 +23,9 @@ The per-file scalars derived from these rows are published by [`valid-nwb-file-t
   A file past it is recorded with `walk_status` `timeout` rather than holding up the run.
 - A run works through content IDs never tried before, in order, and then retries the ones recorded with a retryable failure (`timeout` or `error`).
   So a run only does work for content IDs absent from the cache or marked retryable, and a slow file cannot block the rest of the archive.
-  A run checkpoints its results every 50 files, so a killed run loses at most 50 files of work.
+- Eight files are walked at once, each in its own child process, and a run takes up to 1,000.
+  A run checkpoints its results every 200 files, so a killed run loses at most 200 files of work.
+- The `Update` workflow runs every six hours, and while a backlog remains each run queues the next one itself.
 
 ## What is recorded
 
@@ -103,16 +105,16 @@ The results for the random sample:
 
 ## Archive-wide storage
 
-At about 320 bytes of JSON per array and roughly 23.6 million arrays across the archive's valid NWB files, the full cache would be about 7.5 GB, one record per line.
-That is far past what one plain-git file on the `derivatives` branch can hold, since GitHub refuses files over 100 MB.
-The scheduled, archive-wide workflow is therefore not enabled until that storage is decided.
-Until then the `Update` workflow runs only when dispatched.
+At about 71 KB of JSON per file and about 118,000 valid NWB files, the full cache is about 8.4 GB, and about 360 MB compressed.
+GitHub refuses any file over 100 MiB, so the cache is kept as 256 files, by the first two digits of the content ID: `valid_nwb_file_to_array_sizes_00.jsonl` to `valid_nwb_file_to_array_sizes_ff.jsonl`, about 33 MB each when the archive is covered.
+`dist` publishes those 256 files compressed, about 1.4 MB each when the archive is covered, since even the compressed whole is past the limit.
+A content ID's entry is in the file named by its first two digits.
 
 
 
 ## One-time use
 
-If you only plan to use this cache infrequently or from disparate locations, you can directly download the latest version of the cache as a compressed [JSON Lines](https://jsonlines.org/) file from the `dist` branch:
+If you only plan to use this cache infrequently or from disparate locations, you can directly download the latest version of the cache as 256 compressed [JSON Lines](https://jsonlines.org/) files from the `dist` branch, one per leading pair of hexadecimal digits of the content ID:
 
 ### Python API (recommended)
 
@@ -121,16 +123,31 @@ import gzip
 import json
 import urllib.request
 
-url = "https://raw.githubusercontent.com/dandi-cache/valid-nwb-file-to-array-sizes/refs/heads/dist/derivatives/valid_nwb_file_to_array_sizes.jsonl.gz"
-with urllib.request.urlopen(url) as response:
-    lines = gzip.decompress(data=response.read()).decode("utf-8").splitlines()
-valid_nwb_file_to_array_sizes = [json.loads(line) for line in lines]
+base = "https://raw.githubusercontent.com/dandi-cache/valid-nwb-file-to-array-sizes/refs/heads/dist/derivatives"
+digits = "0123456789abcdef"
+valid_nwb_file_to_array_sizes = {}
+for prefix in (first + second for first in digits for second in digits):
+    with urllib.request.urlopen(f"{base}/valid_nwb_file_to_array_sizes_{prefix}.jsonl.gz") as response:
+        lines = gzip.decompress(data=response.read()).decode("utf-8").splitlines()
+    for line in lines:
+        valid_nwb_file_to_array_sizes.update(json.loads(line))
+```
+
+One content ID's entry is in a single file, named by the first two digits of its ID:
+
+```python
+content_id = "..."
+url = f"{base}/valid_nwb_file_to_array_sizes_{content_id[:2]}.jsonl.gz"
 ```
 
 ### Save to file
 
 ```bash
-curl https://raw.githubusercontent.com/dandi-cache/valid-nwb-file-to-array-sizes/refs/heads/dist/derivatives/valid_nwb_file_to_array_sizes.jsonl.gz -o valid_nwb_file_to_array_sizes.jsonl.gz
+for first in 0 1 2 3 4 5 6 7 8 9 a b c d e f; do
+  for second in 0 1 2 3 4 5 6 7 8 9 a b c d e f; do
+    curl -O "https://raw.githubusercontent.com/dandi-cache/valid-nwb-file-to-array-sizes/refs/heads/dist/derivatives/valid_nwb_file_to_array_sizes_${first}${second}.jsonl.gz"
+  done
+done
 ```
 
 

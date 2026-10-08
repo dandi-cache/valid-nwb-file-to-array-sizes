@@ -9,9 +9,10 @@ permissions:
   packages: read
 
 on:
-  # No schedule yet. This cache runs only when dispatched by hand until its validation sample has
-  # passed and the archive-wide storage of its output is settled; see "Validation" in the README.
-  # Enabling it is adding a `schedule:` here and removing `chain: false` below.
+  # Every six hours. While a backlog remains, each update also queues the next one itself, so the
+  # schedule is what restarts the chain after a run that ends it, not what paces the backlog.
+  schedule:
+    - cron: "23 */6 * * *"
   workflow_dispatch:
     inputs:
       testing:
@@ -46,8 +47,5 @@ jobs:
           token: ${{ secrets._GITHUB_API_KEY }}
           testing: ${{ inputs.testing || false }}
           limit: ${{ inputs.limit || '' }}
-          # A dispatched run never queues the next one while the cache is limited to its validation
-          # sample, so a full batch cannot turn into an archive-wide walk on its own.
-          chain: false
           mail-username: ${{ secrets.MAIL_USERNAME }}
           mail-password: ${{ secrets.MAIL_PASSWORD }}
