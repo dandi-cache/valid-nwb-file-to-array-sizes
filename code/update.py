@@ -234,10 +234,12 @@ def main() -> None:
         retry_when=lambda record: record["walk_status"] in RETRYABLE,
         stages={"reading the NWB file": "file_read_errors.txt"},
         describe=lambda record: f"{record['n_arrays']} arrays, {record['total_storage_bytes'] / 1e6:.1f} MB stored",
-        # Each checkpoint rewrites every one of the 256 files the cache is kept as, so they are spaced
-        # out as the cache grows; a killed run still loses at most this many files of work.
+        # A killed run loses at most this many files of work.
         checkpoint_every=200,
         workers=WORKERS,
+        # The cache is never loaded whole: at full coverage it would take some 40 GB in memory. Each
+        # checkpoint merges what it measured into only the files of the 256 those results belong to.
+        in_memory=False,
     )
 
 
