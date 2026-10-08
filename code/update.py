@@ -52,6 +52,11 @@ SECTIONS = frozenset(
 #: things side by side (a processing module, an optophysiology or extracellular ephys group).
 SUBSECTIONED = frozenset({"processing", "general"})
 
+#: Files walked at once. A walk spends nearly all of its time waiting on HTTP reads of one file's
+#: chunk index, in its own child process, so eight at a time keeps a runner's four cores and 16 GB
+#: well within reach while cutting a batch's wall-clock time about eightfold.
+WORKERS = 8
+
 #: Statuses a later run selects again. `not_hdf5` is not one: it is a Zarr asset, which this cache
 #: does not read, and retrying would only fail the same way.
 RETRYABLE = frozenset({"timeout", "error"})
@@ -190,7 +195,11 @@ def walk_arrays(content_id: str) -> dict:
 def measure_file(content_id: str, item) -> dict:
     """Walk one file in a child process, stopped at `WALK_TIMEOUT_SECONDS`."""
     item.stage = "reading the NWB file"
-    return dandi_cache.run_isolated(walk_arrays, arguments=(content_id,), timeout_seconds=WALK_TIMEOUT_SECONDS)
+    # Spawned rather than forked: with `WORKERS` threads running, a forked child could inherit a lock
+    # another thread held at that moment, still held, and hang on it until the timeout.
+    return dandi_cache.run_isolated(
+        walk_arrays, arguments=(content_id,), timeout_seconds=WALK_TIMEOUT_SECONDS, start_method="spawn"
+    )
 
 
 def failure_record(content_id: str, scope) -> dict:
@@ -225,7 +234,10 @@ def main() -> None:
         retry_when=lambda record: record["walk_status"] in RETRYABLE,
         stages={"reading the NWB file": "file_read_errors.txt"},
         describe=lambda record: f"{record['n_arrays']} arrays, {record['total_storage_bytes'] / 1e6:.1f} MB stored",
-        checkpoint_every=50,
+        # Each checkpoint rewrites every one of the 256 files the cache is kept as, so they are spaced
+        # out as the cache grows; a killed run still loses at most this many files of work.
+        checkpoint_every=200,
+        workers=WORKERS,
     )
 
 

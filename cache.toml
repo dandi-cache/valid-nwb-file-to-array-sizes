@@ -4,6 +4,15 @@
 [cache]
 name = "valid-nwb-file-to-array-sizes"
 
+# At about 71 KB of JSON per file and about 118,000 valid NWB files, the whole cache is about 8.4 GB,
+# and about 360 MB compressed. GitHub refuses any file over 100 MiB, so the cache is kept on
+# `derivatives` as 256 files by the first two digits of the content ID (about 33 MB each when the
+# archive is covered), and published to `dist` as those 256 files compressed, since even the
+# compressed whole is past the limit.
+split = ["valid_nwb_file_to_array_sizes.jsonl"]
+split_files = 256
+publish_split = true
+
 # Upstream cache, registered as a DataLad input subdataset and pinned in every run's provenance,
 # so each result records the exact input commit it was computed from.
 #
@@ -15,12 +24,13 @@ name = "content-id-to-valid-nwb-file"
 # Streaming each file and reading every chunked array's index is heavy enough that a run advances
 # the backlog by a bounded batch.
 #
-# Sized from the 200-file validation sample, timed one file at a time and resampled: a run of 200
-# takes about 154 minutes typically and 263 at the 99th percentile, inside the job's 330-minute
-# timeout with margin. Most files take seconds; the cost is the few with hundreds of thousands of
-# chunks, whose index is read over HTTP one node at a time.
+# Sized from the 200-file validation sample, walked one file at a time: 200 files took about 154
+# minutes typically and 263 at the 99th percentile. Most files take seconds; the cost is the few with
+# hundreds of thousands of chunks, whose index is read over HTTP one node at a time. Walking
+# `WORKERS` (eight) files at once, a run of 1,000 is about 100 minutes typically and 165 at that
+# percentile, inside the job's 330-minute timeout with margin.
 [operations.update]
-limit = 200
+limit = 1000
 # A testing run streams whole NWB files from the archive, so two is enough to exercise the read,
 # the walk, the timeout, the error routing and the write.
 testing_limit = 2
