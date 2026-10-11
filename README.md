@@ -106,31 +106,49 @@ The results for the random sample:
 ## Archive-wide storage
 
 At about 71 KB of JSON per file and about 118,000 valid NWB files, the full cache is about 8.4 GB, and about 360 MB compressed.
-GitHub refuses any file over 100 MiB, so the cache is kept as 256 files, by the first two digits of the content ID: `valid_nwb_file_to_array_sizes_00.jsonl` to `valid_nwb_file_to_array_sizes_ff.jsonl`, about 33 MB each when the archive is covered.
-`dist` publishes those 256 files compressed, about 1.4 MB each when the archive is covered, since even the compressed whole is past the limit.
-A content ID's entry is in the file named by its first two digits.
+GitHub refuses any file over 100 MiB, so the cache is kept as a [Zarr](https://zarr.dev/) store, `derivatives/valid_nwb_file_to_array_sizes.zarr/`, that only grows by appending.
+It is one array of JSON Lines text, in chunk files of at most 80 MB, `stream/c/0`, `stream/c/1`, ...
+The chunks are plain text and each ends on a whole entry, so git shows a run as the lines it added to the last chunk and any new ones, and any chunk can be read on its own.
+An entry that a later run re-records, such as a retried timeout, is a new line, and the last line for a content ID is the current one; the store is rewritten without the older lines once a fifth of them are superseded.
+`dist` publishes a copy with the older lines removed and every chunk gzip-compressed, about 3 MB each, so each content ID appears once.
+There is no single compressed file of the whole: at 360 MB it is over GitHub's limit.
 
 
 
 ## One-time use
 
-If you only plan to use this cache infrequently or from disparate locations, you can directly download the latest version of the cache as 256 compressed [JSON Lines](https://jsonlines.org/) files from the `dist` branch, one per leading pair of hexadecimal digits of the content ID:
+`dist` publishes each output as a [Zarr](https://zarr.dev/) store: the cache itself is `derivatives/valid_nwb_file_to_array_sizes.zarr/`.
+A store is one array of [JSON Lines](https://jsonlines.org/) text cut into chunk files, each holding whole lines and gzip-compressed.
+Where a key appears more than once, the last line is its current entry, and the published copy has no repeats.
+It can be read with the standard library alone, or opened remotely with any Zarr library.
 
 ### Python API (recommended)
+
+Fetch `stream/zarr.json` for the array's length and chunk size, then each chunk in order:
 
 ```python
 import gzip
 import json
+import math
 import urllib.request
 
-base = "https://raw.githubusercontent.com/dandi-cache/valid-nwb-file-to-array-sizes/refs/heads/dist/derivatives"
-digits = "0123456789abcdef"
+store = "https://raw.githubusercontent.com/dandi-cache/valid-nwb-file-to-array-sizes/refs/heads/dist/derivatives/valid_nwb_file_to_array_sizes.zarr"
+
+
+def fetch(path):
+    with urllib.request.urlopen(f"{store}/{path}") as response:
+        return response.read()
+
+
+array = json.loads(fetch("stream/zarr.json"))
+length = array["shape"][0]
+chunk_bytes = array["chunk_grid"]["configuration"]["chunk_shape"][0]
+
 valid_nwb_file_to_array_sizes = {}
-for prefix in (first + second for first in digits for second in digits):
-    with urllib.request.urlopen(f"{base}/valid_nwb_file_to_array_sizes_{prefix}.jsonl.gz") as response:
-        lines = gzip.decompress(data=response.read()).decode("utf-8").splitlines()
-    for line in lines:
-        valid_nwb_file_to_array_sizes.update(json.loads(line))
+for index in range(math.ceil(length / chunk_bytes)):
+    for line in gzip.decompress(fetch(f"stream/c/{index}")).decode("utf-8").splitlines():
+        if line.strip():
+            valid_nwb_file_to_array_sizes.update(json.loads(line))
 ```
 
 One content ID's entry is in a single file, named by the first two digits of its ID:
@@ -140,14 +158,43 @@ content_id = "..."
 url = f"{base}/valid_nwb_file_to_array_sizes_{content_id[:2]}.jsonl.gz"
 ```
 
-### Save to file
+An entry is not filed under its key: the chunks hold the entries in the order they were recorded, so looking up one means reading through them.
+To look up many, read it once as above, or clone the `derivatives` branch.
+
+### Remote Zarr store
+
+Anything that opens Zarr can open the store over HTTP, reading only the chunks it needs.
+The group's `zarr.json` carries the array's metadata, so opening it takes one request:
 
 ```bash
-for first in 0 1 2 3 4 5 6 7 8 9 a b c d e f; do
-  for second in 0 1 2 3 4 5 6 7 8 9 a b c d e f; do
-    curl -O "https://raw.githubusercontent.com/dandi-cache/valid-nwb-file-to-array-sizes/refs/heads/dist/derivatives/valid_nwb_file_to_array_sizes_${first}${second}.jsonl.gz"
-  done
-done
+pip install "zarr>=3" fsspec aiohttp
+```
+
+```python
+import json
+
+import zarr
+
+url = "https://raw.githubusercontent.com/dandi-cache/valid-nwb-file-to-array-sizes/refs/heads/dist/derivatives/valid_nwb_file_to_array_sizes.zarr"
+stream = zarr.open_group(url, mode="r")["stream"]
+print(stream.shape, stream.chunks)  # Bytes in all, and bytes per chunk.
+
+# The first chunk, fetched and decompressed on its own: whole lines, each `{"<key>": <value>}`.
+first_chunk = stream[: stream.chunks[0]].tobytes().decode("utf-8")
+for line in first_chunk.splitlines():
+    if line.strip():
+        print(json.loads(line))
+        break
+```
+
+Reading `stream[:]` returns the whole text; to read it in pieces, step through it by `stream.chunks[0]`, as each chunk is fetched whole.
+
+### Save to file
+
+A raw URL cannot be listed, so to fetch every chunk at once clone the `dist` branch, which holds nothing else:
+
+```bash
+git clone --branch dist --depth 1 https://github.com/dandi-cache/valid-nwb-file-to-array-sizes.git
 ```
 
 
@@ -167,3 +214,17 @@ datalad clone https://github.com/dandi-cache/valid-nwb-file-to-array-sizes.git -
 ```
 
 The `derivatives` branch also keeps the log of every update under `logs/`, next to the results it produced.
+
+Each output is a store on the `derivatives` branch, where it is the whole log, uncompacted, and plain text:
+
+```python
+import json
+import pathlib
+
+chunks = pathlib.Path("valid-nwb-file-to-array-sizes/derivatives/valid_nwb_file_to_array_sizes.zarr/stream/c")
+valid_nwb_file_to_array_sizes = {}
+for chunk in sorted(chunks.iterdir(), key=lambda path: int(path.name)):
+    for line in chunk.read_text().splitlines():
+        if line.strip():
+            valid_nwb_file_to_array_sizes.update(json.loads(line))  # A later line for a key replaces an earlier one.
+```
