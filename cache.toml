@@ -5,13 +5,8 @@
 name = "valid-nwb-file-to-array-sizes"
 
 # At about 71 KB of JSON per file and about 118,000 valid NWB files, the whole cache is about 8.4 GB,
-# and about 360 MB compressed. GitHub refuses any file over 100 MiB, so the cache is kept on
-# `derivatives` as 256 files by the first two digits of the content ID (about 33 MB each when the
-# archive is covered), and published to `dist` as those 256 files compressed, since even the
-# compressed whole is past the limit.
-split = ["valid_nwb_file_to_array_sizes.jsonl"]
-split_files = 256
-publish_split = true
+# and about 360 MB compressed. Like every output it is kept as a Zarr store, in chunks of at most
+# 80 MB, so no file of it approaches GitHub's 100 MiB limit.
 
 # Upstream cache, registered as a DataLad input subdataset and pinned in every run's provenance,
 # so each result records the exact input commit it was computed from.
