@@ -129,16 +129,6 @@ files = sorted((entry["download_url"] for entry in json.load(urllib.request.urlo
 valid_nwb_file_to_array_sizes = {key: value for url in files for line in gzip.decompress(urllib.request.urlopen(url).read()).decode().splitlines() if line for key, value in json.loads(line).items()}
 ```
 
-One content ID's entry is in a single file, named by the first two digits of its ID:
-
-```python
-content_id = "..."
-url = f"{base}/valid_nwb_file_to_array_sizes_{content_id[:2]}.jsonl.gz"
-```
-
-An entry is not filed under its key: the chunks hold the entries in the order they were recorded, so looking up one means reading through them.
-To look up many, read it once as above, or clone the `derivatives` branch.
-
 ### Remote Zarr store
 
 Anything that opens Zarr can open the store over HTTP, reading only the chunks it needs.
