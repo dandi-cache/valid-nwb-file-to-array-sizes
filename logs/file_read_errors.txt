@@ -7718,3 +7718,123 @@ Traceback (most recent call last):
 TimeoutError: exceeded 1200 s
 
 
+Error while reading the NWB file for `f663d3ea-6a84-47ab-ba6f-edbf53da8106`!
+
+<class 'TimeoutError'>: exceeded 1200 s
+
+Traceback (most recent call last):
+  File "/opt/venv/lib/python3.13/site-packages/dandi_cache_utils/_runner.py", line 230, in attempt
+    value = process(item, scope) if takes_scope else process(item)
+            ~~~~~~~^^^^^^^^^^^^^
+  File "/workspace/code/update.py", line 200, in measure_file
+    return dandi_cache.run_isolated(
+           ~~~~~~~~~~~~~~~~~~~~~~~~^
+        walk_arrays, arguments=(content_id,), timeout_seconds=WALK_TIMEOUT_SECONDS, start_method="spawn"
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/opt/venv/lib/python3.13/site-packages/dandi_cache_utils/_isolation.py", line 70, in run_isolated
+    raise TimeoutError(f"exceeded {timeout_seconds:g} s")
+TimeoutError: exceeded 1200 s
+
+
+Error while reading the NWB file for `f66b664b-6080-4f87-b8e1-c6553f0ec6df`!
+
+<class 'TimeoutError'>: exceeded 1200 s
+
+Traceback (most recent call last):
+  File "/opt/venv/lib/python3.13/site-packages/dandi_cache_utils/_runner.py", line 230, in attempt
+    value = process(item, scope) if takes_scope else process(item)
+            ~~~~~~~^^^^^^^^^^^^^
+  File "/workspace/code/update.py", line 200, in measure_file
+    return dandi_cache.run_isolated(
+           ~~~~~~~~~~~~~~~~~~~~~~~~^
+        walk_arrays, arguments=(content_id,), timeout_seconds=WALK_TIMEOUT_SECONDS, start_method="spawn"
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/opt/venv/lib/python3.13/site-packages/dandi_cache_utils/_isolation.py", line 70, in run_isolated
+    raise TimeoutError(f"exceeded {timeout_seconds:g} s")
+TimeoutError: exceeded 1200 s
+
+
+Error while reading the NWB file for `f6cfc89c-30f2-4fdf-9251-dd108045537b`!
+
+<class 'TimeoutError'>: exceeded 1200 s
+
+Traceback (most recent call last):
+  File "/opt/venv/lib/python3.13/site-packages/dandi_cache_utils/_runner.py", line 230, in attempt
+    value = process(item, scope) if takes_scope else process(item)
+            ~~~~~~~^^^^^^^^^^^^^
+  File "/workspace/code/update.py", line 200, in measure_file
+    return dandi_cache.run_isolated(
+           ~~~~~~~~~~~~~~~~~~~~~~~~^
+        walk_arrays, arguments=(content_id,), timeout_seconds=WALK_TIMEOUT_SECONDS, start_method="spawn"
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/opt/venv/lib/python3.13/site-packages/dandi_cache_utils/_isolation.py", line 70, in run_isolated
+    raise TimeoutError(f"exceeded {timeout_seconds:g} s")
+TimeoutError: exceeded 1200 s
+
+
+Error while reading the NWB file for `f6edaf7a-cfbd-42b3-930b-efc67180d786`!
+
+<class 'TimeoutError'>: exceeded 1200 s
+
+Traceback (most recent call last):
+  File "/opt/venv/lib/python3.13/site-packages/dandi_cache_utils/_runner.py", line 230, in attempt
+    value = process(item, scope) if takes_scope else process(item)
+            ~~~~~~~^^^^^^^^^^^^^
+  File "/workspace/code/update.py", line 200, in measure_file
+    return dandi_cache.run_isolated(
+           ~~~~~~~~~~~~~~~~~~~~~~~~^
+        walk_arrays, arguments=(content_id,), timeout_seconds=WALK_TIMEOUT_SECONDS, start_method="spawn"
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/opt/venv/lib/python3.13/site-packages/dandi_cache_utils/_isolation.py", line 70, in run_isolated
+    raise TimeoutError(f"exceeded {timeout_seconds:g} s")
+TimeoutError: exceeded 1200 s
+
+
+Error while reading the NWB file for `f6f57621-c09d-41c6-8d1a-b5d405f1d40a`!
+
+<class 'TimeoutError'>: exceeded 1200 s
+
+Traceback (most recent call last):
+  File "/opt/venv/lib/python3.13/site-packages/dandi_cache_utils/_runner.py", line 230, in attempt
+    value = process(item, scope) if takes_scope else process(item)
+            ~~~~~~~^^^^^^^^^^^^^
+  File "/workspace/code/update.py", line 200, in measure_file
+    return dandi_cache.run_isolated(
+           ~~~~~~~~~~~~~~~~~~~~~~~~^
+        walk_arrays, arguments=(content_id,), timeout_seconds=WALK_TIMEOUT_SECONDS, start_method="spawn"
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/opt/venv/lib/python3.13/site-packages/dandi_cache_utils/_isolation.py", line 70, in run_isolated
+    raise TimeoutError(f"exceeded {timeout_seconds:g} s")
+TimeoutError: exceeded 1200 s
+
+
+Error while reading the NWB file for `f78fe2a6-3dc9-4c12-a288-fbf31ce6fc1c`!
+
+<class 'TimeoutError'>: exceeded 1200 s
+
+Traceback (most recent call last):
+  File "/opt/venv/lib/python3.13/site-packages/dandi_cache_utils/_runner.py", line 230, in attempt
+    value = process(item, scope) if takes_scope else process(item)
+            ~~~~~~~^^^^^^^^^^^^^
+  File "/workspace/code/update.py", line 200, in measure_file
+    return dandi_cache.run_isolated(
+           ~~~~~~~~~~~~~~~~~~~~~~~~^
+        walk_arrays, arguments=(content_id,), timeout_seconds=WALK_TIMEOUT_SECONDS, start_method="spawn"
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/opt/venv/lib/python3.13/site-packages/dandi_cache_utils/_isolation.py", line 70, in run_isolated
+    raise TimeoutError(f"exceeded {timeout_seconds:g} s")
+TimeoutError: exceeded 1200 s
+
+
