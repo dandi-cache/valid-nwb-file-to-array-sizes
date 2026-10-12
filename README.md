@@ -106,12 +106,8 @@ The results for the random sample:
 ## Archive-wide storage
 
 At about 71 KB of JSON per file and about 118,000 valid NWB files, the full cache is about 8.4 GB, and about 360 MB compressed.
-GitHub refuses any file over 100 MiB, so the cache is kept as a [Zarr](https://zarr.dev/) store, `derivatives/valid_nwb_file_to_array_sizes.zarr/`, that only grows by appending.
-It is one array of JSON Lines text, in chunk files of at most 80 MB, `stream/c/0`, `stream/c/1`, ...
-The chunks are plain text and each ends on a whole entry, so git shows a run as the lines it added to the last chunk and any new ones, and any chunk can be read on its own.
-An entry that a later run re-records, such as a retried timeout, is a new line, and the last line for a content ID is the current one; the store is rewritten without the older lines once a fifth of them are superseded.
-`dist` publishes a copy with the older lines removed and every chunk gzip-compressed, about 3 MB each, so each content ID appears once.
-There is no single compressed file of the whole: at 360 MB it is over GitHub's limit.
+The store, `derivatives/valid_nwb_file_to_array_sizes.zarr/`, is one array of JSON Lines text, in chunk files of at most 80 MB, `stream/c/0`, `stream/c/1`, ...
+`dist` publishes a copy with the older lines removed and every chunk gzip-compressed.
 
 
 
@@ -119,7 +115,6 @@ There is no single compressed file of the whole: at 360 MB it is over GitHub's l
 
 `dist` publishes each output as a [Zarr](https://zarr.dev/) store: the cache itself is `derivatives/valid_nwb_file_to_array_sizes.zarr/`.
 A store is one array of [JSON Lines](https://jsonlines.org/) text cut into chunk files, each holding whole lines and gzip-compressed.
-Where a key appears more than once, the last line is its current entry, and the published copy has no repeats.
 It can be read with the standard library alone, or opened remotely with any Zarr library.
 
 ### Python API (recommended)
