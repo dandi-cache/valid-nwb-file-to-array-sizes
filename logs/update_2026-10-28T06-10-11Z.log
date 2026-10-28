@@ -1,0 +1,1060 @@
+2026-10-28T06:10:11Z INFO Logging to /tmp/logs/update_2026-10-28T06-10-11Z.log.
+2026-10-28T06:10:11Z INFO Update valid-nwb-file-to-array-sizes (base directory /tmp).
+2026-10-28T06:12:24Z INFO Processing 1000 items (192296 already recorded).
+2026-10-28T06:12:26Z INFO [1/1000] be18ac0f-d496-46d0-b376-0fd0b261cd97: 112 arrays, 0.5 MB stored; 2.1 s; peak memory 380 MiB.
+2026-10-28T06:12:26Z INFO [2/1000] be40a2a1-4b86-440b-aca3-5569fa73b098: 112 arrays, 0.2 MB stored; 2.1 s; peak memory 380 MiB.
+2026-10-28T06:12:26Z INFO [3/1000] be16024d-6587-4e48-a666-80d9be1b8360: 112 arrays, 0.3 MB stored; 2.2 s; peak memory 380 MiB.
+2026-10-28T06:12:26Z INFO [4/1000] be3c5c5b-3a01-42b2-a2bc-d5b3c74ec40a: 92 arrays, 0.2 MB stored; 2.2 s; peak memory 380 MiB.
+2026-10-28T06:12:26Z INFO [5/1000] be3d0ef8-3796-4164-832f-4e65d0709da6: 112 arrays, 0.4 MB stored; 2.3 s; peak memory 380 MiB.
+2026-10-28T06:12:27Z INFO [6/1000] be3c0de6-f84b-4159-8962-2f1d87506e40: 112 arrays, 0.6 MB stored; 2.3 s; peak memory 380 MiB.
+2026-10-28T06:12:27Z INFO [7/1000] be1be854-d506-4d6f-ad11-2e3d1047f0a8: 112 arrays, 0.6 MB stored; 2.5 s; peak memory 380 MiB.
+2026-10-28T06:12:27Z INFO [8/1000] be146064-9138-4438-8390-140fb8d848ec: 112 arrays, 0.6 MB stored; 2.5 s; peak memory 380 MiB.
+2026-10-28T06:12:28Z INFO [9/1000] be44b71a-9fac-4a71-8425-b56082485c4d: 112 arrays, 0.3 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:12:28Z INFO [10/1000] be4997ec-06cd-4c25-9f47-130550eb4ba0: 114 arrays, 0.7 MB stored; 2.1 s; peak memory 380 MiB.
+2026-10-28T06:12:29Z INFO [11/1000] be57a2ed-068b-44bb-a376-1a117941cd4f: 112 arrays, 1.0 MB stored; 2.1 s; peak memory 380 MiB.
+2026-10-28T06:12:29Z INFO [12/1000] be5cc63e-139c-4e68-831e-744a85393f6a: 112 arrays, 0.8 MB stored; 2.3 s; peak memory 380 MiB.
+2026-10-28T06:12:29Z INFO [13/1000] be5da9a1-a97e-4e17-bac3-86ad9a3bf4e3: 112 arrays, 0.5 MB stored; 2.4 s; peak memory 380 MiB.
+2026-10-28T06:12:29Z INFO [14/1000] be6637e3-99ac-4279-ad0d-534d23587655: 112 arrays, 0.6 MB stored; 2.3 s; peak memory 380 MiB.
+2026-10-28T06:12:29Z INFO [15/1000] be4b1356-f26a-4fe6-b80c-b04e446c7487: 112 arrays, 0.9 MB stored; 2.6 s; peak memory 380 MiB.
+2026-10-28T06:12:29Z INFO [16/1000] be6726aa-0998-4939-8b1d-6df4b2979d18: 112 arrays, 0.8 MB stored; 2.4 s; peak memory 380 MiB.
+2026-10-28T06:12:30Z INFO [17/1000] be6985cf-b5b1-4ea6-9109-174731514290: 94 arrays, 0.3 MB stored; 1.4 s; peak memory 380 MiB.
+2026-10-28T06:12:30Z INFO [18/1000] be6c6e51-1f10-4141-b675-bf10dbb0419c: 112 arrays, 0.4 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:12:30Z INFO [19/1000] be70b1f9-fa9f-4e5f-9b1d-8b2dbcded3bb: 111 arrays, 0.7 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:12:30Z INFO [20/1000] be71c0c5-f695-44e3-8794-ad96cec02bda: 112 arrays, 0.1 MB stored; 1.7 s; peak memory 380 MiB.
+2026-10-28T06:12:31Z INFO [21/1000] be7f7074-1a5a-459c-9cff-6d2f7f7b668b: 112 arrays, 0.2 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:12:31Z INFO [22/1000] be870a5a-f069-4b45-9bba-8469b5df670c: 112 arrays, 0.4 MB stored; 1.9 s; peak memory 380 MiB.
+2026-10-28T06:12:31Z INFO [23/1000] be8874f7-c898-41a6-a91d-4352be8e3dbf: 112 arrays, 0.7 MB stored; 2.0 s; peak memory 380 MiB.
+2026-10-28T06:12:31Z INFO [24/1000] be8ee22d-9070-4e9c-82db-75a678f93b3d: 112 arrays, 0.5 MB stored; 2.1 s; peak memory 380 MiB.
+2026-10-28T06:12:31Z INFO [25/1000] be92b8ae-b2ae-477b-ab90-47649acb5121: 112 arrays, 0.7 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:12:32Z INFO [26/1000] be9a757b-727b-480c-9bcf-8fc9de55cdb2: 112 arrays, 0.5 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:12:32Z INFO [27/1000] be9b0ea8-6a8d-41ae-8a25-e368b362d27c: 112 arrays, 0.9 MB stored; 2.0 s; peak memory 380 MiB.
+2026-10-28T06:12:33Z INFO [28/1000] bea523a5-dab1-4ee1-8043-32aa0ca3d631: 112 arrays, 0.3 MB stored; 1.7 s; peak memory 380 MiB.
+2026-10-28T06:12:33Z INFO [29/1000] bea03338-fff3-438b-863d-a752f44fbccf: 112 arrays, 1.1 MB stored; 2.1 s; peak memory 380 MiB.
+2026-10-28T06:12:33Z INFO [30/1000] bea1928a-d824-4a6e-8a7e-d910867c1457: 112 arrays, 0.7 MB stored; 2.0 s; peak memory 380 MiB.
+2026-10-28T06:12:33Z INFO [31/1000] beacafe2-ba54-4515-9b03-7b9791818ca3: 110 arrays, 1.1 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:12:33Z INFO [32/1000] beb0a541-ad7d-4b6a-ab56-bcdda7c33552: 112 arrays, 0.7 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:12:33Z INFO [33/1000] bea8f70c-b5bc-4ccc-b81a-33726cfe9042: 112 arrays, 0.9 MB stored; 2.1 s; peak memory 380 MiB.
+2026-10-28T06:12:34Z INFO [34/1000] beb520df-45b2-46ad-bde0-7e5968e2a9de: 112 arrays, 0.5 MB stored; 1.6 s; peak memory 380 MiB.
+2026-10-28T06:12:34Z INFO [35/1000] becb93f0-f5f3-47d4-8114-3504fd72f24f: 112 arrays, 0.6 MB stored; 1.9 s; peak memory 380 MiB.
+2026-10-28T06:12:34Z INFO [36/1000] bedb1ed4-57f5-4833-a23b-50b77cb42a98: 112 arrays, 0.5 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:12:35Z INFO [37/1000] bed7353c-b463-4850-a7bc-f348d0894d31: 112 arrays, 0.5 MB stored; 2.0 s; peak memory 380 MiB.
+2026-10-28T06:12:35Z INFO [38/1000] bed82659-8337-4ed0-81bf-d7aa9f5736a3: 112 arrays, 0.9 MB stored; 2.2 s; peak memory 380 MiB.
+2026-10-28T06:12:35Z INFO [39/1000] bee1ce5f-e003-42ff-8c30-3c5346226111: 112 arrays, 0.5 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:12:35Z INFO [40/1000] bedbfbeb-19d4-41bb-85e8-772835c3b038: 112 arrays, 0.7 MB stored; 2.1 s; peak memory 380 MiB.
+2026-10-28T06:12:35Z INFO [41/1000] bee035fb-5fc8-497b-b2f0-21e6287d09b3: 112 arrays, 0.9 MB stored; 2.0 s; peak memory 380 MiB.
+2026-10-28T06:12:35Z INFO [42/1000] bee27214-55e1-4563-b892-3f3dcaf1fac2: 112 arrays, 0.7 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:12:36Z INFO [43/1000] bee364a1-4b8f-4198-8b72-62eb9bc211b3: 111 arrays, 0.3 MB stored; 1.6 s; peak memory 380 MiB.
+2026-10-28T06:12:36Z INFO [44/1000] bee54a08-d56b-4fa8-b4ad-a4f10e6b834a: 112 arrays, 0.4 MB stored; 1.6 s; peak memory 380 MiB.
+2026-10-28T06:12:36Z INFO [45/1000] beeb9eb3-e15a-4d5b-b33e-9dc2b1011fc3: 112 arrays, 0.5 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:12:37Z INFO [46/1000] bef9dd1a-d263-4c97-af69-70ce04f6d433: 112 arrays, 0.7 MB stored; 1.7 s; peak memory 380 MiB.
+2026-10-28T06:12:37Z INFO [47/1000] bef62860-4b66-42a7-901d-654681dbad62: 112 arrays, 1.2 MB stored; 2.1 s; peak memory 380 MiB.
+2026-10-28T06:12:37Z INFO [48/1000] bef7d114-6dc5-4107-87b5-fdbbe886ff15: 112 arrays, 0.9 MB stored; 2.2 s; peak memory 380 MiB.
+2026-10-28T06:12:37Z INFO [49/1000] befad800-3942-4e78-b26a-4e1a514da2b7: 112 arrays, 0.8 MB stored; 2.1 s; peak memory 380 MiB.
+2026-10-28T06:12:37Z INFO [50/1000] befd02a0-6f3c-4546-9b57-058aea7cb6ed: 112 arrays, 0.9 MB stored; 1.7 s; peak memory 380 MiB.
+2026-10-28T06:12:38Z INFO [51/1000] beff9cfe-8c93-4bae-a326-cf776fcb36b6: 112 arrays, 0.7 MB stored; 1.7 s; peak memory 380 MiB.
+2026-10-28T06:12:38Z INFO [52/1000] bf064d80-6511-486a-80b4-2e68e69b96b6: 112 arrays, 0.8 MB stored; 1.7 s; peak memory 380 MiB.
+2026-10-28T06:12:38Z INFO [53/1000] bf0b2b45-2d06-4bc0-ab99-036644531213: 111 arrays, 0.3 MB stored; 1.5 s; peak memory 380 MiB.
+2026-10-28T06:12:38Z INFO [54/1000] bf07d6c3-d05c-447c-8a7a-59e914b743d1: 112 arrays, 0.7 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:12:39Z INFO [55/1000] bf0bf22d-4af6-4d49-9dea-e3f5c3288d04: 112 arrays, 0.2 MB stored; 1.7 s; peak memory 380 MiB.
+2026-10-28T06:12:39Z INFO [56/1000] bf0fc71c-962d-4b2e-9c97-fc451d0b5163: 111 arrays, 0.0 MB stored; 1.5 s; peak memory 380 MiB.
+2026-10-28T06:12:39Z INFO [57/1000] bf0fa32e-e941-4d44-920f-e646eced19b0: 112 arrays, 0.5 MB stored; 1.9 s; peak memory 380 MiB.
+2026-10-28T06:12:39Z INFO [58/1000] bf1d49c0-3213-4750-b27f-d4d62f5589f7: 111 arrays, 0.0 MB stored; 1.2 s; peak memory 380 MiB.
+2026-10-28T06:12:39Z INFO [59/1000] bf105b24-9909-4439-b1b5-bb50fa2f6436: 112 arrays, 0.7 MB stored; 2.2 s; peak memory 380 MiB.
+2026-10-28T06:12:40Z INFO [60/1000] bf13e315-fdb0-44f3-887f-554e50dae162: 112 arrays, 1.1 MB stored; 1.9 s; peak memory 380 MiB.
+2026-10-28T06:12:40Z INFO [61/1000] bf216828-22c9-4bb4-ae85-4aa139c97b58: 112 arrays, 0.6 MB stored; 1.7 s; peak memory 380 MiB.
+2026-10-28T06:12:40Z INFO [62/1000] bf294481-2a4b-4a4e-b6d0-a20aef655bca: 112 arrays, 0.7 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:12:40Z INFO [63/1000] bf2c3f72-371b-4f0e-a39c-0da5bfcce372: 112 arrays, 0.2 MB stored; 1.6 s; peak memory 380 MiB.
+2026-10-28T06:12:41Z INFO [64/1000] bf2edbf3-6bf3-45f4-8c9c-da2a6e901604: 112 arrays, 1.2 MB stored; 2.0 s; peak memory 380 MiB.
+2026-10-28T06:12:41Z INFO [65/1000] bf302433-b3b3-4036-9ff7-75f7a753a970: 112 arrays, 0.4 MB stored; 1.6 s; peak memory 380 MiB.
+2026-10-28T06:12:41Z INFO [66/1000] bf3156e1-b3a9-4319-b625-4ed312c16213: 112 arrays, 0.5 MB stored; 1.7 s; peak memory 380 MiB.
+2026-10-28T06:12:41Z INFO [67/1000] bf35b32a-7857-4be6-befd-0515ee766e8d: 112 arrays, 0.5 MB stored; 1.6 s; peak memory 380 MiB.
+2026-10-28T06:12:41Z INFO [68/1000] bf47c499-d498-4d32-b698-4ae7a84a5307: 112 arrays, 0.8 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:12:42Z INFO [69/1000] bf532dcd-e4a9-497d-b460-556994ec6a82: 112 arrays, 0.8 MB stored; 1.6 s; peak memory 380 MiB.
+2026-10-28T06:12:42Z INFO [70/1000] bf525483-e543-45a7-b6b3-e3758bdb45ae: 112 arrays, 1.2 MB stored; 1.9 s; peak memory 380 MiB.
+2026-10-28T06:12:42Z INFO [71/1000] bf51d163-8c4c-433b-869b-a16456f5ed64: 112 arrays, 0.9 MB stored; 2.1 s; peak memory 380 MiB.
+2026-10-28T06:12:42Z INFO [72/1000] bf558368-27e3-4c5b-b085-49b6cf807a9c: 112 arrays, 0.3 MB stored; 1.5 s; peak memory 380 MiB.
+2026-10-28T06:12:42Z INFO [73/1000] bf54d338-8573-442c-9732-15a88516525a: 112 arrays, 0.4 MB stored; 1.7 s; peak memory 380 MiB.
+2026-10-28T06:12:42Z INFO [74/1000] bf5b744e-69c3-4980-b4e9-0a31bb8ec73f: 112 arrays, 0.5 MB stored; 1.5 s; peak memory 380 MiB.
+2026-10-28T06:12:43Z INFO [75/1000] bf56cbe0-db3a-4069-acb0-664bf864e34f: 112 arrays, 0.5 MB stored; 1.9 s; peak memory 380 MiB.
+2026-10-28T06:12:43Z INFO [76/1000] bf684922-a3d3-4b9f-9cfa-8f7c70a6b484: 112 arrays, 0.6 MB stored; 1.5 s; peak memory 380 MiB.
+2026-10-28T06:12:43Z INFO [77/1000] bf69742c-bf24-4390-8ce7-487d02fe788d: 112 arrays, 0.8 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:12:44Z INFO [78/1000] bf6a3c00-d9a5-4514-847b-47d6f5dd86df: 112 arrays, 0.6 MB stored; 1.9 s; peak memory 380 MiB.
+2026-10-28T06:12:44Z INFO [79/1000] bf74497c-a9f8-44b5-af97-29d2405726eb: 112 arrays, 0.6 MB stored; 1.9 s; peak memory 380 MiB.
+2026-10-28T06:12:44Z INFO [80/1000] bf765dfd-a292-4d97-b962-df008268e52b: 111 arrays, 0.8 MB stored; 2.0 s; peak memory 380 MiB.
+2026-10-28T06:12:44Z INFO [81/1000] bf7f5ce3-608c-4d4f-8575-eae9d83d8f25: 112 arrays, 0.5 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:12:45Z INFO [82/1000] bf7efa05-ceae-42b7-8124-afacdafa542e: 112 arrays, 0.9 MB stored; 2.1 s; peak memory 380 MiB.
+2026-10-28T06:12:45Z INFO [83/1000] bf76d528-227b-4a9a-ab06-92c6965bb34f: 112 arrays, 1.3 MB stored; 2.2 s; peak memory 380 MiB.
+2026-10-28T06:12:45Z INFO [84/1000] bf824988-484d-4061-9bff-0091de511df9: 112 arrays, 0.8 MB stored; 1.9 s; peak memory 380 MiB.
+2026-10-28T06:12:45Z INFO [85/1000] bf838351-ff8a-44ae-a7a2-0018b3de755c: 112 arrays, 0.5 MB stored; 1.6 s; peak memory 380 MiB.
+2026-10-28T06:12:45Z INFO [86/1000] bf866d7c-0980-4974-b440-a385c582a94b: 112 arrays, 0.5 MB stored; 1.6 s; peak memory 380 MiB.
+2026-10-28T06:12:46Z INFO [87/1000] bf88b4ab-0f24-41dd-8796-67bed4a18d6e: 111 arrays, 0.7 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:12:46Z INFO [88/1000] bf898c8d-2d81-4de9-a271-9fcd7369db54: 112 arrays, 0.6 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:12:46Z INFO [89/1000] bf91fbfe-41fe-4b17-832c-9e1c45ed7ab6: 112 arrays, 0.6 MB stored; 1.7 s; peak memory 380 MiB.
+2026-10-28T06:12:46Z INFO [90/1000] bf8f3b92-19ca-45e9-93db-94ea0945b19f: 112 arrays, 0.4 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:12:47Z INFO [91/1000] bf8f3b87-da07-4876-b463-dc8bbe3c1a41: 112 arrays, 1.6 MB stored; 2.1 s; peak memory 380 MiB.
+2026-10-28T06:12:47Z INFO [92/1000] bf931a71-816b-4e53-9762-2caf089e80e6: 112 arrays, 0.5 MB stored; 1.9 s; peak memory 380 MiB.
+2026-10-28T06:12:47Z INFO [93/1000] bf9bc6e2-629e-491b-b4ba-ecdd76b7b379: 112 arrays, 0.4 MB stored; 1.5 s; peak memory 380 MiB.
+2026-10-28T06:12:47Z INFO [94/1000] bf94482b-21f4-4003-8d5e-ef318a04ac3d: 112 arrays, 1.0 MB stored; 1.9 s; peak memory 380 MiB.
+2026-10-28T06:12:47Z INFO [95/1000] bf9bfc32-6103-446a-9577-acdc1972ef97: 112 arrays, 0.4 MB stored; 1.4 s; peak memory 380 MiB.
+2026-10-28T06:12:48Z INFO [96/1000] bf9cdb37-4822-4d44-b0ff-73fe2c6449e8: 112 arrays, 0.3 MB stored; 1.6 s; peak memory 380 MiB.
+2026-10-28T06:12:48Z INFO [97/1000] bfa1e3f9-31fe-4b65-a1a9-7c0c7abd320c: 112 arrays, 0.5 MB stored; 1.6 s; peak memory 380 MiB.
+2026-10-28T06:12:48Z INFO [98/1000] bf9eb05d-5679-4b83-acdf-d77d68ef7841: 112 arrays, 0.9 MB stored; 1.9 s; peak memory 380 MiB.
+2026-10-28T06:12:48Z INFO [99/1000] bfa056bd-a724-41cf-801d-3e1b639e8e61: 112 arrays, 0.6 MB stored; 1.9 s; peak memory 380 MiB.
+2026-10-28T06:12:49Z INFO [100/1000] bfb15f8b-2800-469a-b5a5-502f701286d9: 112 arrays, 0.2 MB stored; 1.6 s; peak memory 380 MiB.
+2026-10-28T06:12:49Z INFO [101/1000] bfac801f-648c-441c-9d9d-836d5a9b6696: 112 arrays, 0.1 MB stored; 1.7 s; peak memory 380 MiB.
+2026-10-28T06:12:49Z INFO [102/1000] bfa0bdf5-c901-4ee3-92e2-daf5abe84f83: 133 arrays, 0.4 MB stored; 2.1 s; peak memory 380 MiB.
+2026-10-28T06:12:49Z INFO [103/1000] bfb94d31-3f1b-49d3-b51f-1750ec2f306d: 112 arrays, 0.4 MB stored; 1.6 s; peak memory 380 MiB.
+2026-10-28T06:12:49Z INFO [104/1000] bfb9fe6f-0f12-45fc-a3e7-0e2f76568162: 110 arrays, 0.0 MB stored; 1.3 s; peak memory 380 MiB.
+2026-10-28T06:12:50Z INFO [105/1000] bfba73e0-21af-477c-a1e1-2f8036319b21: 94 arrays, 0.2 MB stored; 1.7 s; peak memory 380 MiB.
+2026-10-28T06:12:50Z INFO [106/1000] bfbe6e69-3f93-4c34-86c1-63d05c5ec5c2: 112 arrays, 0.4 MB stored; 1.9 s; peak memory 380 MiB.
+2026-10-28T06:12:50Z INFO [107/1000] bfbb7e1a-c2b3-4a5b-8647-d4816a06083b: 112 arrays, 0.5 MB stored; 2.0 s; peak memory 380 MiB.
+2026-10-28T06:12:51Z INFO [108/1000] bfc3e068-0f46-44d8-9dcf-72d7028307d8: 112 arrays, 0.6 MB stored; 1.9 s; peak memory 380 MiB.
+2026-10-28T06:12:51Z INFO [109/1000] bfc2f49a-778f-4b1f-8095-9a4d30dae43d: 110 arrays, 0.5 MB stored; 2.0 s; peak memory 380 MiB.
+2026-10-28T06:12:51Z INFO [110/1000] bfc6df86-f2f9-4f7f-b80b-27686c211c43: 112 arrays, 0.5 MB stored; 1.9 s; peak memory 380 MiB.
+2026-10-28T06:12:51Z INFO [111/1000] bfc5aad4-0467-4d10-bb80-71d391476021: 112 arrays, 0.7 MB stored; 2.1 s; peak memory 380 MiB.
+2026-10-28T06:12:51Z INFO [112/1000] bfc4cffc-0675-4f37-8b52-fae2fe266a8f: 112 arrays, 1.1 MB stored; 2.4 s; peak memory 380 MiB.
+2026-10-28T06:12:51Z INFO [113/1000] bfc90ed3-b4a6-447b-9046-da6eafafef89: 112 arrays, 0.9 MB stored; 1.7 s; peak memory 380 MiB.
+2026-10-28T06:12:52Z INFO [114/1000] bfc91109-1f11-476e-9b8e-20033ecade0b: 112 arrays, 0.4 MB stored; 1.6 s; peak memory 380 MiB.
+2026-10-28T06:12:52Z INFO [115/1000] bfccfedf-6e31-4e8f-836c-52af86d16187: 112 arrays, 0.7 MB stored; 1.9 s; peak memory 380 MiB.
+2026-10-28T06:12:52Z INFO [116/1000] bfcea3e5-a79e-4f1e-b92d-4f90b5a796a1: 112 arrays, 0.6 MB stored; 1.9 s; peak memory 380 MiB.
+2026-10-28T06:12:53Z INFO [117/1000] bfcfff02-013b-4000-81a7-9e96a0052a7e: 112 arrays, 0.2 MB stored; 1.9 s; peak memory 380 MiB.
+2026-10-28T06:12:53Z INFO [118/1000] bfd35682-0b25-4e2a-9253-df839bc03787: 112 arrays, 0.6 MB stored; 1.7 s; peak memory 380 MiB.
+2026-10-28T06:12:53Z INFO [119/1000] bfd13655-8bac-40ed-82f3-e95fb80749d6: 133 arrays, 0.4 MB stored; 1.9 s; peak memory 380 MiB.
+2026-10-28T06:12:53Z INFO [120/1000] bfd3bf14-0a87-43c4-8a5b-6d61244e8df7: 112 arrays, 1.1 MB stored; 1.9 s; peak memory 380 MiB.
+2026-10-28T06:12:53Z INFO [121/1000] bfd3f214-cac3-4460-89ad-6ca236aeef5d: 112 arrays, 0.5 MB stored; 1.6 s; peak memory 380 MiB.
+2026-10-28T06:12:53Z INFO [122/1000] bfe10b89-d057-4867-9217-3c029fa0d0af: 112 arrays, 0.5 MB stored; 1.7 s; peak memory 380 MiB.
+2026-10-28T06:12:54Z INFO [123/1000] bfe4d1b0-69c3-4347-a25c-5a62236b9b75: 112 arrays, 0.4 MB stored; 1.5 s; peak memory 380 MiB.
+2026-10-28T06:12:54Z INFO [124/1000] bfe99da6-5fdb-45a7-89f1-b6426e3bc1de: 112 arrays, 0.4 MB stored; 1.6 s; peak memory 380 MiB.
+2026-10-28T06:12:54Z INFO [125/1000] bff46488-d33b-449b-87f8-dac9ab395c1e: 112 arrays, 0.2 MB stored; 1.5 s; peak memory 380 MiB.
+2026-10-28T06:12:54Z INFO [126/1000] bfecfbf1-e7d1-416a-8fa3-6b3c94ddddc9: 112 arrays, 0.5 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:12:55Z INFO [127/1000] bfef7a86-be0b-47b8-a3a7-70ce0d7cbf0b: 111 arrays, 0.5 MB stored; 2.1 s; peak memory 380 MiB.
+2026-10-28T06:12:55Z INFO [128/1000] bff712e3-3be1-41ae-a2c4-edeb15df820c: 112 arrays, 0.4 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:12:55Z INFO [129/1000] bff6a329-6d90-4a38-ad9a-5beb984ae6c9: 112 arrays, 0.7 MB stored; 2.1 s; peak memory 380 MiB.
+2026-10-28T06:12:55Z INFO [130/1000] bff895c1-d800-4979-a725-8eeca9c7ea79: 112 arrays, 0.7 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:12:55Z INFO [131/1000] bffad195-9299-4905-9106-2b4cbcd3dadc: 112 arrays, 0.7 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:12:56Z INFO [132/1000] c001b4ac-5dd4-4dfc-9b8f-a7e83226dd2a: 112 arrays, 0.6 MB stored; 1.6 s; peak memory 380 MiB.
+2026-10-28T06:12:56Z INFO [133/1000] c003fdf8-afbe-44d0-a831-16d534b41fbd: 112 arrays, 0.6 MB stored; 1.6 s; peak memory 380 MiB.
+2026-10-28T06:12:56Z INFO [134/1000] c0052b74-dd50-4cde-b2e0-f5c53f4e64bd: 112 arrays, 0.5 MB stored; 1.7 s; peak memory 380 MiB.
+2026-10-28T06:12:56Z INFO [135/1000] c0056fe6-98c0-437d-a4cc-19df012ff768: 112 arrays, 0.3 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:12:57Z INFO [136/1000] c00d03f0-c57c-4e74-876d-3f67c39ad35a: 112 arrays, 0.4 MB stored; 1.6 s; peak memory 380 MiB.
+2026-10-28T06:12:57Z INFO [137/1000] c00e0a7f-4e33-493e-806a-30d412f06188: 112 arrays, 2.1 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:12:57Z INFO [138/1000] c010cec5-3884-4f92-a00c-d39db1ae3d7c: 112 arrays, 0.5 MB stored; 1.7 s; peak memory 380 MiB.
+2026-10-28T06:12:57Z INFO [139/1000] c01cb904-22ec-46c5-8dca-86a3db1c0171: 111 arrays, 0.4 MB stored; 1.7 s; peak memory 380 MiB.
+2026-10-28T06:12:57Z INFO [140/1000] c023e074-0164-49a3-a8e7-d878456e30fb: 112 arrays, 0.4 MB stored; 1.7 s; peak memory 380 MiB.
+2026-10-28T06:12:58Z INFO [141/1000] c02b564b-478f-42f6-a24d-eec96b903dd4: 111 arrays, 0.7 MB stored; 1.6 s; peak memory 380 MiB.
+2026-10-28T06:12:58Z INFO [142/1000] c029aaf3-fd14-4d55-94e3-7f9a603a0c78: 112 arrays, 0.8 MB stored; 1.9 s; peak memory 380 MiB.
+2026-10-28T06:12:58Z INFO [143/1000] c02c2eee-372a-476f-b7d1-b4dbdacda1f7: 111 arrays, 0.2 MB stored; 1.6 s; peak memory 380 MiB.
+2026-10-28T06:12:58Z INFO [144/1000] c034a1bf-0079-469e-930a-86dc900eedfb: 112 arrays, 0.3 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:12:58Z INFO [145/1000] c03c3735-8cf7-4b1b-b324-8dc387f16ff8: 112 arrays, 0.5 MB stored; 1.7 s; peak memory 380 MiB.
+2026-10-28T06:12:59Z INFO [146/1000] c048af3c-8656-4409-98f4-90d8bc936497: 112 arrays, 0.4 MB stored; 1.6 s; peak memory 380 MiB.
+2026-10-28T06:12:59Z INFO [147/1000] c04eb401-a4fb-4f55-8829-af2b800ab45b: 112 arrays, 0.6 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:12:59Z INFO [148/1000] c051184a-5302-4612-a208-c13362222a3f: 112 arrays, 0.3 MB stored; 1.5 s; peak memory 380 MiB.
+2026-10-28T06:12:59Z INFO [149/1000] c04ebd87-7a11-409a-a28e-4172a7b18d4e: 112 arrays, 0.7 MB stored; 2.0 s; peak memory 380 MiB.
+2026-10-28T06:13:00Z INFO [150/1000] c056ee01-32cd-44c4-81f3-904a9ed5d099: 112 arrays, 0.4 MB stored; 1.6 s; peak memory 380 MiB.
+2026-10-28T06:13:00Z INFO [151/1000] c054c2f1-1224-4967-b01e-db851793fef7: 112 arrays, 1.4 MB stored; 1.9 s; peak memory 380 MiB.
+2026-10-28T06:13:00Z INFO [152/1000] c05740f2-3f7f-41ab-8ec8-f61a334fc8a5: 112 arrays, 0.7 MB stored; 1.7 s; peak memory 380 MiB.
+2026-10-28T06:13:00Z INFO [153/1000] c058efd6-d395-4249-aff4-484eb095f05f: 112 arrays, 0.6 MB stored; 1.7 s; peak memory 380 MiB.
+2026-10-28T06:13:00Z INFO [154/1000] c05b66f8-90e2-4802-b41b-f75cee019b82: 112 arrays, 0.3 MB stored; 1.4 s; peak memory 380 MiB.
+2026-10-28T06:13:00Z INFO [155/1000] c0578b23-ee63-4d24-8e60-e7e9c50d412f: 112 arrays, 1.2 MB stored; 2.0 s; peak memory 380 MiB.
+2026-10-28T06:13:01Z INFO [156/1000] c05d85e5-ef9c-4b14-aaaf-b126c0222b96: 112 arrays, 0.5 MB stored; 1.7 s; peak memory 380 MiB.
+2026-10-28T06:13:01Z INFO [157/1000] c05f6d7c-92a8-4412-9a1c-6a2751a97aee: 112 arrays, 0.8 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:13:01Z INFO [158/1000] c0603408-630e-4791-9bb7-804d35bb52cd: 112 arrays, 0.6 MB stored; 1.6 s; peak memory 380 MiB.
+2026-10-28T06:13:01Z INFO [159/1000] c05f853e-81c8-45d3-9bc4-7f83e3dda8fc: 112 arrays, 0.5 MB stored; 1.9 s; peak memory 380 MiB.
+2026-10-28T06:13:02Z INFO [160/1000] c0608057-6b8e-478c-8dca-a9a16b750b5f: 112 arrays, 0.7 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:13:02Z INFO [161/1000] c06d4d50-bf57-4ad5-8d84-6775708fda85: 112 arrays, 0.7 MB stored; 1.6 s; peak memory 380 MiB.
+2026-10-28T06:13:02Z INFO [162/1000] c06fd8ef-741c-48a9-aa73-188124c9df11: 112 arrays, 1.0 MB stored; 1.9 s; peak memory 380 MiB.
+2026-10-28T06:13:02Z INFO [163/1000] c071c50c-800c-44f3-86f3-92a6b28b9dc6: 112 arrays, 0.8 MB stored; 1.9 s; peak memory 380 MiB.
+2026-10-28T06:13:03Z INFO [164/1000] c072b000-464a-496d-b5ab-74f299a6495c: 112 arrays, 1.2 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:13:03Z INFO [165/1000] c07edd8b-770f-4ec8-b81f-2f461d505fce: 112 arrays, 0.7 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:13:03Z INFO [166/1000] c0805f50-32a6-4774-9485-113c4b74bb05: 112 arrays, 0.4 MB stored; 1.6 s; peak memory 380 MiB.
+2026-10-28T06:13:03Z INFO [167/1000] c07be92d-de5d-4b24-8a77-ebb5e5b5104c: 112 arrays, 0.8 MB stored; 1.9 s; peak memory 380 MiB.
+2026-10-28T06:13:04Z INFO [168/1000] c095b0b1-ffb4-4bce-992e-824269c83d21: 112 arrays, 0.3 MB stored; 1.7 s; peak memory 380 MiB.
+2026-10-28T06:13:04Z INFO [169/1000] c095c161-25ec-46b6-8819-37b46479bee3: 112 arrays, 0.4 MB stored; 1.4 s; peak memory 380 MiB.
+2026-10-28T06:13:04Z INFO [170/1000] c083c8e1-c498-417c-8c9d-a9a69361ef90: 112 arrays, 0.8 MB stored; 1.9 s; peak memory 380 MiB.
+2026-10-28T06:13:04Z INFO [171/1000] c096f5a3-bc08-4a36-b2eb-1cc189db7a01: 133 arrays, 0.5 MB stored; 1.7 s; peak memory 380 MiB.
+2026-10-28T06:13:05Z INFO [172/1000] c098f2ef-ca8d-45bd-b750-5979c3511f88: 112 arrays, 1.0 MB stored; 1.9 s; peak memory 380 MiB.
+2026-10-28T06:13:05Z INFO [173/1000] c0b3fbfd-4a6f-4f2b-b4b8-b472584f19c2: 112 arrays, 0.2 MB stored; 1.6 s; peak memory 380 MiB.
+2026-10-28T06:13:05Z INFO [174/1000] c0a4b954-17a6-4b5c-9c6b-1cf39eb9fe08: 112 arrays, 0.4 MB stored; 1.7 s; peak memory 380 MiB.
+2026-10-28T06:13:05Z INFO [175/1000] c0a9ab67-ef4d-47bc-94b7-07e6f33e139b: 112 arrays, 0.4 MB stored; 1.9 s; peak memory 380 MiB.
+2026-10-28T06:13:05Z INFO [176/1000] c0c7eb4d-aa7d-4e2f-8501-cf8f8771d07d: 112 arrays, 0.5 MB stored; 1.6 s; peak memory 380 MiB.
+2026-10-28T06:13:05Z INFO [177/1000] c0cfaaf0-090d-473b-a9ba-58d097070e33: 111 arrays, 0.3 MB stored; 1.7 s; peak memory 380 MiB.
+2026-10-28T06:13:05Z INFO [178/1000] c0c40090-b9fe-4899-9f3c-fdff7b0d3024: 112 arrays, 0.3 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:13:06Z INFO [179/1000] c0d19079-dca2-4758-b256-82241306065f: 112 arrays, 1.1 MB stored; 2.0 s; peak memory 380 MiB.
+2026-10-28T06:13:06Z INFO [180/1000] c0db6a24-7187-46b4-bc71-0e152b00c636: 114 arrays, 0.3 MB stored; 1.6 s; peak memory 380 MiB.
+2026-10-28T06:13:07Z INFO [181/1000] c0e24241-a082-4541-9e87-30b36d791197: 112 arrays, 0.4 MB stored; 1.7 s; peak memory 380 MiB.
+2026-10-28T06:13:07Z INFO [182/1000] c0e1f90e-a948-4b51-b106-1d6b07f81769: 111 arrays, 0.2 MB stored; 1.9 s; peak memory 380 MiB.
+2026-10-28T06:13:07Z INFO [183/1000] c0dc1c26-6e6a-4c6c-a537-65bbee87a0b2: 112 arrays, 0.7 MB stored; 2.0 s; peak memory 380 MiB.
+2026-10-28T06:13:07Z INFO [184/1000] c0ea5764-4925-4d6b-b0e9-244dc05ea8ba: 112 arrays, 1.2 MB stored; 1.9 s; peak memory 380 MiB.
+2026-10-28T06:13:07Z INFO [185/1000] c0e90ab3-9b0e-4dab-aa4e-b2b43016dc95: 133 arrays, 0.7 MB stored; 1.9 s; peak memory 380 MiB.
+2026-10-28T06:13:07Z INFO [186/1000] c0e3f888-8a83-4bee-8ca4-e274bacff368: 112 arrays, 1.5 MB stored; 2.0 s; peak memory 380 MiB.
+2026-10-28T06:13:08Z INFO [187/1000] c0ea9185-95a8-42ce-92b4-7a65163ac38c: 112 arrays, 0.3 MB stored; 1.6 s; peak memory 380 MiB.
+2026-10-28T06:13:08Z INFO [188/1000] c0ee8cda-0eba-4842-b137-b8731f12f718: 112 arrays, 0.5 MB stored; 1.7 s; peak memory 380 MiB.
+2026-10-28T06:13:08Z INFO [189/1000] c0f235f4-ecd0-4c60-90ba-ea21b2ee8a6a: 88 arrays, 0.2 MB stored; 1.3 s; peak memory 380 MiB.
+2026-10-28T06:13:08Z INFO [190/1000] c0f7f3a9-fd16-4954-92bc-9a14b81f9fdc: 112 arrays, 0.5 MB stored; 1.7 s; peak memory 380 MiB.
+2026-10-28T06:13:08Z INFO [191/1000] c0eeacef-b7ab-4179-99fb-47e5bb73397d: 112 arrays, 0.7 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:13:09Z INFO [192/1000] c1051455-b23f-4a65-9918-d935294c1d80: 112 arrays, 0.4 MB stored; 1.6 s; peak memory 380 MiB.
+2026-10-28T06:13:09Z INFO [193/1000] c0fe3230-3c8e-45b8-87ec-9551d9e9326d: 112 arrays, 0.5 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:13:09Z INFO [194/1000] c0ffcc28-19e5-4e72-a33e-08515f579b57: 112 arrays, 0.9 MB stored; 1.9 s; peak memory 380 MiB.
+2026-10-28T06:13:10Z INFO [195/1000] c109710e-81b1-4741-8800-008280a241ea: 110 arrays, 2.2 MB stored; 1.9 s; peak memory 380 MiB.
+2026-10-28T06:13:10Z INFO [196/1000] c11236e2-9b60-4431-8547-0f71d27d7bd8: 112 arrays, 0.7 MB stored; 1.7 s; peak memory 380 MiB.
+2026-10-28T06:13:10Z INFO [197/1000] c1136b59-b419-4f89-81ac-45fc7fb9c6cf: 112 arrays, 0.3 MB stored; 1.4 s; peak memory 380 MiB.
+2026-10-28T06:13:10Z INFO [198/1000] c10a4360-97f9-4853-b8b5-28b6bc3d4791: 112 arrays, 0.6 MB stored; 1.9 s; peak memory 380 MiB.
+2026-10-28T06:13:10Z INFO [199/1000] c11241a7-ed2e-4d33-8f23-ccf258170b41: 112 arrays, 0.6 MB stored; 1.6 s; peak memory 380 MiB.
+2026-10-28T06:13:11Z INFO [200/1000] c1140ffe-5c0e-4280-9c70-cbd8326872c6: 112 arrays, 0.8 MB stored; 1.7 s; peak memory 380 MiB.
+2026-10-28T06:13:11Z INFO [200/1000] c1140ffe-5c0e-4280-9c70-cbd8326872c6: checkpointed 200 new records.
+2026-10-28T06:13:11Z INFO [201/1000] c11d872e-88e7-4791-b512-e70fc07c360d: 112 arrays, 0.7 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:13:11Z INFO [202/1000] c11e5bcd-d673-4f20-a8b4-a23b231e70d6: 112 arrays, 0.9 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:13:11Z INFO [203/1000] c12fb0f2-3fc9-45d7-923f-c11d4c7f1c70: 112 arrays, 0.7 MB stored; 1.7 s; peak memory 380 MiB.
+2026-10-28T06:13:12Z INFO [204/1000] c144a739-a61c-4e1b-a1cf-152dd8b8423b: 112 arrays, 0.4 MB stored; 1.7 s; peak memory 380 MiB.
+2026-10-28T06:13:12Z INFO [205/1000] c128c53b-74e5-410a-8105-56488c77113c: 112 arrays, 0.8 MB stored; 2.1 s; peak memory 380 MiB.
+2026-10-28T06:13:12Z INFO [206/1000] c12c16c8-2b81-458e-9626-1f002371f819: 112 arrays, 0.8 MB stored; 1.9 s; peak memory 380 MiB.
+2026-10-28T06:13:12Z INFO [207/1000] c12b319b-65cc-4136-8348-0bfa0ccd84fa: 112 arrays, 0.7 MB stored; 2.1 s; peak memory 380 MiB.
+2026-10-28T06:13:12Z INFO [208/1000] c1496867-976d-4531-843c-d041d390e0ee: 112 arrays, 0.7 MB stored; 1.5 s; peak memory 380 MiB.
+2026-10-28T06:13:12Z INFO [209/1000] c1477da3-d1b6-4cef-a88f-4b9d0e3c85e9: 112 arrays, 0.6 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:13:12Z INFO [210/1000] c1543029-66fa-45ec-aad0-1fce75a61977: 112 arrays, 0.5 MB stored; 1.6 s; peak memory 380 MiB.
+2026-10-28T06:13:13Z INFO [211/1000] c157532a-24c0-422a-bd73-39e427590da7: 112 arrays, 0.7 MB stored; 1.9 s; peak memory 380 MiB.
+2026-10-28T06:13:13Z INFO [212/1000] c16af66a-f085-417d-bdeb-8682d697bfa2: 112 arrays, 0.0 MB stored; 1.7 s; peak memory 380 MiB.
+2026-10-28T06:13:13Z INFO [213/1000] c1640162-e56e-4abb-aa84-c2b60f2eee0d: 112 arrays, 0.6 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:13:13Z INFO [214/1000] c1726ecd-64dd-456b-87ac-47ee2cfac524: 112 arrays, 0.6 MB stored; 1.7 s; peak memory 380 MiB.
+2026-10-28T06:13:14Z INFO [215/1000] c160c810-d3ce-41ee-b053-597eaccf38d7: 112 arrays, 0.7 MB stored; 2.0 s; peak memory 380 MiB.
+2026-10-28T06:13:14Z INFO [216/1000] c174689c-e4ec-4238-8d2d-1ae2f793e270: 112 arrays, 0.0 MB stored; 1.5 s; peak memory 380 MiB.
+2026-10-28T06:13:14Z INFO [217/1000] c174ac97-e9d6-4ee4-ad27-e791735021b5: 112 arrays, 0.3 MB stored; 1.5 s; peak memory 380 MiB.
+2026-10-28T06:13:14Z INFO [218/1000] c172988a-f9ce-4844-9d08-7e994770a381: 112 arrays, 0.7 MB stored; 1.9 s; peak memory 380 MiB.
+2026-10-28T06:13:15Z INFO [219/1000] c17e4e48-f992-4134-bd87-df4ed6204b8a: 112 arrays, 0.4 MB stored; 1.7 s; peak memory 380 MiB.
+2026-10-28T06:13:15Z INFO [220/1000] c1767e2f-0ac5-4e5e-994c-a871bc28b8dc: 112 arrays, 0.6 MB stored; 2.0 s; peak memory 380 MiB.
+2026-10-28T06:13:15Z INFO [221/1000] c178cce2-b754-47c7-8140-3e8fe99499eb: 112 arrays, 0.8 MB stored; 2.0 s; peak memory 380 MiB.
+2026-10-28T06:13:15Z INFO [222/1000] c17ff5cc-cc88-4058-ac53-9500c169482c: 112 arrays, 0.4 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:13:16Z INFO [223/1000] c17e88cb-f559-466c-bcdf-8b748befd961: 112 arrays, 0.8 MB stored; 2.0 s; peak memory 380 MiB.
+2026-10-28T06:13:16Z INFO [224/1000] c1806162-96e7-4ce2-8e76-724c53724c12: 112 arrays, 0.5 MB stored; 2.0 s; peak memory 380 MiB.
+2026-10-28T06:13:16Z INFO [225/1000] c186f3d7-740d-4d1c-933c-2f2ba6f3a33f: 112 arrays, 0.9 MB stored; 2.0 s; peak memory 380 MiB.
+2026-10-28T06:13:16Z INFO [226/1000] c194d8cd-3e74-42c5-8611-d5da3503001f: 112 arrays, 0.7 MB stored; 2.0 s; peak memory 380 MiB.
+2026-10-28T06:13:17Z INFO [227/1000] c19fc921-efbc-47a7-9f91-b5f45a2faa12: 112 arrays, 2.0 MB stored; 1.9 s; peak memory 380 MiB.
+2026-10-28T06:13:17Z INFO [228/1000] c1a0b670-0f18-40de-9feb-70ecfb24ed14: 112 arrays, 0.4 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:13:17Z INFO [229/1000] c1aaaa0f-22fb-4684-85d2-e3c419bf7ade: 112 arrays, 0.5 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:13:18Z INFO [230/1000] c1a3bd3e-c7a9-4ae7-91d3-835961237f90: 112 arrays, 0.5 MB stored; 2.1 s; peak memory 380 MiB.
+2026-10-28T06:13:18Z INFO [231/1000] c1ac6127-3067-4f8f-b107-281f1961fc29: 112 arrays, 0.7 MB stored; 2.0 s; peak memory 380 MiB.
+2026-10-28T06:13:18Z INFO [232/1000] c1b21999-41bc-41bc-9e7c-102be934f282: 110 arrays, 2.2 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:13:18Z INFO [233/1000] c1ad83d7-66dc-42b4-8b00-54c04c5391f9: 112 arrays, 0.4 MB stored; 1.9 s; peak memory 380 MiB.
+2026-10-28T06:13:18Z INFO [234/1000] c1bde553-a9bd-47a2-a770-48aff9e6352a: 112 arrays, 0.8 MB stored; 2.1 s; peak memory 380 MiB.
+2026-10-28T06:13:19Z INFO [235/1000] c1cb6c6e-b365-40b5-a32d-38a2111770be: 112 arrays, 0.5 MB stored; 1.5 s; peak memory 380 MiB.
+2026-10-28T06:13:19Z INFO [236/1000] c1c201c9-e101-4d20-b821-aa8cce565f98: 112 arrays, 0.5 MB stored; 1.9 s; peak memory 380 MiB.
+2026-10-28T06:13:19Z INFO [237/1000] c1c9159c-66e3-4dcf-beaf-e42c5fd19d36: 112 arrays, 1.3 MB stored; 2.0 s; peak memory 380 MiB.
+2026-10-28T06:13:19Z INFO [238/1000] c1de8403-2530-4f2f-a5be-46d81a59a249: 112 arrays, 0.2 MB stored; 1.6 s; peak memory 380 MiB.
+2026-10-28T06:13:20Z INFO [239/1000] c1dd2a77-1494-4a21-9c60-10ecf158d584: 112 arrays, 0.5 MB stored; 1.7 s; peak memory 380 MiB.
+2026-10-28T06:13:20Z INFO [240/1000] c1d4ae79-ce28-4647-a2f6-0b99d5313075: 111 arrays, 0.6 MB stored; 2.0 s; peak memory 380 MiB.
+2026-10-28T06:13:20Z INFO [241/1000] c1d50c06-7738-42ce-8bed-a9ca57cb17e6: 112 arrays, 0.9 MB stored; 2.0 s; peak memory 380 MiB.
+2026-10-28T06:13:20Z INFO [242/1000] c1e8041c-4bd2-4529-91f9-ea347225a382: 112 arrays, 0.5 MB stored; 1.6 s; peak memory 380 MiB.
+2026-10-28T06:13:21Z INFO [243/1000] c1ee3232-c3bf-4000-a610-c0600331d4ae: 112 arrays, 0.6 MB stored; 1.7 s; peak memory 380 MiB.
+2026-10-28T06:13:21Z INFO [244/1000] c1f32c75-b34b-4df9-b9c1-a844e2f2478f: 112 arrays, 0.7 MB stored; 1.9 s; peak memory 380 MiB.
+2026-10-28T06:13:21Z INFO [245/1000] c1fa2d73-fd85-4546-9a7a-888480dc0d07: 112 arrays, 0.4 MB stored; 1.7 s; peak memory 380 MiB.
+2026-10-28T06:13:21Z INFO [246/1000] c207f253-bdeb-407a-bf06-938b87665955: 112 arrays, 0.4 MB stored; 1.7 s; peak memory 380 MiB.
+2026-10-28T06:13:21Z INFO [247/1000] c1fe56bc-83a5-4d4c-a881-08ef7aaeb6ff: 112 arrays, 0.4 MB stored; 1.7 s; peak memory 380 MiB.
+2026-10-28T06:13:21Z INFO [248/1000] c1fc5b9d-c813-4e98-ab13-bceb4cf46dbb: 112 arrays, 0.4 MB stored; 1.9 s; peak memory 380 MiB.
+2026-10-28T06:13:21Z INFO [249/1000] c20a4900-c319-4bd1-9889-7778cd0aaa4b: 112 arrays, 0.5 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:13:22Z INFO [250/1000] c20c1035-2035-4b20-8233-e3b8424d1ff9: 111 arrays, 1.0 MB stored; 2.2 s; peak memory 380 MiB.
+2026-10-28T06:13:22Z INFO [251/1000] c20d2b1e-da9c-4565-8333-f01aea883378: 112 arrays, 0.7 MB stored; 1.6 s; peak memory 380 MiB.
+2026-10-28T06:13:22Z INFO [252/1000] c20df371-c194-405a-9b98-a07e378cc50e: 112 arrays, 0.4 MB stored; 1.6 s; peak memory 380 MiB.
+2026-10-28T06:13:23Z INFO [253/1000] c20e7e0e-9b2e-4fab-94c6-a851b369ea34: 112 arrays, 0.6 MB stored; 2.0 s; peak memory 380 MiB.
+2026-10-28T06:13:23Z INFO [254/1000] c219c75c-1f74-475e-b0d7-c78278f5b391: 112 arrays, 0.7 MB stored; 1.7 s; peak memory 380 MiB.
+2026-10-28T06:13:23Z INFO [255/1000] c220a1ef-1026-4610-83d8-dfea7b6b8b68: 112 arrays, 0.9 MB stored; 1.7 s; peak memory 380 MiB.
+2026-10-28T06:13:23Z INFO [256/1000] c2111cef-97cd-40ac-b0d8-e41c7a5c0369: 112 arrays, 0.6 MB stored; 1.9 s; peak memory 380 MiB.
+2026-10-28T06:13:23Z INFO [257/1000] c2224643-6cb6-4521-a0c9-b014cea9443e: 112 arrays, 0.7 MB stored; 1.9 s; peak memory 380 MiB.
+2026-10-28T06:13:24Z INFO [258/1000] c2262f0a-38a7-4cc8-9c50-9bb39ef08546: 112 arrays, 0.6 MB stored; 1.6 s; peak memory 380 MiB.
+2026-10-28T06:13:24Z INFO [259/1000] c228042c-ffc6-4ae9-9271-867c1df61187: 112 arrays, 0.4 MB stored; 1.5 s; peak memory 380 MiB.
+2026-10-28T06:13:24Z INFO [260/1000] c222d3b5-93c9-4133-990b-1c85668304bb: 112 arrays, 0.7 MB stored; 2.0 s; peak memory 380 MiB.
+2026-10-28T06:13:25Z INFO [261/1000] c22cb6b6-90c3-41de-924f-258c5b020624: 112 arrays, 0.4 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:13:25Z INFO [262/1000] c24b54db-47c8-4e96-9dd6-fe453f53afd2: 112 arrays, 0.7 MB stored; 1.6 s; peak memory 380 MiB.
+2026-10-28T06:13:25Z INFO [263/1000] c2472205-e968-4a11-b1f8-fa7285fd30c5: 112 arrays, 0.4 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:13:25Z INFO [264/1000] c236cac4-3cab-4818-8827-8c339e145a53: 112 arrays, 0.8 MB stored; 2.2 s; peak memory 380 MiB.
+2026-10-28T06:13:25Z INFO [265/1000] c2505fbe-061f-4365-8c43-442179f1ebf0: 112 arrays, 0.7 MB stored; 1.9 s; peak memory 380 MiB.
+2026-10-28T06:13:25Z INFO [266/1000] c25ae318-9e9a-49e1-a102-a1073f1fbe78: 112 arrays, 0.8 MB stored; 1.6 s; peak memory 380 MiB.
+2026-10-28T06:13:25Z INFO [267/1000] c2521265-2f5d-4b25-aeac-1ef78c8dc1f3: 112 arrays, 0.5 MB stored; 1.7 s; peak memory 380 MiB.
+2026-10-28T06:13:26Z INFO [268/1000] c25c7f65-0170-45bf-bc5c-30bf04629e92: 112 arrays, 0.5 MB stored; 1.6 s; peak memory 380 MiB.
+2026-10-28T06:13:27Z INFO [269/1000] c25d8a9a-8ca0-4ed3-92b9-4ef4bfc11ad9: 112 arrays, 1.0 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:13:27Z INFO [270/1000] c2669b22-f60f-4fca-99a3-e9f643da296b: 112 arrays, 0.6 MB stored; 2.0 s; peak memory 380 MiB.
+2026-10-28T06:13:27Z INFO [271/1000] c2694ea9-4732-4356-8b91-0983b3a38b9c: 112 arrays, 0.7 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:13:27Z INFO [272/1000] c25fae2a-fba7-4947-ab86-ff27f29e869b: 112 arrays, 0.8 MB stored; 2.3 s; peak memory 380 MiB.
+2026-10-28T06:13:27Z INFO [273/1000] c26dc0fe-4e69-4eaa-a691-dcc49e4cccf6: 112 arrays, 0.5 MB stored; 1.9 s; peak memory 380 MiB.
+2026-10-28T06:13:27Z INFO [274/1000] c26fc76a-0db6-4f3a-a028-a3a25a252e26: 112 arrays, 0.8 MB stored; 1.9 s; peak memory 380 MiB.
+2026-10-28T06:13:27Z INFO [275/1000] c27265ca-e695-403f-b3f0-dded7c46505e: 112 arrays, 0.4 MB stored; 1.6 s; peak memory 380 MiB.
+2026-10-28T06:13:27Z INFO [276/1000] c271e0a9-f563-468f-8930-a99b6bb0c948: 112 arrays, 0.7 MB stored; 2.0 s; peak memory 380 MiB.
+2026-10-28T06:13:28Z INFO [277/1000] c27487af-df53-4715-9eda-33f7d3dcebd3: 112 arrays, 0.3 MB stored; 1.4 s; peak memory 380 MiB.
+2026-10-28T06:13:28Z INFO [278/1000] c277a20f-0d22-4655-add5-74fb96a72629: 112 arrays, 0.6 MB stored; 1.6 s; peak memory 380 MiB.
+2026-10-28T06:13:29Z INFO [279/1000] c2786f4e-b521-47d6-8e83-2942cd6e12ba: 112 arrays, 0.3 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:13:29Z INFO [280/1000] c2795fec-f961-4540-bee2-e0855fa27a8d: 112 arrays, 0.3 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:13:29Z INFO [281/1000] c2818ecf-dd32-40fa-8420-43c92d50d013: 112 arrays, 0.6 MB stored; 2.0 s; peak memory 380 MiB.
+2026-10-28T06:13:29Z INFO [282/1000] c2819740-4dae-4f54-9d0a-3febc329736b: 112 arrays, 0.9 MB stored; 2.0 s; peak memory 380 MiB.
+2026-10-28T06:13:29Z INFO [283/1000] c27b520c-76bf-44e0-bf20-066ca4d3e2b3: 112 arrays, 0.5 MB stored; 2.2 s; peak memory 380 MiB.
+2026-10-28T06:13:30Z INFO [284/1000] c28ab1f3-fcca-4aa4-aca7-f1dcbe7e0c85: 112 arrays, 0.3 MB stored; 1.6 s; peak memory 380 MiB.
+2026-10-28T06:13:30Z INFO [285/1000] c281ba18-2bb1-4531-bfbc-61543bf87ea6: 112 arrays, 0.9 MB stored; 2.2 s; peak memory 380 MiB.
+2026-10-28T06:13:30Z INFO [286/1000] c28d9d23-0d1f-457e-b1e1-aa60e4bc0918: 112 arrays, 0.6 MB stored; 1.7 s; peak memory 380 MiB.
+2026-10-28T06:13:30Z INFO [287/1000] c2924925-0e06-4361-9041-366b21072abf: 112 arrays, 0.0 MB stored; 1.4 s; peak memory 380 MiB.
+2026-10-28T06:13:30Z INFO [288/1000] c28e2785-3c00-43a9-9306-a12c293187bd: 112 arrays, 0.3 MB stored; 1.7 s; peak memory 380 MiB.
+2026-10-28T06:13:31Z INFO [289/1000] c296f6f6-3e89-4c35-90fb-b581077077e2: 112 arrays, 0.1 MB stored; 1.6 s; peak memory 380 MiB.
+2026-10-28T06:13:31Z INFO [290/1000] c29c9b01-6c79-4736-ba1c-7d1d706ff74e: 112 arrays, 0.2 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:13:31Z INFO [291/1000] c29cf52d-60b5-45a6-b6d9-76526ef61d51: 112 arrays, 0.9 MB stored; 1.9 s; peak memory 380 MiB.
+2026-10-28T06:13:31Z INFO [292/1000] c2a45c28-0ecb-4316-af54-055c53d991bb: 112 arrays, 0.5 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:13:32Z INFO [293/1000] c2a809b3-6543-4edb-8901-77ac351d55ed: 112 arrays, 1.1 MB stored; 1.9 s; peak memory 380 MiB.
+2026-10-28T06:13:32Z INFO [294/1000] c2a88e67-49f2-456b-a738-e6265832553c: 112 arrays, 0.3 MB stored; 1.6 s; peak memory 380 MiB.
+2026-10-28T06:13:32Z INFO [295/1000] c2ab755b-24b8-4e91-8b2b-86df9d314405: 112 arrays, 0.5 MB stored; 1.7 s; peak memory 380 MiB.
+2026-10-28T06:13:32Z INFO [296/1000] c2ae11dc-c180-40ac-851c-5850c43623fb: 112 arrays, 0.1 MB stored; 1.5 s; peak memory 380 MiB.
+2026-10-28T06:13:32Z INFO [297/1000] c2aa3fe2-13a5-4cee-a28f-dda215631081: 112 arrays, 0.7 MB stored; 2.2 s; peak memory 380 MiB.
+2026-10-28T06:13:33Z INFO [298/1000] c2afa44c-b798-4149-92c8-25c723558354: 112 arrays, 0.9 MB stored; 1.9 s; peak memory 380 MiB.
+2026-10-28T06:13:33Z INFO [299/1000] c2bc493b-016c-4851-bb78-70a27b9c3c73: 112 arrays, 0.3 MB stored; 1.6 s; peak memory 380 MiB.
+2026-10-28T06:13:33Z INFO [300/1000] c2b22fe6-7e91-4ab5-9b1c-740b6a7ba0f4: 112 arrays, 0.4 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:13:33Z INFO [301/1000] c2c32a31-e9f6-4a42-ad26-e023b9a235fa: 112 arrays, 0.6 MB stored; 1.9 s; peak memory 380 MiB.
+2026-10-28T06:13:34Z INFO [302/1000] c2c4977a-1a26-4714-9c92-7cd23121bfcb: 112 arrays, 0.5 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:13:34Z INFO [303/1000] c2c879f7-12b0-4680-9fdd-6ce695d25369: 112 arrays, 0.5 MB stored; 1.7 s; peak memory 380 MiB.
+2026-10-28T06:13:34Z INFO [304/1000] c2ccad59-09d1-47d5-ad53-daca9b5fa447: 112 arrays, 0.5 MB stored; 1.7 s; peak memory 380 MiB.
+2026-10-28T06:13:34Z INFO [305/1000] c2d5d324-010c-455f-8715-1265c222e289: 112 arrays, 0.6 MB stored; 1.7 s; peak memory 380 MiB.
+2026-10-28T06:13:34Z INFO [306/1000] c2d6405c-bbcd-4331-a161-42c5ef573ad8: 112 arrays, 0.3 MB stored; 1.5 s; peak memory 380 MiB.
+2026-10-28T06:13:35Z INFO [307/1000] c2dc503f-5e97-4335-bc82-45cd1ae941a2: 112 arrays, 0.5 MB stored; 1.7 s; peak memory 380 MiB.
+2026-10-28T06:13:35Z INFO [308/1000] c2d755ff-8dbf-4ff3-8bf0-67662f53cd1f: 112 arrays, 0.7 MB stored; 1.9 s; peak memory 380 MiB.
+2026-10-28T06:13:35Z INFO [309/1000] c2e2a18c-14ba-45b6-8530-8f1d3ba9de1e: 112 arrays, 0.7 MB stored; 1.6 s; peak memory 380 MiB.
+2026-10-28T06:13:35Z INFO [310/1000] c2dfdf81-1581-4b00-b28e-acec10e88421: 112 arrays, 0.5 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:13:36Z INFO [311/1000] c2e956b8-9067-4913-9fc7-ead07a3240e3: 112 arrays, 0.7 MB stored; 1.9 s; peak memory 380 MiB.
+2026-10-28T06:13:36Z INFO [312/1000] c2ede37e-cd1e-4f62-bade-151ed23f5d3f: 112 arrays, 0.7 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:13:36Z INFO [313/1000] c2eecd37-6236-4553-8857-a9dd231a54f5: 112 arrays, 0.7 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:13:36Z INFO [314/1000] c2ef8974-b2f7-407b-b68e-8662173c9de4: 112 arrays, 0.8 MB stored; 1.6 s; peak memory 380 MiB.
+2026-10-28T06:13:37Z INFO [315/1000] c2f9ad7b-6eab-43a7-931b-6566c66e1218: 112 arrays, 0.8 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:13:37Z INFO [316/1000] c2f8702c-c1bb-428b-8c78-53b51359fe0f: 112 arrays, 1.0 MB stored; 1.9 s; peak memory 380 MiB.
+2026-10-28T06:13:37Z INFO [317/1000] c2fe03d3-7175-4f43-9ec0-3eb18287fcda: 112 arrays, 0.4 MB stored; 1.5 s; peak memory 380 MiB.
+2026-10-28T06:13:37Z INFO [318/1000] c30101ba-0af3-43f0-b099-bb233740b6ba: 112 arrays, 0.8 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:13:38Z INFO [319/1000] c3014f7d-cfdd-4005-9b45-41c330a314a9: 112 arrays, 1.1 MB stored; 2.0 s; peak memory 380 MiB.
+2026-10-28T06:13:38Z INFO [320/1000] c302f2d8-9244-458f-95ea-0ba2eca03a66: 112 arrays, 0.7 MB stored; 1.7 s; peak memory 380 MiB.
+2026-10-28T06:13:38Z INFO [321/1000] c302f127-3649-4719-8f78-20b26dcce683: 112 arrays, 0.4 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:13:38Z INFO [322/1000] c301f098-09b5-41de-a6f9-7025282169b0: 112 arrays, 0.9 MB stored; 2.0 s; peak memory 380 MiB.
+2026-10-28T06:13:38Z INFO [323/1000] c3096acc-33f7-46cb-809b-4d111ef2b300: 107 arrays, 0.1 MB stored; 1.4 s; peak memory 380 MiB.
+2026-10-28T06:13:38Z INFO [324/1000] c307a969-f53e-4776-8de8-ce944e421c8d: 112 arrays, 0.9 MB stored; 1.7 s; peak memory 380 MiB.
+2026-10-28T06:13:39Z INFO [325/1000] c309ea64-f484-49b5-b9da-af0fd5732615: 112 arrays, 0.5 MB stored; 1.9 s; peak memory 380 MiB.
+2026-10-28T06:13:39Z INFO [326/1000] c30b94f4-f231-49a0-9730-5919618a9dee: 112 arrays, 0.5 MB stored; 1.5 s; peak memory 380 MiB.
+2026-10-28T06:13:39Z INFO [327/1000] c30b9b64-968f-4e07-800d-a5b4bc43b8b6: 112 arrays, 0.4 MB stored; 1.7 s; peak memory 380 MiB.
+2026-10-28T06:13:40Z INFO [328/1000] c312be4a-db65-4711-9a57-c750444817aa: 112 arrays, 0.3 MB stored; 1.7 s; peak memory 380 MiB.
+2026-10-28T06:13:40Z INFO [329/1000] c30dccde-f966-4c3c-b50c-945c2a0549e7: 112 arrays, 0.7 MB stored; 2.0 s; peak memory 380 MiB.
+2026-10-28T06:13:40Z INFO [330/1000] c30f3ce2-99e3-4397-892c-1a71182ae52f: 112 arrays, 0.8 MB stored; 2.1 s; peak memory 380 MiB.
+2026-10-28T06:13:40Z INFO [331/1000] c3140088-4669-4ff7-b19f-a92cc18031df: 114 arrays, 0.4 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:13:40Z INFO [332/1000] c31f5c3d-38ac-471f-a972-77ada90f5254: 133 arrays, 0.1 MB stored; 1.6 s; peak memory 380 MiB.
+2026-10-28T06:13:40Z INFO [333/1000] c317a7ba-d8f7-471f-b156-36c07d9fea71: 112 arrays, 0.8 MB stored; 2.1 s; peak memory 380 MiB.
+2026-10-28T06:13:40Z INFO [334/1000] c31b2c08-01e6-4a8a-a222-29802beda027: 112 arrays, 0.3 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:13:41Z INFO [335/1000] c32551a5-b257-438a-9e30-817d94d1c8bf: 112 arrays, 0.3 MB stored; 1.5 s; peak memory 380 MiB.
+2026-10-28T06:13:41Z INFO [336/1000] c330ac13-b29d-46a0-84b7-5eef1fcdfe88: 112 arrays, 0.4 MB stored; 1.6 s; peak memory 380 MiB.
+2026-10-28T06:13:41Z INFO [337/1000] c32a735f-feeb-4507-8639-c3dae2df853f: 112 arrays, 0.6 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:13:42Z INFO [338/1000] c33776f3-09fd-4c6a-9715-368af77efa34: 112 arrays, 0.7 MB stored; 1.9 s; peak memory 380 MiB.
+2026-10-28T06:13:42Z INFO [339/1000] c3336757-f909-4839-9a65-9979b180dcc8: 112 arrays, 0.5 MB stored; 2.0 s; peak memory 380 MiB.
+2026-10-28T06:13:42Z INFO [340/1000] c340db64-8aa6-4d28-a49e-8947d1856056: 112 arrays, 0.4 MB stored; 1.7 s; peak memory 380 MiB.
+2026-10-28T06:13:42Z INFO [341/1000] c33d97f8-f76e-41af-ac1d-bb0da0792d14: 112 arrays, 0.8 MB stored; 2.0 s; peak memory 380 MiB.
+2026-10-28T06:13:42Z INFO [342/1000] c341cd5e-6f2d-4916-bdae-1d175af22d62: 111 arrays, 0.8 MB stored; 2.0 s; peak memory 380 MiB.
+2026-10-28T06:13:43Z INFO [343/1000] c342e48e-9025-46d7-bcab-d48e281448fb: 114 arrays, 0.7 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:13:43Z INFO [344/1000] c3451318-d33c-4144-bcec-ad8b0d089018: 112 arrays, 0.5 MB stored; 1.6 s; peak memory 380 MiB.
+2026-10-28T06:13:43Z INFO [345/1000] c3470141-e035-4fc5-a7d2-6fe8d5a65fd5: 112 arrays, 0.7 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:13:44Z INFO [346/1000] c34a2cf8-f396-4a18-b09e-58b25c999ad9: 112 arrays, 0.2 MB stored; 1.7 s; peak memory 380 MiB.
+2026-10-28T06:13:44Z INFO [347/1000] c3486c15-17eb-48ec-a439-ee968dbd8e79: 112 arrays, 0.6 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:13:44Z INFO [348/1000] c34b3985-baf2-40c8-9ee8-74f4924afa89: 112 arrays, 0.3 MB stored; 1.9 s; peak memory 380 MiB.
+2026-10-28T06:13:44Z INFO [349/1000] c356aad0-6190-48f3-84e3-59923b25dea7: 114 arrays, 0.5 MB stored; 1.7 s; peak memory 380 MiB.
+2026-10-28T06:13:44Z INFO [350/1000] c35a5066-1c3d-4bc3-8773-3408e8670e60: 112 arrays, 0.4 MB stored; 1.6 s; peak memory 380 MiB.
+2026-10-28T06:13:44Z INFO [351/1000] c34ce3b4-1eba-4d77-8af0-b53e4f60f240: 112 arrays, 0.7 MB stored; 2.1 s; peak memory 380 MiB.
+2026-10-28T06:13:44Z INFO [352/1000] c35b3613-2102-4945-b9af-21547ff437cc: 112 arrays, 0.5 MB stored; 1.5 s; peak memory 380 MiB.
+2026-10-28T06:13:45Z INFO [353/1000] c35cfe36-ce75-4130-bb37-be531dbb0aff: 112 arrays, 0.7 MB stored; 1.4 s; peak memory 380 MiB.
+2026-10-28T06:13:45Z INFO [354/1000] c3692e3a-86e6-48a9-98f6-fa36524f8cb8: 111 arrays, 0.1 MB stored; 1.6 s; peak memory 380 MiB.
+2026-10-28T06:13:45Z INFO [355/1000] c363fd7a-c38c-42f7-a651-e8c3de3ad977: 112 arrays, 0.7 MB stored; 1.9 s; peak memory 380 MiB.
+2026-10-28T06:13:46Z INFO [356/1000] c36b5cfb-0a21-4a9e-a31a-767c0aa2aad0: 112 arrays, 0.3 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:13:46Z INFO [357/1000] c36c51e8-fefe-4b88-98f5-14d8255e845d: 112 arrays, 0.5 MB stored; 1.9 s; peak memory 380 MiB.
+2026-10-28T06:13:46Z INFO [358/1000] c383efe1-ec91-4935-a794-d5aa7f8b57e2: 112 arrays, 0.2 MB stored; 1.6 s; peak memory 380 MiB.
+2026-10-28T06:13:46Z INFO [359/1000] c3747f3a-6a5e-47b9-84cf-0bc732f809af: 112 arrays, 0.8 MB stored; 2.1 s; peak memory 380 MiB.
+2026-10-28T06:13:46Z INFO [360/1000] c397746f-82e2-4255-b98a-f4c845a4cf91: 112 arrays, 1.4 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:13:46Z INFO [361/1000] c374c23f-b091-41b9-b8dd-c728a824f36b: 112 arrays, 1.0 MB stored; 2.1 s; peak memory 380 MiB.
+2026-10-28T06:13:47Z INFO [362/1000] c39d13e8-ae27-457c-9942-482d0c82ef7d: 111 arrays, 0.0 MB stored; 1.5 s; peak memory 380 MiB.
+2026-10-28T06:13:47Z INFO [363/1000] c39df64f-f53f-486d-84a6-f413aae5aba5: 112 arrays, 0.4 MB stored; 1.6 s; peak memory 380 MiB.
+2026-10-28T06:13:47Z INFO [364/1000] c39e0bb2-7205-4eb2-87f2-02a8b5750881: 112 arrays, 0.6 MB stored; 1.7 s; peak memory 380 MiB.
+2026-10-28T06:13:48Z INFO [365/1000] c3a001d3-0ba4-413b-8007-291205e2fcde: 112 arrays, 0.4 MB stored; 1.7 s; peak memory 380 MiB.
+2026-10-28T06:13:48Z INFO [366/1000] c3a00430-4be0-440b-bbf8-1aecaadd1bc1: 112 arrays, 0.4 MB stored; 1.7 s; peak memory 380 MiB.
+2026-10-28T06:13:48Z INFO [367/1000] c3a58e36-2110-4fc0-b18e-1eeb3840fa8c: 111 arrays, 0.0 MB stored; 1.5 s; peak memory 380 MiB.
+2026-10-28T06:13:48Z INFO [368/1000] c3a2e669-73c8-4875-bd47-0c8ced424033: 112 arrays, 0.5 MB stored; 1.6 s; peak memory 380 MiB.
+2026-10-28T06:13:48Z INFO [369/1000] c3acab97-91e0-464a-bb2c-b37c1ccacc07: 112 arrays, 0.5 MB stored; 1.7 s; peak memory 380 MiB.
+2026-10-28T06:13:49Z INFO [370/1000] c3ac90a5-576f-4e59-8cf2-a9942bb2ee95: 112 arrays, 0.8 MB stored; 2.1 s; peak memory 380 MiB.
+2026-10-28T06:13:49Z INFO [371/1000] c3af9938-e28b-4722-9ac0-db36ea14a3d0: 112 arrays, 0.9 MB stored; 2.1 s; peak memory 380 MiB.
+2026-10-28T06:13:49Z INFO [372/1000] c3b3f83c-5e7b-4ed8-b91f-1bdc61cf5cf5: 112 arrays, 0.7 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:13:49Z INFO [373/1000] c3b4a7f8-0e00-4ee5-a5c2-e800104ddb95: 112 arrays, 0.6 MB stored; 1.6 s; peak memory 380 MiB.
+2026-10-28T06:13:50Z INFO [374/1000] c3bd8015-547d-4f63-a2fc-e760b8493176: 112 arrays, 0.7 MB stored; 1.9 s; peak memory 380 MiB.
+2026-10-28T06:13:50Z INFO [375/1000] c3be0e66-f75f-4182-897e-6dca6a53f0e6: 111 arrays, 0.5 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:13:50Z INFO [376/1000] c3be0b1d-4b27-4e38-950e-3023ef95feff: 112 arrays, 0.5 MB stored; 1.9 s; peak memory 380 MiB.
+2026-10-28T06:13:50Z INFO [377/1000] c3bff096-8125-43de-a780-20d6daef9e7c: 112 arrays, 0.2 MB stored; 1.6 s; peak memory 380 MiB.
+2026-10-28T06:13:50Z INFO [378/1000] c3c22c05-04af-4ca5-9bb0-3a8aeb3d701a: 112 arrays, 0.4 MB stored; 1.6 s; peak memory 380 MiB.
+2026-10-28T06:13:51Z INFO [379/1000] c3d97159-0fe2-4ccd-a238-c099850adf14: 112 arrays, 0.5 MB stored; 1.6 s; peak memory 380 MiB.
+2026-10-28T06:13:51Z INFO [380/1000] c3d6e6ad-cd25-4741-9b84-bbcf60ba4f0a: 112 arrays, 0.7 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:13:51Z INFO [381/1000] c3d2b264-fe8b-4534-a366-f15b3ff7369f: 112 arrays, 0.9 MB stored; 2.0 s; peak memory 380 MiB.
+2026-10-28T06:13:51Z INFO [382/1000] c3e817e3-074d-4ba5-a101-ff49df3abc55: 112 arrays, 0.2 MB stored; 1.5 s; peak memory 380 MiB.
+2026-10-28T06:13:52Z INFO [383/1000] c3e03a43-9602-4a14-aee7-d1920ed20c18: 111 arrays, 0.3 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:13:52Z INFO [384/1000] c3deab9a-38d4-46c3-a61b-573b018ffa3b: 112 arrays, 0.5 MB stored; 2.0 s; peak memory 380 MiB.
+2026-10-28T06:13:52Z INFO [385/1000] c3eb1574-4a3a-4e82-ad6f-c179f31bb22c: 112 arrays, 0.9 MB stored; 1.6 s; peak memory 380 MiB.
+2026-10-28T06:13:52Z INFO [386/1000] c3ea0e18-c576-4a1b-9c78-e781f7749b8b: 112 arrays, 0.4 MB stored; 1.9 s; peak memory 380 MiB.
+2026-10-28T06:13:52Z INFO [387/1000] c3f03895-8a28-4d6e-90d3-d83849f4e1a4: 111 arrays, 0.1 MB stored; 1.5 s; peak memory 380 MiB.
+2026-10-28T06:13:53Z INFO [388/1000] c3f88aef-914f-4005-bec7-6cd64086e0fe: 112 arrays, 0.6 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:13:53Z INFO [389/1000] c3fb1f12-1869-47d2-ab34-97be3123b484: 112 arrays, 0.7 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:13:53Z INFO [390/1000] c4031a76-19da-413e-95a1-68e5f04cb046: 112 arrays, 0.7 MB stored; 1.7 s; peak memory 380 MiB.
+2026-10-28T06:13:53Z INFO [391/1000] c405d525-2712-4723-b59e-f9b4e0e25537: 112 arrays, 0.4 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:13:54Z INFO [392/1000] c3fef299-be31-46a0-af10-dc244e33fd87: 108 arrays, 0.4 MB stored; 2.2 s; peak memory 380 MiB.
+2026-10-28T06:13:54Z INFO [393/1000] c405292e-80b3-41cd-9e48-f5457cc81143: 112 arrays, 0.6 MB stored; 1.9 s; peak memory 380 MiB.
+2026-10-28T06:13:54Z INFO [394/1000] c40c79e5-6a3f-4fb4-9812-e6f9e8c46ad8: 112 arrays, 0.5 MB stored; 1.7 s; peak memory 380 MiB.
+2026-10-28T06:13:54Z INFO [395/1000] c40a8b7b-acc1-4019-9933-5cded69936fa: 112 arrays, 0.5 MB stored; 2.0 s; peak memory 380 MiB.
+2026-10-28T06:13:54Z INFO [396/1000] c410bf36-4441-4e58-81c5-c22e3cb7deea: 112 arrays, 0.1 MB stored; 1.3 s; peak memory 380 MiB.
+2026-10-28T06:13:55Z INFO [397/1000] c4132029-44cb-4099-aa20-26dfbcb5d434: 112 arrays, 1.1 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:13:55Z INFO [398/1000] c419e071-684b-40b2-ad8a-6a9e90590a3e: 112 arrays, 0.7 MB stored; 1.6 s; peak memory 380 MiB.
+2026-10-28T06:13:55Z INFO [399/1000] c41a430a-2631-40e3-9410-d44ac5daa33a: 111 arrays, 0.2 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:13:56Z INFO [400/1000] c41e0ca5-22a3-4c78-8fda-3fa687cba187: 112 arrays, 0.5 MB stored; 2.0 s; peak memory 380 MiB.
+2026-10-28T06:13:56Z INFO [400/1000] c41e0ca5-22a3-4c78-8fda-3fa687cba187: checkpointed 400 new records.
+2026-10-28T06:13:56Z INFO [401/1000] c4239173-2afd-4cc7-95d0-54fea469f47b: 111 arrays, 0.5 MB stored; 2.0 s; peak memory 380 MiB.
+2026-10-28T06:13:56Z INFO [402/1000] c4316ec5-1f49-4b30-bbe3-ef4b93451e4b: 112 arrays, 0.7 MB stored; 1.7 s; peak memory 380 MiB.
+2026-10-28T06:13:56Z INFO [403/1000] c42d316e-b201-4f5d-bdc2-13de83e0dbd0: 112 arrays, 0.6 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:13:56Z INFO [404/1000] c42c22b2-b4f3-48fb-aa05-9d5e50ccecb2: 112 arrays, 0.5 MB stored; 2.0 s; peak memory 380 MiB.
+2026-10-28T06:13:56Z INFO [405/1000] c4332660-2bce-41b6-adeb-1ba98f8a21ab: 112 arrays, 0.6 MB stored; 1.6 s; peak memory 380 MiB.
+2026-10-28T06:13:56Z INFO [406/1000] c432f4bd-81c4-4270-bdae-1e29221fffc1: 112 arrays, 0.7 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:13:57Z INFO [407/1000] c435dddb-0d16-43c8-ad05-4496b26ab8d6: 112 arrays, 0.5 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:13:57Z INFO [408/1000] c43c7548-b20a-4a86-a35e-05823c90e397: 112 arrays, 0.7 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:13:57Z INFO [409/1000] c4463b53-5928-407d-a704-2a0b1d39d20d: 112 arrays, 0.1 MB stored; 1.6 s; peak memory 380 MiB.
+2026-10-28T06:13:57Z INFO [410/1000] c443ad93-c4c3-4f55-84e6-79faba82f76c: 112 arrays, 0.2 MB stored; 1.7 s; peak memory 380 MiB.
+2026-10-28T06:13:58Z INFO [411/1000] c43e101b-7408-4196-88c3-cbb42844199f: 112 arrays, 0.5 MB stored; 1.9 s; peak memory 380 MiB.
+2026-10-28T06:13:58Z INFO [412/1000] c4477a6e-7ac6-4fc1-a320-479b87a7a131: 112 arrays, 0.5 MB stored; 2.2 s; peak memory 380 MiB.
+2026-10-28T06:13:58Z INFO [413/1000] c45c9e42-72c8-448c-9374-dd16581fbcfb: 112 arrays, 0.9 MB stored; 1.7 s; peak memory 380 MiB.
+2026-10-28T06:13:58Z INFO [414/1000] c44900db-e570-4e79-af41-fc81133e2ebe: 112 arrays, 0.5 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:13:59Z INFO [415/1000] c45df8c2-b924-471d-a48a-83914445d9f9: 112 arrays, 0.7 MB stored; 1.6 s; peak memory 380 MiB.
+2026-10-28T06:13:59Z INFO [416/1000] c46c6861-db8f-4c7c-86af-c649c7f7d410: 112 arrays, 0.7 MB stored; 1.6 s; peak memory 380 MiB.
+2026-10-28T06:13:59Z INFO [417/1000] c4747c2d-d548-4178-9cd1-c0230bc768d9: 114 arrays, 0.1 MB stored; 1.6 s; peak memory 380 MiB.
+2026-10-28T06:13:59Z INFO [418/1000] c46823bd-7b26-41e4-9ac9-1b4176af28bb: 112 arrays, 0.7 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:13:59Z INFO [419/1000] c464e7a6-b106-4e9a-ba66-385e0653694c: 112 arrays, 0.9 MB stored; 1.9 s; peak memory 380 MiB.
+2026-10-28T06:14:00Z INFO [420/1000] c48cab78-8432-4fa9-a11c-3bb591688411: 112 arrays, 0.6 MB stored; 1.5 s; peak memory 380 MiB.
+2026-10-28T06:14:00Z INFO [421/1000] c47a99de-8392-496f-bd3f-1386d45d8a2e: 112 arrays, 0.5 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:14:00Z INFO [422/1000] c47e94fd-2fb6-476e-a891-d86327f21d80: 112 arrays, 0.5 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:14:00Z INFO [423/1000] c48d2f8a-9cb4-49a2-98e9-137dc66136fe: 112 arrays, 0.2 MB stored; 1.6 s; peak memory 380 MiB.
+2026-10-28T06:14:01Z INFO [424/1000] c49d6ef9-aa96-45b1-9f16-594f3727df37: 112 arrays, 0.3 MB stored; 1.6 s; peak memory 380 MiB.
+2026-10-28T06:14:01Z INFO [425/1000] c493213c-09fc-4d96-aecc-d6f67a895da4: 112 arrays, 1.2 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:14:01Z INFO [426/1000] c49a4f91-78da-44f4-8db3-6f278cb1cc08: 112 arrays, 0.2 MB stored; 1.7 s; peak memory 380 MiB.
+2026-10-28T06:14:01Z INFO [427/1000] c4a072b7-6f77-4388-b304-ca17a6db66a9: 112 arrays, 0.8 MB stored; 1.9 s; peak memory 380 MiB.
+2026-10-28T06:14:01Z INFO [428/1000] c4a66029-6da2-4465-9291-39ee88b21211: 112 arrays, 0.0 MB stored; 1.4 s; peak memory 380 MiB.
+2026-10-28T06:14:02Z INFO [429/1000] c4b125bd-2140-4baa-b2ed-d2634441b9ce: 111 arrays, 0.5 MB stored; 1.6 s; peak memory 380 MiB.
+2026-10-28T06:14:02Z INFO [430/1000] c4aa7f7d-e53b-495a-94c4-052a97274c8e: 112 arrays, 0.7 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:14:02Z INFO [431/1000] c4c30bd4-5909-4974-adb6-6a04d1164878: 112 arrays, 0.8 MB stored; 1.9 s; peak memory 380 MiB.
+2026-10-28T06:14:03Z INFO [432/1000] c4d407e0-9824-412b-8060-94758d252e62: 112 arrays, 0.4 MB stored; 1.7 s; peak memory 380 MiB.
+2026-10-28T06:14:03Z INFO [433/1000] c4d2e090-40a4-4287-858d-7ad39f352971: 112 arrays, 0.7 MB stored; 1.9 s; peak memory 380 MiB.
+2026-10-28T06:14:03Z INFO [434/1000] c4dbc3cb-14e3-42f6-8721-273567ebdd3a: 112 arrays, 0.4 MB stored; 2.0 s; peak memory 380 MiB.
+2026-10-28T06:14:03Z INFO [435/1000] c4df174e-0fc7-4afb-8b27-c70ed6706b2e: 114 arrays, 0.4 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:14:03Z INFO [436/1000] c4e45e87-70dc-4202-b83d-6ef5b591e0cf: 92 arrays, 0.3 MB stored; 1.5 s; peak memory 380 MiB.
+2026-10-28T06:14:03Z INFO [437/1000] c4ddec64-b972-434b-852f-d4987ad35df4: 112 arrays, 0.5 MB stored; 2.0 s; peak memory 380 MiB.
+2026-10-28T06:14:03Z INFO [438/1000] c4e1332b-6d90-423e-ac61-ce61a5efd149: 112 arrays, 0.4 MB stored; 1.7 s; peak memory 380 MiB.
+2026-10-28T06:14:04Z INFO [439/1000] c4e91c39-dc79-479c-a188-0b396f54635f: 133 arrays, 0.3 MB stored; 1.6 s; peak memory 380 MiB.
+2026-10-28T06:14:04Z INFO [440/1000] c4ef053b-ea06-4779-acda-7aa184dbc12c: 112 arrays, 0.5 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:14:05Z INFO [441/1000] c4f08958-e1e8-4813-8b34-3e3073d1bcf9: 112 arrays, 0.9 MB stored; 2.0 s; peak memory 380 MiB.
+2026-10-28T06:14:05Z INFO [442/1000] c4f1456d-4e7d-4668-8ae4-c65d929bd30f: 112 arrays, 0.4 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:14:05Z INFO [443/1000] c4f71ba1-929c-496a-a711-cf282690bd9d: 112 arrays, 0.5 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:14:05Z INFO [444/1000] c4f4b102-1c32-4004-9a6b-04e4ea149f94: 112 arrays, 0.8 MB stored; 2.0 s; peak memory 380 MiB.
+2026-10-28T06:14:05Z INFO [445/1000] c4f8e0f6-639b-4f11-bd3b-76b5de4e965c: 112 arrays, 0.6 MB stored; 2.0 s; peak memory 380 MiB.
+2026-10-28T06:14:05Z INFO [446/1000] c4f961ad-dac1-482d-bb18-2976af627383: 112 arrays, 1.0 MB stored; 2.1 s; peak memory 380 MiB.
+2026-10-28T06:14:05Z INFO [447/1000] c4f9b1ff-f772-46ff-8a28-e4404d6a80db: 112 arrays, 0.5 MB stored; 1.6 s; peak memory 380 MiB.
+2026-10-28T06:14:06Z INFO [448/1000] c4faa914-619c-4e22-ac9e-207a57536fb3: 112 arrays, 0.2 MB stored; 1.6 s; peak memory 380 MiB.
+2026-10-28T06:14:06Z INFO [449/1000] c4fad056-32b1-494b-a243-5d88f448be78: 112 arrays, 0.7 MB stored; 1.7 s; peak memory 380 MiB.
+2026-10-28T06:14:07Z INFO [450/1000] c4fae8f1-a266-466c-9288-41e475f1fdc1: 112 arrays, 1.2 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:14:07Z INFO [451/1000] c509c919-3f07-4248-b4d6-30012a14251d: 112 arrays, 0.6 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:14:07Z INFO [452/1000] c50fd055-29bd-43bd-be38-79ca02835781: 112 arrays, 0.6 MB stored; 1.9 s; peak memory 380 MiB.
+2026-10-28T06:14:07Z INFO [453/1000] c51cbf72-30a3-47df-9571-f1d6a06f3baf: 112 arrays, 1.3 MB stored; 1.9 s; peak memory 380 MiB.
+2026-10-28T06:14:07Z INFO [454/1000] c529641d-5338-483c-919f-ed2dfbf43902: 112 arrays, 0.8 MB stored; 1.9 s; peak memory 380 MiB.
+2026-10-28T06:14:07Z INFO [455/1000] c530854d-3b34-4fd9-a40d-f11e36e2ee06: 112 arrays, 0.5 MB stored; 1.4 s; peak memory 380 MiB.
+2026-10-28T06:14:07Z INFO [456/1000] c515bbf9-db85-4cdf-9afd-22c96a6f1971: 112 arrays, 0.7 MB stored; 2.1 s; peak memory 380 MiB.
+2026-10-28T06:14:08Z INFO [457/1000] c533a5a9-1bc9-4b97-acf7-5bf9b17cf7e6: 112 arrays, 1.0 MB stored; 1.7 s; peak memory 380 MiB.
+2026-10-28T06:14:08Z INFO [458/1000] c534d9b3-5b11-4ef4-87c1-5d0833809234: 133 arrays, 0.8 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:14:08Z INFO [459/1000] c5383162-1e49-4902-9775-373d749ec604: 112 arrays, 0.8 MB stored; 1.6 s; peak memory 380 MiB.
+2026-10-28T06:14:09Z INFO [460/1000] c546cdf7-46e7-48b5-b953-1bd118588ad0: 112 arrays, 0.6 MB stored; 1.6 s; peak memory 380 MiB.
+2026-10-28T06:14:09Z INFO [461/1000] c53ebf01-b258-4141-81ba-c458031196dd: 112 arrays, 0.9 MB stored; 2.0 s; peak memory 380 MiB.
+2026-10-28T06:14:09Z INFO [462/1000] c55161d0-0d8c-43b9-8749-ec15c808a600: 112 arrays, 0.6 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:14:09Z INFO [463/1000] c54e8725-2122-45e5-9076-1a45d13eef24: 112 arrays, 0.7 MB stored; 1.9 s; peak memory 380 MiB.
+2026-10-28T06:14:09Z INFO [464/1000] c543c079-07f6-473a-b0ef-187a226b4ab9: 112 arrays, 0.5 MB stored; 2.0 s; peak memory 380 MiB.
+2026-10-28T06:14:10Z INFO [465/1000] c5520804-113f-48e7-b724-12f47ae36544: 112 arrays, 0.8 MB stored; 1.6 s; peak memory 380 MiB.
+2026-10-28T06:14:10Z INFO [466/1000] c553b2e2-d029-4898-a514-674b4f6f981a: 112 arrays, 0.6 MB stored; 1.6 s; peak memory 380 MiB.
+2026-10-28T06:14:10Z INFO [467/1000] c5545cce-6fee-4a36-8d9a-91b16b8de7ab: 112 arrays, 0.6 MB stored; 1.6 s; peak memory 380 MiB.
+2026-10-28T06:14:11Z INFO [468/1000] c55e8d50-30b8-4184-b867-e8e0b9643815: 112 arrays, 0.7 MB stored; 1.9 s; peak memory 380 MiB.
+2026-10-28T06:14:11Z INFO [469/1000] c562b303-22a9-43ac-beef-14cb38f5acb0: 112 arrays, 0.6 MB stored; 2.2 s; peak memory 380 MiB.
+2026-10-28T06:14:11Z INFO [470/1000] c56a3661-9855-442b-aa18-ae8571c3999b: 108 arrays, 0.8 MB stored; 1.9 s; peak memory 380 MiB.
+2026-10-28T06:14:11Z INFO [471/1000] c5696455-4c93-4c4c-8f3e-55edcebdae8c: 112 arrays, 1.0 MB stored; 2.0 s; peak memory 380 MiB.
+2026-10-28T06:14:11Z INFO [472/1000] c56cc374-c653-44cb-9bc6-df3f6d8ac562: 112 arrays, 0.8 MB stored; 1.6 s; peak memory 380 MiB.
+2026-10-28T06:14:11Z INFO [473/1000] c5702723-8979-490b-b22c-318c44c45d41: 112 arrays, 0.3 MB stored; 1.3 s; peak memory 380 MiB.
+2026-10-28T06:14:11Z INFO [474/1000] c563918a-3f4c-414d-bab5-2a1ef93102a6: 112 arrays, 1.2 MB stored; 2.3 s; peak memory 380 MiB.
+2026-10-28T06:14:12Z INFO [475/1000] c56f53a5-ae32-4957-993a-470483466c46: 111 arrays, 0.5 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:14:12Z INFO [476/1000] c577452e-0576-49cb-95df-de6b2ba3def8: 133 arrays, 0.3 MB stored; 1.6 s; peak memory 380 MiB.
+2026-10-28T06:14:13Z INFO [477/1000] c57d3e43-6ae6-4c50-8989-dd3f0f3a645c: 112 arrays, 0.3 MB stored; 1.9 s; peak memory 380 MiB.
+2026-10-28T06:14:13Z INFO [478/1000] c57f91a6-5c87-470c-af12-cd54c07deb46: 112 arrays, 0.7 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:14:13Z INFO [479/1000] c587ddc8-2904-4d7b-8431-0cfa800230f6: 112 arrays, 0.5 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:14:13Z INFO [480/1000] c58822e7-4864-42a7-9eac-f5a44c9123ad: 112 arrays, 0.8 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:14:13Z INFO [481/1000] c58e14b9-3439-41d1-a432-9dc559050462: 112 arrays, 0.7 MB stored; 2.0 s; peak memory 380 MiB.
+2026-10-28T06:14:13Z INFO [482/1000] c5881117-8ee8-4470-b99f-8962f7162c7a: 112 arrays, 1.8 MB stored; 2.2 s; peak memory 380 MiB.
+2026-10-28T06:14:14Z INFO [483/1000] c595bf42-9ccf-457f-a9fd-8325205dcb4c: 112 arrays, 0.8 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:14:14Z INFO [484/1000] c598ba37-ab4b-4ed6-baed-bc5ee9400082: 112 arrays, 0.9 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:14:15Z INFO [485/1000] c5ab4c89-ade6-4fe1-bc30-3cf232980e6c: 112 arrays, 0.3 MB stored; 1.6 s; peak memory 380 MiB.
+2026-10-28T06:14:15Z INFO [486/1000] c5a5060a-12a8-4a5e-8f8f-4fd414a9c642: 112 arrays, 0.6 MB stored; 1.7 s; peak memory 380 MiB.
+2026-10-28T06:14:15Z INFO [487/1000] c5b04956-f23e-464c-9479-21689c46e309: 112 arrays, 0.2 MB stored; 1.9 s; peak memory 380 MiB.
+2026-10-28T06:14:15Z INFO [488/1000] c5a81934-259d-4886-b73e-063935dae495: 112 arrays, 0.5 MB stored; 2.1 s; peak memory 380 MiB.
+2026-10-28T06:14:15Z INFO [489/1000] c5b86235-ca91-4991-a73a-4f04738576a5: 112 arrays, 0.4 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:14:15Z INFO [490/1000] c5b9b9a2-21f8-4846-a3fc-034166322f21: 112 arrays, 0.1 MB stored; 1.3 s; peak memory 380 MiB.
+2026-10-28T06:14:15Z INFO [491/1000] c5b4854b-d123-4ad3-aa56-7ac487f8e90c: 112 arrays, 0.8 MB stored; 2.0 s; peak memory 380 MiB.
+2026-10-28T06:14:15Z INFO [492/1000] c5b20dd1-6d84-4646-be89-ce89511207d5: 112 arrays, 0.7 MB stored; 2.1 s; peak memory 380 MiB.
+2026-10-28T06:14:16Z INFO [493/1000] c5ba28b8-791d-4c8e-979a-315553dc4ffa: 112 arrays, 0.8 MB stored; 1.6 s; peak memory 380 MiB.
+2026-10-28T06:14:16Z INFO [494/1000] c5bc861b-5eea-4bf9-b9b1-dd08c085148f: 112 arrays, 0.9 MB stored; 1.7 s; peak memory 380 MiB.
+2026-10-28T06:14:17Z INFO [495/1000] c5c5cbac-7d03-460b-bf85-806e60747bf0: 112 arrays, 0.5 MB stored; 1.9 s; peak memory 380 MiB.
+2026-10-28T06:14:17Z INFO [496/1000] c5c75349-89f1-4c57-983d-fa3a3d5282ad: 111 arrays, 0.3 MB stored; 1.6 s; peak memory 380 MiB.
+2026-10-28T06:14:17Z INFO [497/1000] c5c8f4f8-76f4-4123-920a-6c7247ad30ed: 112 arrays, 0.4 MB stored; 1.6 s; peak memory 380 MiB.
+2026-10-28T06:14:17Z INFO [498/1000] c5bff739-04cc-4a83-a2ee-c001e3fb4406: 112 arrays, 0.8 MB stored; 2.1 s; peak memory 380 MiB.
+2026-10-28T06:14:17Z INFO [499/1000] c5cb8c17-e1be-45cb-a59b-70367051fcd7: 110 arrays, 2.2 MB stored; 2.0 s; peak memory 380 MiB.
+2026-10-28T06:14:18Z INFO [500/1000] c5c8fa32-fd89-45c5-b57a-b0cc70386e77: 112 arrays, 2.2 MB stored; 2.1 s; peak memory 380 MiB.
+2026-10-28T06:14:18Z INFO [501/1000] c5cdd845-89ee-4bf3-b285-3e799b7e05af: 112 arrays, 0.6 MB stored; 1.6 s; peak memory 380 MiB.
+2026-10-28T06:14:18Z INFO [502/1000] c5ce4f0e-1668-4f5b-890b-3d9837fa01c5: 112 arrays, 0.5 MB stored; 1.6 s; peak memory 380 MiB.
+2026-10-28T06:14:19Z INFO [503/1000] c5d51207-0353-4a92-9fc2-0bfd12b3a288: 114 arrays, 0.5 MB stored; 1.7 s; peak memory 380 MiB.
+2026-10-28T06:14:19Z INFO [504/1000] c5df2fe0-a46c-4921-a7a0-a083d6171b85: 112 arrays, 0.1 MB stored; 1.5 s; peak memory 380 MiB.
+2026-10-28T06:14:19Z INFO [505/1000] c5d7cd9f-93e7-42d7-bbd7-78e0c4296b1a: 112 arrays, 0.4 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:14:19Z INFO [506/1000] c5d73b15-f2f5-4503-985c-78e8509942d0: 112 arrays, 1.1 MB stored; 2.2 s; peak memory 380 MiB.
+2026-10-28T06:14:19Z INFO [507/1000] c5e24f6a-591d-4daf-9d24-d93a56880001: 112 arrays, 0.6 MB stored; 1.7 s; peak memory 380 MiB.
+2026-10-28T06:14:19Z INFO [508/1000] c5ed0626-4a45-4b28-a35f-ec982a9e8fc3: 112 arrays, 0.4 MB stored; 1.6 s; peak memory 380 MiB.
+2026-10-28T06:14:20Z INFO [509/1000] c5eacec9-ad81-49ba-983f-87f20b06b584: 112 arrays, 1.1 MB stored; 2.1 s; peak memory 380 MiB.
+2026-10-28T06:14:20Z INFO [510/1000] c5ef2727-df25-421c-bd88-1311d631ffc7: 112 arrays, 0.6 MB stored; 1.7 s; peak memory 380 MiB.
+2026-10-28T06:14:20Z INFO [511/1000] c5f265fc-d3c5-4ec0-88a8-05668f5c3e4d: 112 arrays, 0.3 MB stored; 1.5 s; peak memory 380 MiB.
+2026-10-28T06:14:20Z INFO [512/1000] c5f58c95-f9aa-452f-8203-3352111fd65c: 111 arrays, 0.5 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:14:21Z INFO [513/1000] c5fdd72b-8756-4b42-8725-cb00014fd767: 112 arrays, 0.7 MB stored; 2.0 s; peak memory 380 MiB.
+2026-10-28T06:14:21Z INFO [514/1000] c608a872-f486-4909-a2d2-b3f550c2a9b1: 112 arrays, 0.4 MB stored; 1.6 s; peak memory 380 MiB.
+2026-10-28T06:14:21Z INFO [515/1000] c6011a37-fa67-4644-b241-973df72e377d: 112 arrays, 0.3 MB stored; 1.7 s; peak memory 380 MiB.
+2026-10-28T06:14:21Z INFO [516/1000] c608eb17-5bae-4ba4-92fd-02f66834e1fe: 112 arrays, 0.8 MB stored; 1.9 s; peak memory 380 MiB.
+2026-10-28T06:14:21Z INFO [517/1000] c609004e-7fc1-4d23-8545-df94cfff4195: 112 arrays, 0.5 MB stored; 1.9 s; peak memory 380 MiB.
+2026-10-28T06:14:22Z INFO [518/1000] c60de665-baee-4718-bf64-486c5744707b: 112 arrays, 0.6 MB stored; 1.9 s; peak memory 380 MiB.
+2026-10-28T06:14:22Z INFO [519/1000] c612e83a-1710-4bfe-af7e-80738fe42e92: 112 arrays, 0.5 MB stored; 1.6 s; peak memory 380 MiB.
+2026-10-28T06:14:22Z INFO [520/1000] c613a18f-bcde-4866-a3fb-1bbe65534827: 112 arrays, 0.9 MB stored; 1.7 s; peak memory 380 MiB.
+2026-10-28T06:14:23Z INFO [521/1000] c6254760-bcf6-4055-977d-70fc614c70e4: 112 arrays, 0.7 MB stored; 1.7 s; peak memory 380 MiB.
+2026-10-28T06:14:23Z INFO [522/1000] c61696c2-36e5-4ee6-9617-ec002564b1be: 112 arrays, 0.8 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:14:23Z INFO [523/1000] c624898e-5056-4219-bfbd-ca565efb6923: 112 arrays, 0.8 MB stored; 2.0 s; peak memory 380 MiB.
+2026-10-28T06:14:23Z INFO [524/1000] c62f3ff0-4c20-4251-8a45-b5a831346419: 112 arrays, 0.4 MB stored; 1.7 s; peak memory 380 MiB.
+2026-10-28T06:14:23Z INFO [525/1000] c630def7-3ae0-4da0-819c-9dd4f4180586: 112 arrays, 0.4 MB stored; 1.7 s; peak memory 380 MiB.
+2026-10-28T06:14:23Z INFO [526/1000] c634dbcc-2820-4c70-828e-ed9d2a68cf55: 112 arrays, 0.6 MB stored; 1.6 s; peak memory 380 MiB.
+2026-10-28T06:14:24Z INFO [527/1000] c63336de-f4a0-4c7e-8b32-e7af2ac29148: 112 arrays, 0.7 MB stored; 1.9 s; peak memory 380 MiB.
+2026-10-28T06:14:24Z INFO [528/1000] c63bf6c7-430f-4427-b276-7730eafbf8db: 111 arrays, 0.3 MB stored; 1.6 s; peak memory 380 MiB.
+2026-10-28T06:14:24Z INFO [529/1000] c642bb91-ee03-4089-a3ce-8617b694c9a2: 111 arrays, 0.7 MB stored; 1.7 s; peak memory 380 MiB.
+2026-10-28T06:14:24Z INFO [530/1000] c63ebb84-2162-4edd-aaf1-580bb9737a64: 112 arrays, 0.5 MB stored; 1.7 s; peak memory 380 MiB.
+2026-10-28T06:14:25Z INFO [531/1000] c6475271-e7fe-4c00-9b8f-2050f9ab96a4: 112 arrays, 1.3 MB stored; 1.9 s; peak memory 380 MiB.
+2026-10-28T06:14:25Z INFO [532/1000] c6512c13-7f85-4c96-8daa-f7d832ba4e22: 112 arrays, 0.4 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:14:25Z INFO [533/1000] c647b4fb-98f6-47b4-b43a-bf352683e513: 112 arrays, 0.9 MB stored; 2.0 s; peak memory 380 MiB.
+2026-10-28T06:14:25Z INFO [534/1000] c65211c2-fb26-4823-a371-967f55244921: 112 arrays, 0.4 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:14:25Z INFO [535/1000] c6570ce6-a303-446a-a019-c22d04d5eef2: 112 arrays, 0.4 MB stored; 1.7 s; peak memory 380 MiB.
+2026-10-28T06:14:25Z INFO [536/1000] c657faf7-c59c-4286-9898-746c2fe9a950: 112 arrays, 0.5 MB stored; 1.7 s; peak memory 380 MiB.
+2026-10-28T06:14:26Z INFO [537/1000] c66106c0-db6c-4d72-9c68-b7e587bc620b: 112 arrays, 0.2 MB stored; 1.4 s; peak memory 380 MiB.
+2026-10-28T06:14:26Z INFO [538/1000] c660b047-3410-413f-bf45-a211e328ea76: 114 arrays, 0.7 MB stored; 1.7 s; peak memory 380 MiB.
+2026-10-28T06:14:26Z INFO [539/1000] c6621043-d624-430c-845c-23805efaba3d: 112 arrays, 0.1 MB stored; 1.6 s; peak memory 380 MiB.
+2026-10-28T06:14:27Z INFO [540/1000] c663c663-4ac2-4ab0-bd2d-95f04c80fc31: 111 arrays, 0.3 MB stored; 1.6 s; peak memory 380 MiB.
+2026-10-28T06:14:27Z INFO [541/1000] c66d8351-4dcc-487b-ace3-348d3f67ccca: 112 arrays, 0.5 MB stored; 1.7 s; peak memory 380 MiB.
+2026-10-28T06:14:27Z INFO [542/1000] c670d45a-3caf-4924-a08a-1393f1a9d8b6: 112 arrays, 0.3 MB stored; 1.9 s; peak memory 380 MiB.
+2026-10-28T06:14:27Z INFO [543/1000] c672a4df-ab1e-4469-9880-d7175bf7de99: 112 arrays, 0.6 MB stored; 1.9 s; peak memory 380 MiB.
+2026-10-28T06:14:27Z INFO [544/1000] c67cbc75-b0be-4809-869b-6c345cd84853: 112 arrays, 0.4 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:14:28Z INFO [545/1000] c67edeb1-f3b8-4fa3-acdc-ef1c766758ef: 112 arrays, 0.8 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:14:28Z INFO [546/1000] c67f2963-65af-4e38-8506-2a5c3e0176fd: 112 arrays, 0.5 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:14:28Z INFO [547/1000] c68179cc-26e1-40ff-9cff-dca69e8be5b9: 112 arrays, 0.6 MB stored; 1.6 s; peak memory 380 MiB.
+2026-10-28T06:14:28Z INFO [548/1000] c684310d-5fe2-4ab0-b4dc-2d83daf74f2d: 112 arrays, 0.2 MB stored; 1.6 s; peak memory 380 MiB.
+2026-10-28T06:14:28Z INFO [549/1000] c6829a33-5a40-4f0d-a382-4214baf58852: 112 arrays, 0.8 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:14:29Z INFO [550/1000] c6861ed0-4022-4316-9cb0-4a7af86afa67: 112 arrays, 0.2 MB stored; 1.6 s; peak memory 380 MiB.
+2026-10-28T06:14:29Z INFO [551/1000] c69236e7-e480-4b85-9e9d-7631600eb3be: 112 arrays, 0.3 MB stored; 1.7 s; peak memory 380 MiB.
+2026-10-28T06:14:29Z INFO [552/1000] c68b4c4a-3a22-4dbe-a292-96cccf94f4bf: 112 arrays, 0.4 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:14:29Z INFO [553/1000] c6991c0a-8719-4054-98e4-99987d570cd1: 112 arrays, 0.4 MB stored; 1.6 s; peak memory 380 MiB.
+2026-10-28T06:14:29Z INFO [554/1000] c6a48df1-f35d-4c69-9259-48d76e10c29a: 112 arrays, 0.3 MB stored; 1.6 s; peak memory 380 MiB.
+2026-10-28T06:14:30Z INFO [555/1000] c69e1fbd-fbda-416d-85db-e91db4eff6f8: 133 arrays, 0.6 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:14:30Z INFO [556/1000] c6a97649-2d15-459c-ac4d-6426743a966f: 112 arrays, 0.5 MB stored; 1.7 s; peak memory 380 MiB.
+2026-10-28T06:14:30Z INFO [557/1000] c6aa04b7-febf-4a97-b4f3-b51bb0bc92b8: 112 arrays, 0.3 MB stored; 1.7 s; peak memory 380 MiB.
+2026-10-28T06:14:30Z INFO [558/1000] c6aeadca-986a-40e9-8203-9a5dc749f3e5: 112 arrays, 0.5 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:14:31Z INFO [559/1000] c6c5c084-d8c7-462e-8e7a-f35bedb58d7a: 112 arrays, 0.7 MB stored; 1.7 s; peak memory 380 MiB.
+2026-10-28T06:14:31Z INFO [560/1000] c6d22917-6242-4e53-bccd-4b75f58f767b: 112 arrays, 0.6 MB stored; 1.9 s; peak memory 380 MiB.
+2026-10-28T06:14:31Z INFO [561/1000] c6d4963e-ec1d-4e24-89a8-d75b3f79490f: 112 arrays, 0.5 MB stored; 1.6 s; peak memory 380 MiB.
+2026-10-28T06:14:31Z INFO [562/1000] c6d450bd-4f6a-45c0-a235-9b835590e62a: 112 arrays, 2.0 MB stored; 2.0 s; peak memory 380 MiB.
+2026-10-28T06:14:31Z INFO [563/1000] c6d7e4fa-e806-44ed-8da8-93f1be327fcd: 112 arrays, 0.5 MB stored; 1.9 s; peak memory 380 MiB.
+2026-10-28T06:14:32Z INFO [564/1000] c6e77efb-0b4f-4338-9818-b56ed3c328d0: 112 arrays, 0.9 MB stored; 1.6 s; peak memory 380 MiB.
+2026-10-28T06:14:32Z INFO [565/1000] c6e83a17-ee3f-4d67-b862-1623a46abb50: 112 arrays, 1.2 MB stored; 1.9 s; peak memory 380 MiB.
+2026-10-28T06:14:32Z INFO [566/1000] c6e9b30c-3e29-4f79-81ed-5822db5bfecb: 112 arrays, 0.7 MB stored; 1.7 s; peak memory 380 MiB.
+2026-10-28T06:14:32Z INFO [567/1000] c6eb0439-32df-4a6e-90c5-a6d5afbc7eec: 112 arrays, 0.7 MB stored; 1.6 s; peak memory 380 MiB.
+2026-10-28T06:14:33Z INFO [568/1000] c6f05474-e573-4126-9884-9817ff79d1ac: 112 arrays, 0.8 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:14:33Z INFO [569/1000] c6f144e1-0a38-42e6-b81d-808f640823fa: 133 arrays, 0.6 MB stored; 1.7 s; peak memory 380 MiB.
+2026-10-28T06:14:33Z INFO [570/1000] c6f0bd93-1dc0-4625-93b2-53373766d4da: 112 arrays, 0.6 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:14:33Z INFO [571/1000] c7038ca1-6617-440a-b4f8-afdad0b0a0f7: 112 arrays, 0.8 MB stored; 1.7 s; peak memory 380 MiB.
+2026-10-28T06:14:33Z INFO [572/1000] c711af3e-f047-4e05-ae82-80c02e36b5c4: 94 arrays, 0.0 MB stored; 1.3 s; peak memory 380 MiB.
+2026-10-28T06:14:33Z INFO [573/1000] c70669b2-ed0a-4339-9e49-935c16498548: 112 arrays, 0.5 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:14:34Z INFO [574/1000] c714ee68-513e-4c05-898d-f6f6f2d870b5: 112 arrays, 0.1 MB stored; 1.5 s; peak memory 380 MiB.
+2026-10-28T06:14:34Z INFO [575/1000] c712513e-8763-4cf7-99dc-1dcb687ecb4f: 112 arrays, 1.0 MB stored; 1.9 s; peak memory 380 MiB.
+2026-10-28T06:14:34Z INFO [576/1000] c71ae13e-4fb3-4c8f-8752-7ac5cb54cb51: 112 arrays, 0.6 MB stored; 1.7 s; peak memory 380 MiB.
+2026-10-28T06:14:35Z INFO [577/1000] c71c9a25-e666-4c6f-b497-bc750ef544ef: 114 arrays, 0.6 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:14:35Z INFO [578/1000] c71da6fb-2826-4301-8f4c-3c8c361312fc: 112 arrays, 0.2 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:14:35Z INFO [579/1000] c7238a2f-79b6-4037-a409-6e338f360744: 112 arrays, 0.1 MB stored; 1.6 s; peak memory 380 MiB.
+2026-10-28T06:14:35Z INFO [580/1000] c72a325c-74d3-46e2-b448-3db34d508dd4: 112 arrays, 0.6 MB stored; 2.0 s; peak memory 380 MiB.
+2026-10-28T06:14:35Z INFO [581/1000] c72a905f-5fdf-4a31-b749-d6f1828701ec: 112 arrays, 0.9 MB stored; 2.0 s; peak memory 380 MiB.
+2026-10-28T06:14:35Z INFO [582/1000] c734783a-5fd7-4c1e-98fb-af9ad33a5251: 112 arrays, 0.2 MB stored; 1.3 s; peak memory 380 MiB.
+2026-10-28T06:14:35Z INFO [583/1000] c72daa69-37aa-4337-8f23-b75e27c3dd8a: 112 arrays, 0.9 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:14:36Z INFO [584/1000] c734cc27-5a97-4ba1-93f7-ee1bf77fb94f: 112 arrays, 0.5 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:14:36Z INFO [585/1000] c73adc8f-df39-4ee3-9654-8288ce76ed4a: 111 arrays, 0.3 MB stored; 1.7 s; peak memory 380 MiB.
+2026-10-28T06:14:36Z INFO [586/1000] c739e90a-bc0e-4191-b36c-c1e1d2102712: 112 arrays, 0.7 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:14:37Z INFO [587/1000] c73e3b12-d7d9-4c19-b690-02a2eadc32f2: 112 arrays, 0.6 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:14:37Z INFO [588/1000] c73f7d94-31df-4c31-b162-dbaa4fcbe25c: 112 arrays, 0.7 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:14:37Z INFO [589/1000] c7414f42-ea51-459f-a382-5597d96e424b: 112 arrays, 0.5 MB stored; 1.6 s; peak memory 380 MiB.
+2026-10-28T06:14:37Z INFO [590/1000] c7564f6d-457b-4415-837e-61f2921a5b04: 112 arrays, 0.4 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:14:37Z INFO [591/1000] c7578ada-5765-447a-8092-fc8e03441af0: 112 arrays, 0.4 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:14:38Z INFO [592/1000] c757fb55-fce2-4a36-b7fd-62828a119ba7: 112 arrays, 0.9 MB stored; 1.6 s; peak memory 380 MiB.
+2026-10-28T06:14:38Z INFO [593/1000] c76484a5-e86f-4c5b-ac7a-663f19ff272a: 112 arrays, 0.6 MB stored; 1.5 s; peak memory 380 MiB.
+2026-10-28T06:14:38Z INFO [594/1000] c763dd8b-4302-428a-9abf-70ca0cd52a6d: 112 arrays, 0.6 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:14:38Z INFO [595/1000] c7673aa1-7306-466f-bdac-f64a11cea246: 112 arrays, 0.8 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:14:39Z INFO [596/1000] c76f8615-fc8d-4e0d-b98a-618e5ac2ef7e: 112 arrays, 0.6 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:14:39Z INFO [597/1000] c76f0fde-189c-4539-8cfa-78f9245d8651: 112 arrays, 0.3 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:14:39Z INFO [598/1000] c772216e-3177-40ec-91d4-d78eee127a1d: 112 arrays, 0.3 MB stored; 1.7 s; peak memory 380 MiB.
+2026-10-28T06:14:39Z INFO [599/1000] c773a3a9-a2be-437a-a574-0fa68ddf438a: 112 arrays, 0.7 MB stored; 2.1 s; peak memory 380 MiB.
+2026-10-28T06:14:39Z INFO [600/1000] c77e1c63-4782-416d-96e8-1dcfd6eba0fc: 112 arrays, 0.6 MB stored; 1.6 s; peak memory 380 MiB.
+2026-10-28T06:14:40Z INFO [600/1000] c77e1c63-4782-416d-96e8-1dcfd6eba0fc: checkpointed 600 new records.
+2026-10-28T06:14:40Z INFO [601/1000] c786b794-1971-4622-a40d-dbecd76bff82: 112 arrays, 0.6 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:14:40Z INFO [602/1000] c78e3135-5fc7-48df-be3f-3c1c31dbb68f: 112 arrays, 0.7 MB stored; 1.7 s; peak memory 380 MiB.
+2026-10-28T06:14:40Z INFO [603/1000] c7890768-5b11-4753-aad0-685781d6f25a: 112 arrays, 1.5 MB stored; 2.0 s; peak memory 380 MiB.
+2026-10-28T06:14:41Z INFO [604/1000] c798fd1b-5f7b-4185-a823-44e8b8ea1d0d: 112 arrays, 0.5 MB stored; 1.6 s; peak memory 380 MiB.
+2026-10-28T06:14:41Z INFO [605/1000] c79281b4-ee9f-437e-a472-400a920b34ea: 112 arrays, 0.7 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:14:41Z INFO [606/1000] c7962c9c-2522-4064-be9f-5406c14d589b: 112 arrays, 0.6 MB stored; 1.7 s; peak memory 380 MiB.
+2026-10-28T06:14:41Z INFO [607/1000] c7994800-c4bc-4af7-b2c9-35aab811384b: 112 arrays, 0.6 MB stored; 1.7 s; peak memory 380 MiB.
+2026-10-28T06:14:41Z INFO [608/1000] c799cfea-a673-4fc7-b213-15da6cc38b6a: 112 arrays, 0.2 MB stored; 1.5 s; peak memory 380 MiB.
+2026-10-28T06:14:42Z INFO [609/1000] c79e458b-a9e9-4d8f-9b38-f169bfffacae: 112 arrays, 1.2 MB stored; 1.9 s; peak memory 380 MiB.
+2026-10-28T06:14:42Z INFO [610/1000] c7a9e3f6-ffde-419f-923a-d9c79cbfcabc: 112 arrays, 0.5 MB stored; 1.7 s; peak memory 380 MiB.
+2026-10-28T06:14:42Z INFO [611/1000] c7c7243a-e164-4b21-b7a7-21f502b61748: 110 arrays, 0.7 MB stored; 1.7 s; peak memory 380 MiB.
+2026-10-28T06:14:42Z INFO [612/1000] c7d16032-b25b-4fa0-8a1d-81a8d51dd74a: 112 arrays, 0.5 MB stored; 1.7 s; peak memory 380 MiB.
+2026-10-28T06:14:42Z INFO [613/1000] c7d63116-2f75-4e39-be07-c8dfc51d5353: 110 arrays, 0.7 MB stored; 1.9 s; peak memory 380 MiB.
+2026-10-28T06:14:42Z INFO [614/1000] c7bb7380-40b3-4d52-a221-ccb66037bd27: 112 arrays, 1.4 MB stored; 2.2 s; peak memory 380 MiB.
+2026-10-28T06:14:43Z INFO [615/1000] c7e2f8bf-be78-48f1-8c89-13476a01f2bb: 112 arrays, 0.4 MB stored; 1.4 s; peak memory 380 MiB.
+2026-10-28T06:14:43Z INFO [616/1000] c7e00abf-e4a9-4b5c-bbd2-3bc3bb4fd90e: 112 arrays, 0.4 MB stored; 1.7 s; peak memory 380 MiB.
+2026-10-28T06:14:43Z INFO [617/1000] c7e4e53c-af6a-4ab7-95ea-59efcc656513: 112 arrays, 0.7 MB stored; 1.5 s; peak memory 380 MiB.
+2026-10-28T06:14:43Z INFO [618/1000] c7e4f537-3919-4983-9ab8-4c28abe4d3ed: 112 arrays, 0.5 MB stored; 1.6 s; peak memory 380 MiB.
+2026-10-28T06:14:44Z INFO [619/1000] c7f171b8-0509-47f0-8fb3-bce86e1b5257: 112 arrays, 0.1 MB stored; 1.6 s; peak memory 380 MiB.
+2026-10-28T06:14:44Z INFO [620/1000] c7ef7043-2933-46a4-bfee-8b9a02b31aa6: 112 arrays, 0.5 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:14:44Z INFO [621/1000] c7f81c2a-dd82-4881-9302-01cd79a3e72d: 112 arrays, 0.5 MB stored; 1.7 s; peak memory 380 MiB.
+2026-10-28T06:14:44Z INFO [622/1000] c7f849ec-a7a3-4866-b390-c42f947327db: 112 arrays, 0.5 MB stored; 1.9 s; peak memory 380 MiB.
+2026-10-28T06:14:44Z INFO [623/1000] c7fe02c9-da39-42ff-bdaa-0329eb9db795: 112 arrays, 0.5 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:14:45Z INFO [624/1000] c801ef16-4b04-459b-96a0-9eb53ba32745: 112 arrays, 0.5 MB stored; 1.4 s; peak memory 380 MiB.
+2026-10-28T06:14:45Z INFO [625/1000] c8006db5-37a1-4f32-90de-f523a2ec8818: 112 arrays, 0.6 MB stored; 2.1 s; peak memory 380 MiB.
+2026-10-28T06:14:45Z INFO [626/1000] c801deca-9767-4fb2-8d13-d6b8c765d003: 112 arrays, 0.7 MB stored; 1.9 s; peak memory 380 MiB.
+2026-10-28T06:14:46Z INFO [627/1000] c80811f6-9b34-4cd9-83d6-730826e862ea: 133 arrays, 0.4 MB stored; 1.7 s; peak memory 380 MiB.
+2026-10-28T06:14:46Z INFO [628/1000] c808ca12-0e3c-48a3-b5d7-b835efa2393e: 112 arrays, 0.6 MB stored; 1.7 s; peak memory 380 MiB.
+2026-10-28T06:14:46Z INFO [629/1000] c80a0973-4623-4236-82fc-c9a6a73c7f08: 112 arrays, 0.9 MB stored; 2.0 s; peak memory 380 MiB.
+2026-10-28T06:14:46Z INFO [630/1000] c81a241f-b4a6-44b0-9e43-c576221a4b05: 112 arrays, 0.7 MB stored; 1.9 s; peak memory 380 MiB.
+2026-10-28T06:14:46Z INFO [631/1000] c81b32d0-10bb-4320-9868-ea44c848006d: 112 arrays, 0.7 MB stored; 1.9 s; peak memory 380 MiB.
+2026-10-28T06:14:46Z INFO [632/1000] c81c9a6b-9dfc-4276-a11f-f41342c44790: 112 arrays, 0.2 MB stored; 1.7 s; peak memory 380 MiB.
+2026-10-28T06:14:47Z INFO [633/1000] c81c6a42-e0d4-43d4-8fe9-fa0664797f6b: 112 arrays, 1.0 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:14:47Z INFO [634/1000] c822745e-c39a-49d4-85e8-af258f4a6c7e: 112 arrays, 0.6 MB stored; 1.7 s; peak memory 380 MiB.
+2026-10-28T06:14:47Z INFO [635/1000] c823a10a-a8a4-401d-b05e-330e8430b240: 112 arrays, 0.6 MB stored; 1.6 s; peak memory 380 MiB.
+2026-10-28T06:14:47Z INFO [636/1000] c825f827-119d-4c8d-a2ef-69f0bc1a745f: 112 arrays, 0.4 MB stored; 1.6 s; peak memory 380 MiB.
+2026-10-28T06:14:48Z INFO [637/1000] c82dabed-ecb8-473c-a930-14784962f5af: 112 arrays, 0.5 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:14:48Z INFO [638/1000] c8362de4-caf2-4012-a114-e6067f8a3173: 112 arrays, 0.7 MB stored; 1.7 s; peak memory 380 MiB.
+2026-10-28T06:14:48Z INFO [639/1000] c832b5af-f067-4074-996f-fc6d85d4ced8: 112 arrays, 1.1 MB stored; 1.9 s; peak memory 380 MiB.
+2026-10-28T06:14:48Z INFO [640/1000] c830d861-9a06-4597-a8f5-20507b4037c0: 112 arrays, 0.5 MB stored; 2.0 s; peak memory 380 MiB.
+2026-10-28T06:14:48Z INFO [641/1000] c8363378-ee29-4b26-bcb1-ca28e12d81a4: 112 arrays, 0.3 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:14:49Z INFO [642/1000] c843b10c-2d58-4a20-b1da-2ac87cda7712: 92 arrays, 0.1 MB stored; 1.4 s; peak memory 380 MiB.
+2026-10-28T06:14:49Z INFO [643/1000] c83a7112-f766-4cf8-b7d0-56669bf6ad4d: 112 arrays, 0.9 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:14:49Z INFO [644/1000] c8365e8b-d37c-419e-b71d-ab46af034b2b: 112 arrays, 2.1 MB stored; 2.4 s; peak memory 380 MiB.
+2026-10-28T06:14:50Z INFO [645/1000] c8466f5d-9fc6-4e11-bcf5-be985926a3d1: 112 arrays, 0.4 MB stored; 1.7 s; peak memory 380 MiB.
+2026-10-28T06:14:50Z INFO [646/1000] c84535ff-34f3-42a3-9672-d80e708febec: 112 arrays, 1.1 MB stored; 2.0 s; peak memory 380 MiB.
+2026-10-28T06:14:50Z INFO [647/1000] c85433bf-8c23-4c1c-be8f-9d1e1f4bd2cd: 112 arrays, 0.8 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:14:50Z INFO [648/1000] c847602a-e399-4d54-a3b2-b12a3f9e6bc2: 112 arrays, 0.7 MB stored; 2.1 s; peak memory 380 MiB.
+2026-10-28T06:14:50Z INFO [649/1000] c851351c-fa29-406e-8bfd-b2e4eb2136f5: 112 arrays, 0.9 MB stored; 2.1 s; peak memory 380 MiB.
+2026-10-28T06:14:50Z INFO [650/1000] c85d6462-fb8d-46ee-b88c-47e0b48ccbd3: 112 arrays, 0.3 MB stored; 1.4 s; peak memory 380 MiB.
+2026-10-28T06:14:51Z INFO [651/1000] c85cafb5-6bd0-4317-8406-f418bddbdcd0: 112 arrays, 0.7 MB stored; 1.9 s; peak memory 380 MiB.
+2026-10-28T06:14:51Z INFO [652/1000] c85ebf05-98a2-4967-83b9-9bf5d67d0122: 112 arrays, 0.9 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:14:51Z INFO [653/1000] c86246b3-f5d9-49ae-9abd-44606f0ba030: 114 arrays, 0.7 MB stored; 1.6 s; peak memory 380 MiB.
+2026-10-28T06:14:52Z INFO [654/1000] c86581be-3492-408c-be3a-920f515cc12a: 112 arrays, 0.7 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:14:52Z INFO [655/1000] c86dd4bc-578d-4e54-8dec-4ae29004e7a7: 112 arrays, 0.8 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:14:52Z INFO [656/1000] c88357f9-a315-4ace-8144-af399be33ab3: 112 arrays, 0.4 MB stored; 1.7 s; peak memory 380 MiB.
+2026-10-28T06:14:52Z INFO [657/1000] c8727a78-1cfa-47ee-9b13-51c825edc2be: 112 arrays, 1.0 MB stored; 2.1 s; peak memory 380 MiB.
+2026-10-28T06:14:52Z INFO [658/1000] c891502b-2816-47ba-b96e-004717696fb7: 112 arrays, 0.5 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:14:53Z INFO [659/1000] c8909ad9-5576-4e4b-86dc-d822483e19f3: 112 arrays, 0.9 MB stored; 2.1 s; peak memory 380 MiB.
+2026-10-28T06:14:53Z INFO [660/1000] c8930e5b-e45a-4730-b5f1-404f37211b9b: 112 arrays, 0.5 MB stored; 1.9 s; peak memory 380 MiB.
+2026-10-28T06:14:53Z INFO [661/1000] c895cc7f-3821-46c1-8af9-1eb71f5e1d76: 112 arrays, 0.7 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:14:53Z INFO [662/1000] c89819db-4936-49cc-8b9d-991b38e99446: 112 arrays, 0.9 MB stored; 1.6 s; peak memory 380 MiB.
+2026-10-28T06:14:54Z INFO [663/1000] c89d92de-d963-4ad1-8be7-3a812cb0cf0c: 112 arrays, 0.5 MB stored; 1.7 s; peak memory 380 MiB.
+2026-10-28T06:14:54Z INFO [664/1000] c89f2cb6-6e1d-4f7c-b1e4-d0250f542ab6: 112 arrays, 0.7 MB stored; 1.9 s; peak memory 380 MiB.
+2026-10-28T06:14:54Z INFO [665/1000] c8aad8f8-7b76-43b4-8b2d-f44fb5177c77: 112 arrays, 0.4 MB stored; 1.6 s; peak memory 380 MiB.
+2026-10-28T06:14:54Z INFO [666/1000] c8aa1e40-f6aa-4c63-94fa-15486e5057b7: 112 arrays, 0.3 MB stored; 1.7 s; peak memory 380 MiB.
+2026-10-28T06:14:54Z INFO [667/1000] c8a619a6-8d4d-4e0b-b0ad-8f28ad5396be: 112 arrays, 0.4 MB stored; 1.9 s; peak memory 380 MiB.
+2026-10-28T06:14:55Z INFO [668/1000] c8ac8b58-7e8e-4c98-8161-c27d86ba5e18: 112 arrays, 0.4 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:14:55Z INFO [669/1000] c8af49ba-9854-4408-ac55-0f18e9ae69e4: 133 arrays, 0.5 MB stored; 1.5 s; peak memory 380 MiB.
+2026-10-28T06:14:55Z INFO [670/1000] c8acd6e7-0223-455a-a151-5a70abefb4c1: 112 arrays, 1.7 MB stored; 2.2 s; peak memory 380 MiB.
+2026-10-28T06:14:55Z INFO [671/1000] c8afc1e3-c7cf-4dde-a09e-69562b948348: 112 arrays, 0.6 MB stored; 1.7 s; peak memory 380 MiB.
+2026-10-28T06:14:56Z INFO [672/1000] c8bf4170-0385-43f8-b897-a7e475b2482b: 112 arrays, 0.3 MB stored; 1.6 s; peak memory 380 MiB.
+2026-10-28T06:14:56Z INFO [673/1000] c8ba4560-1601-4e98-bd87-80e3b9289102: 112 arrays, 0.5 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:14:56Z INFO [674/1000] c8b7ce8b-833e-487a-a1de-db9ef5744942: 112 arrays, 0.7 MB stored; 2.0 s; peak memory 380 MiB.
+2026-10-28T06:14:56Z INFO [675/1000] c8c5e292-6d24-47f2-a110-47cdac8b7cc9: 112 arrays, 0.8 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:14:56Z INFO [676/1000] c8cdb8a9-560d-4eff-9f72-ff5d94764f11: 112 arrays, 0.4 MB stored; 1.6 s; peak memory 380 MiB.
+2026-10-28T06:14:56Z INFO [677/1000] c8cb9734-de07-402e-8bcb-d9762dd2a4e6: 112 arrays, 1.1 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:14:57Z INFO [678/1000] c8db82a7-d1c7-4d47-a560-476c0bdb2ca5: 112 arrays, 0.2 MB stored; 1.6 s; peak memory 380 MiB.
+2026-10-28T06:14:57Z INFO [679/1000] c8ddc367-2192-4a49-9d26-1414b2f01291: 112 arrays, 0.9 MB stored; 2.0 s; peak memory 380 MiB.
+2026-10-28T06:14:58Z INFO [680/1000] c8de20d8-011b-413d-8feb-7c0642820160: 112 arrays, 0.5 MB stored; 1.9 s; peak memory 380 MiB.
+2026-10-28T06:14:58Z INFO [681/1000] c8dfb2e6-ee3a-4cb6-8069-3cd4204cdc8d: 112 arrays, 0.5 MB stored; 1.9 s; peak memory 380 MiB.
+2026-10-28T06:14:58Z INFO [682/1000] c8e085cc-99e2-4177-ba3a-0e3003c4428a: 112 arrays, 1.1 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:14:58Z INFO [683/1000] c8dfe62c-0078-4fe6-843c-0818bb0719d6: 112 arrays, 0.9 MB stored; 2.0 s; peak memory 380 MiB.
+2026-10-28T06:14:58Z INFO [684/1000] c8e561fc-e8e0-47f2-9d48-f8e038d7c1cb: 112 arrays, 0.4 MB stored; 1.7 s; peak memory 380 MiB.
+2026-10-28T06:14:58Z INFO [685/1000] c8e510e8-244f-45c1-af4f-f9eca7e60323: 112 arrays, 0.7 MB stored; 2.1 s; peak memory 380 MiB.
+2026-10-28T06:14:59Z INFO [686/1000] c8f5b83c-458d-4e15-b3eb-1d4cb29f2033: 112 arrays, 0.6 MB stored; 1.7 s; peak memory 380 MiB.
+2026-10-28T06:14:59Z INFO [687/1000] c8f97de3-030f-48bb-92dc-3c1beb868226: 112 arrays, 0.4 MB stored; 1.6 s; peak memory 380 MiB.
+2026-10-28T06:14:59Z INFO [688/1000] c8f9b6b2-d738-40c6-bbac-2bae7746f47b: 112 arrays, 0.5 MB stored; 1.6 s; peak memory 380 MiB.
+2026-10-28T06:15:00Z INFO [689/1000] c8fbab78-8b53-4c5e-a19f-aa8663b9cbe1: 112 arrays, 1.3 MB stored; 1.9 s; peak memory 380 MiB.
+2026-10-28T06:15:00Z INFO [690/1000] c90854e9-208d-4b38-bbfa-80743cba1f33: 112 arrays, 0.1 MB stored; 1.6 s; peak memory 380 MiB.
+2026-10-28T06:15:00Z INFO [691/1000] c8ffab35-ddef-4ada-b10a-b1818f719906: 112 arrays, 0.4 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:15:00Z INFO [692/1000] c8fd91d6-bb48-4dec-b142-f69da9cba220: 112 arrays, 0.6 MB stored; 2.0 s; peak memory 380 MiB.
+2026-10-28T06:15:00Z INFO [693/1000] c90bf4a8-6ebc-4f35-b417-ff6bfc00840d: 112 arrays, 0.3 MB stored; 1.6 s; peak memory 380 MiB.
+2026-10-28T06:15:00Z INFO [694/1000] c90ca0c7-6285-44bd-a87d-daf2ef304ae5: 112 arrays, 0.5 MB stored; 1.7 s; peak memory 380 MiB.
+2026-10-28T06:15:01Z INFO [695/1000] c910cfc3-5b03-4aed-910e-cc8b596ae4d2: 133 arrays, 0.3 MB stored; 1.5 s; peak memory 380 MiB.
+2026-10-28T06:15:01Z INFO [696/1000] c90e11cd-8bb6-4e3b-8bce-ae7f7aec3588: 112 arrays, 1.0 MB stored; 2.0 s; peak memory 380 MiB.
+2026-10-28T06:15:01Z INFO [697/1000] c9134970-a93d-483b-aefe-13e5d4fbb133: 112 arrays, 0.4 MB stored; 1.7 s; peak memory 380 MiB.
+2026-10-28T06:15:02Z INFO [698/1000] c910d951-0e70-4485-8bd2-59d58cc7f901: 112 arrays, 0.4 MB stored; 2.0 s; peak memory 380 MiB.
+2026-10-28T06:15:02Z INFO [699/1000] c917cd05-2be0-41d8-bfd7-f551fe653646: 112 arrays, 0.3 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:15:02Z INFO [700/1000] c9138cdb-a380-418b-881e-ae856de5786b: 112 arrays, 0.6 MB stored; 2.0 s; peak memory 380 MiB.
+2026-10-28T06:15:02Z INFO [701/1000] c9187005-436b-417d-b6bb-9d4e0f98f5c0: 112 arrays, 0.8 MB stored; 2.0 s; peak memory 380 MiB.
+2026-10-28T06:15:02Z INFO [702/1000] c91d6a5b-0e27-46d4-a756-07a73db48551: 112 arrays, 0.4 MB stored; 1.5 s; peak memory 380 MiB.
+2026-10-28T06:15:02Z INFO [703/1000] c9189409-5ed0-4c9f-bdc2-ac7616a0e1e2: 112 arrays, 0.8 MB stored; 2.0 s; peak memory 380 MiB.
+2026-10-28T06:15:03Z INFO [704/1000] c925e89a-ffcf-4842-b42d-906191326541: 112 arrays, 1.0 MB stored; 1.7 s; peak memory 380 MiB.
+2026-10-28T06:15:03Z INFO [705/1000] c926e900-46ed-4ff6-8104-816f2de74f46: 112 arrays, 0.9 MB stored; 1.5 s; peak memory 380 MiB.
+2026-10-28T06:15:03Z INFO [706/1000] c931edc8-700d-4422-857b-ee10753b9345: 112 arrays, 0.4 MB stored; 1.7 s; peak memory 380 MiB.
+2026-10-28T06:15:04Z INFO [707/1000] c93ab5e5-fa3b-419b-96b4-4dfc9dbf64dd: 112 arrays, 0.8 MB stored; 2.0 s; peak memory 380 MiB.
+2026-10-28T06:15:04Z INFO [708/1000] c93d225b-610f-48cb-a4ce-dc68c025c6e2: 112 arrays, 1.0 MB stored; 2.0 s; peak memory 380 MiB.
+2026-10-28T06:15:04Z INFO [709/1000] c9410b1d-3801-43b8-8106-b14b1d043dff: 112 arrays, 0.7 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:15:04Z INFO [710/1000] c947c571-3595-48dc-a65b-3a1efaeb8d63: 112 arrays, 0.2 MB stored; 1.4 s; peak memory 380 MiB.
+2026-10-28T06:15:04Z INFO [711/1000] c9476160-ebde-4fee-a10d-a3990532b641: 111 arrays, 0.0 MB stored; 1.7 s; peak memory 380 MiB.
+2026-10-28T06:15:04Z INFO [712/1000] c94267e4-9607-4755-adc5-1650c8b6b7b0: 112 arrays, 1.1 MB stored; 1.9 s; peak memory 380 MiB.
+2026-10-28T06:15:05Z INFO [713/1000] c9487fcf-03e4-4c7c-b5be-ce1c075ba6b6: 112 arrays, 0.6 MB stored; 1.9 s; peak memory 380 MiB.
+2026-10-28T06:15:05Z INFO [714/1000] c94c583f-f902-4328-8d8b-290023bd3ecf: 112 arrays, 0.3 MB stored; 1.6 s; peak memory 380 MiB.
+2026-10-28T06:15:06Z INFO [715/1000] c95870eb-833a-46ec-ac9f-5c219ae564cc: 112 arrays, 0.8 MB stored; 1.9 s; peak memory 380 MiB.
+2026-10-28T06:15:06Z INFO [716/1000] c968b5c6-a4bf-4afa-8160-bfb327c0f996: 111 arrays, 0.0 MB stored; 1.4 s; peak memory 380 MiB.
+2026-10-28T06:15:06Z INFO [717/1000] c963714c-46f5-46e3-816d-e87519d2a56f: 112 arrays, 0.4 MB stored; 1.7 s; peak memory 380 MiB.
+2026-10-28T06:15:06Z INFO [718/1000] c961bc01-b111-4370-8ede-659058acd2ed: 112 arrays, 0.9 MB stored; 2.2 s; peak memory 380 MiB.
+2026-10-28T06:15:06Z INFO [719/1000] c965a38e-3a29-4a0b-975e-91cfa9c94ed7: 114 arrays, 0.7 MB stored; 2.1 s; peak memory 380 MiB.
+2026-10-28T06:15:06Z INFO [720/1000] c966bf7a-2501-49b6-9f74-9afd11b2451c: 112 arrays, 0.8 MB stored; 2.1 s; peak memory 380 MiB.
+2026-10-28T06:15:06Z INFO [721/1000] c96f7b87-b496-48a4-b0d2-559be4592e58: 112 arrays, 0.6 MB stored; 1.4 s; peak memory 380 MiB.
+2026-10-28T06:15:07Z INFO [722/1000] c96b9dec-139a-4aa8-a145-67c75637c859: 112 arrays, 0.6 MB stored; 1.7 s; peak memory 380 MiB.
+2026-10-28T06:15:07Z INFO [723/1000] c96f992b-3a9a-46b3-bb86-f6e99e1f85b5: 112 arrays, 0.6 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:15:07Z INFO [724/1000] c976a124-78cf-4426-87c3-2576383794f9: 112 arrays, 0.6 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:15:07Z INFO [725/1000] c9764c6b-77ac-4d79-bc6c-f92f117fdb64: 112 arrays, 0.7 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:15:08Z INFO [726/1000] c98e7c56-5f7d-4454-be30-6205eaca4f31: 112 arrays, 0.3 MB stored; 1.6 s; peak memory 380 MiB.
+2026-10-28T06:15:08Z INFO [727/1000] c97cda25-cf98-48a5-9781-35b2b28af2bd: 112 arrays, 0.4 MB stored; 1.9 s; peak memory 380 MiB.
+2026-10-28T06:15:08Z INFO [728/1000] c981ba37-8a64-4609-bc38-4f331fca5927: 112 arrays, 0.4 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:15:08Z INFO [729/1000] c9956231-4246-44ac-a591-9898e33c3cac: 112 arrays, 0.4 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:15:08Z INFO [730/1000] c997d244-4760-40c9-bf8e-858d757e73c9: 112 arrays, 0.6 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:15:09Z INFO [731/1000] c998492f-294e-4238-af77-3d9c09204d04: 112 arrays, 0.5 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:15:09Z INFO [732/1000] c9a2279a-a8b6-4ebc-a955-077baa3cbc25: 112 arrays, 0.7 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:15:09Z INFO [733/1000] c9a0b041-476b-47e5-b1f4-e0af8258555c: 112 arrays, 0.8 MB stored; 2.1 s; peak memory 380 MiB.
+2026-10-28T06:15:10Z INFO [734/1000] c9a8b330-4c99-48d7-b719-ff39e1d092d6: 112 arrays, 0.7 MB stored; 1.9 s; peak memory 380 MiB.
+2026-10-28T06:15:10Z INFO [735/1000] c9ab677c-bb0b-4a6d-a814-821e3764a4e7: 112 arrays, 0.9 MB stored; 1.9 s; peak memory 380 MiB.
+2026-10-28T06:15:10Z INFO [736/1000] c9ad26e4-0e69-4261-9e38-faab28611d43: 112 arrays, 0.8 MB stored; 1.6 s; peak memory 380 MiB.
+2026-10-28T06:15:10Z INFO [737/1000] c9ac6ce1-a729-4e95-ab8f-3ecab3faa322: 112 arrays, 0.7 MB stored; 1.9 s; peak memory 380 MiB.
+2026-10-28T06:15:10Z INFO [738/1000] c9a93f3d-3396-424a-b416-4c1b33d10093: 112 arrays, 0.8 MB stored; 2.3 s; peak memory 380 MiB.
+2026-10-28T06:15:10Z INFO [739/1000] c9ad99f3-9ae3-4a37-a9d2-0359465eebfb: 112 arrays, 0.1 MB stored; 1.3 s; peak memory 380 MiB.
+2026-10-28T06:15:11Z INFO [740/1000] c9ae28a1-6c49-4f62-bb0c-8d852679f591: 112 arrays, 0.5 MB stored; 1.6 s; peak memory 380 MiB.
+2026-10-28T06:15:11Z INFO [741/1000] c9b4407e-9810-4b13-86f9-5716eb9f2195: 112 arrays, 0.5 MB stored; 1.7 s; peak memory 380 MiB.
+2026-10-28T06:15:12Z INFO [742/1000] c9b67c23-7157-4a3b-8579-f3194ca8c74b: 112 arrays, 0.3 MB stored; 1.6 s; peak memory 380 MiB.
+2026-10-28T06:15:12Z INFO [743/1000] c9b6137a-1341-4328-8434-2cbe87c614b3: 112 arrays, 0.7 MB stored; 1.9 s; peak memory 380 MiB.
+2026-10-28T06:15:12Z INFO [744/1000] c9ba36d7-c613-4ea2-abb7-5a69ca1769db: 112 arrays, 0.2 MB stored; 1.7 s; peak memory 380 MiB.
+2026-10-28T06:15:12Z INFO [745/1000] c9c3d909-bb9f-4448-93e1-2e59b94360a1: 112 arrays, 0.8 MB stored; 2.1 s; peak memory 380 MiB.
+2026-10-28T06:15:12Z INFO [746/1000] c9c401a3-4c2d-4007-be18-9e82a5e7a71e: 112 arrays, 1.0 MB stored; 1.9 s; peak memory 380 MiB.
+2026-10-28T06:15:12Z INFO [747/1000] c9cb211b-1253-48ad-adcf-0bab456eba70: 112 arrays, 1.2 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:15:13Z INFO [748/1000] c9cb3ead-2ef2-4a66-82f0-1a7d7884c608: 112 arrays, 0.5 MB stored; 1.7 s; peak memory 380 MiB.
+2026-10-28T06:15:13Z INFO [749/1000] c9ce57e1-a4dd-45ee-97fe-d7e2e835ed2b: 112 arrays, 0.4 MB stored; 1.7 s; peak memory 380 MiB.
+2026-10-28T06:15:13Z INFO [750/1000] c9cf8960-7896-42e3-95e5-7c173b103755: 110 arrays, 0.3 MB stored; 1.5 s; peak memory 380 MiB.
+2026-10-28T06:15:13Z INFO [751/1000] c9d4f659-058d-48f2-8017-aa11dea1e9ce: 112 arrays, 0.7 MB stored; 1.7 s; peak memory 380 MiB.
+2026-10-28T06:15:14Z INFO [752/1000] c9d635e0-38f0-4cec-b205-48aecd5d1c75: 112 arrays, 0.5 MB stored; 1.9 s; peak memory 380 MiB.
+2026-10-28T06:15:14Z INFO [753/1000] c9dd8ff4-779b-499d-ad84-e4d7fc413e50: 112 arrays, 0.4 MB stored; 1.7 s; peak memory 380 MiB.
+2026-10-28T06:15:14Z INFO [754/1000] c9eda3f7-8170-4cf4-bf16-a872a406020c: 112 arrays, 0.3 MB stored; 1.6 s; peak memory 380 MiB.
+2026-10-28T06:15:14Z INFO [755/1000] c9d86a66-014b-47b9-93de-d36fbb238405: 112 arrays, 0.6 MB stored; 2.0 s; peak memory 380 MiB.
+2026-10-28T06:15:14Z INFO [756/1000] c9eefd17-677e-4e9e-b62e-625f4656ad8a: 112 arrays, 0.9 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:15:15Z INFO [757/1000] c9f6e37e-22b5-416a-b101-22e0694ce86f: 112 arrays, 0.4 MB stored; 1.7 s; peak memory 380 MiB.
+2026-10-28T06:15:15Z INFO [758/1000] c9f91a9f-9ab5-4d9b-82bd-143cadfa59e9: 112 arrays, 0.1 MB stored; 1.5 s; peak memory 380 MiB.
+2026-10-28T06:15:15Z INFO [759/1000] c9fd4ce6-172f-4b9f-bd0a-e919af512fbd: 112 arrays, 0.6 MB stored; 1.6 s; peak memory 380 MiB.
+2026-10-28T06:15:15Z INFO [760/1000] c9ff6c49-4114-427d-9f65-36301dacc30e: 112 arrays, 0.7 MB stored; 1.7 s; peak memory 380 MiB.
+2026-10-28T06:15:16Z INFO [761/1000] ca01348a-a948-4d77-bdcd-52a3980c940d: 111 arrays, 0.9 MB stored; 1.9 s; peak memory 380 MiB.
+2026-10-28T06:15:16Z INFO [762/1000] ca0289d2-1fe7-4dcd-a7b3-cbab535ca775: 112 arrays, 0.8 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:15:16Z INFO [763/1000] ca02a5a8-3408-46e0-be0c-f404991f6b8f: 112 arrays, 0.5 MB stored; 1.6 s; peak memory 380 MiB.
+2026-10-28T06:15:16Z INFO [764/1000] ca02a25d-c37f-42c9-9650-49050e78325c: 112 arrays, 0.7 MB stored; 2.0 s; peak memory 380 MiB.
+2026-10-28T06:15:16Z INFO [765/1000] ca04ceae-6f28-40ad-8abc-c5ac648e8a57: 112 arrays, 1.0 MB stored; 1.7 s; peak memory 380 MiB.
+2026-10-28T06:15:16Z INFO [766/1000] ca0340a0-4f73-4d19-abcc-e6e85d51818c: 112 arrays, 0.8 MB stored; 1.9 s; peak memory 380 MiB.
+2026-10-28T06:15:17Z INFO [767/1000] ca08c6e9-f38c-41c6-aee0-aad144b4fe38: 112 arrays, 0.4 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:15:17Z INFO [768/1000] ca09157b-1f5c-4064-979c-cdb0a0ebf0dc: 112 arrays, 0.6 MB stored; 1.5 s; peak memory 380 MiB.
+2026-10-28T06:15:17Z INFO [769/1000] ca0b94cc-0b0e-417f-b51c-19850911e879: 112 arrays, 0.4 MB stored; 1.7 s; peak memory 380 MiB.
+2026-10-28T06:15:18Z INFO [770/1000] ca2d75df-da06-42cc-bc18-822c482b101f: 112 arrays, 0.6 MB stored; 1.5 s; peak memory 380 MiB.
+2026-10-28T06:15:18Z INFO [771/1000] ca0f02e7-cffb-4502-b99d-bba26898693a: 112 arrays, 0.9 MB stored; 1.9 s; peak memory 380 MiB.
+2026-10-28T06:15:18Z INFO [772/1000] ca334497-f8ec-465e-af12-2624272c193d: 112 arrays, 0.1 MB stored; 1.4 s; peak memory 380 MiB.
+2026-10-28T06:15:18Z INFO [773/1000] ca12b72f-7bf0-4aef-bbb5-dd40877275e1: 112 arrays, 0.6 MB stored; 2.0 s; peak memory 380 MiB.
+2026-10-28T06:15:18Z INFO [774/1000] ca2e35b9-2583-427b-b618-1b6a1aaba499: 112 arrays, 0.3 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:15:18Z INFO [775/1000] ca39671a-ddce-4eeb-9f2d-516a0f6c0b59: 112 arrays, 0.6 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:15:18Z INFO [776/1000] ca3ec9db-d0cf-4183-8a0b-bb2b570e1436: 112 arrays, 0.5 MB stored; 1.6 s; peak memory 380 MiB.
+2026-10-28T06:15:19Z INFO [777/1000] ca3f8d16-d2b0-4cb7-bda0-a90baa2032c1: 112 arrays, 0.1 MB stored; 1.5 s; peak memory 380 MiB.
+2026-10-28T06:15:19Z INFO [778/1000] ca47420d-b65d-4000-be30-276c3bd98ea4: 92 arrays, 0.1 MB stored; 1.6 s; peak memory 380 MiB.
+2026-10-28T06:15:20Z INFO [779/1000] ca46bf03-2fa0-4c99-9d74-6aed632eb137: 112 arrays, 0.6 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:15:20Z INFO [780/1000] ca406c8a-5c06-4f01-a9d0-275d03c43309: 112 arrays, 1.2 MB stored; 2.2 s; peak memory 380 MiB.
+2026-10-28T06:15:20Z INFO [781/1000] ca42f39c-5588-4393-9f69-ec38ce2613f6: 112 arrays, 0.7 MB stored; 2.1 s; peak memory 380 MiB.
+2026-10-28T06:15:20Z INFO [782/1000] ca4c9166-6c5d-4d83-867b-09f1ed0a29b4: 112 arrays, 0.4 MB stored; 1.7 s; peak memory 380 MiB.
+2026-10-28T06:15:20Z INFO [783/1000] ca487c03-9348-4c7b-bab3-ea25312a1b84: 112 arrays, 0.8 MB stored; 2.0 s; peak memory 380 MiB.
+2026-10-28T06:15:20Z INFO [784/1000] ca4fae7d-082c-46bd-8092-e25bf219d3e3: 112 arrays, 0.5 MB stored; 1.9 s; peak memory 380 MiB.
+2026-10-28T06:15:21Z INFO [785/1000] ca5136fe-3c5c-41cd-a810-125877f42624: 112 arrays, 1.0 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:15:21Z INFO [786/1000] ca5a9b00-77d7-4b8b-94fd-4f6aa1691307: 112 arrays, 0.9 MB stored; 1.9 s; peak memory 380 MiB.
+2026-10-28T06:15:21Z INFO [787/1000] ca692477-f6f4-4985-b640-0fd8b5b67d97: 112 arrays, 0.4 MB stored; 1.5 s; peak memory 380 MiB.
+2026-10-28T06:15:22Z INFO [788/1000] ca645d86-f838-460f-ad39-243bab37f885: 112 arrays, 0.6 MB stored; 1.9 s; peak memory 380 MiB.
+2026-10-28T06:15:22Z INFO [789/1000] ca5e2fb6-a258-469f-8bb3-abf3d3e97ffd: 112 arrays, 0.6 MB stored; 2.1 s; peak memory 380 MiB.
+2026-10-28T06:15:22Z INFO [790/1000] ca7806d9-f018-412c-acae-cf320e61835b: 112 arrays, 0.1 MB stored; 1.4 s; peak memory 380 MiB.
+2026-10-28T06:15:22Z INFO [791/1000] ca65cde0-b723-4799-8f32-b6c6b3c21e35: 112 arrays, 0.5 MB stored; 2.1 s; peak memory 380 MiB.
+2026-10-28T06:15:22Z INFO [792/1000] ca741abb-9060-4355-8160-7dbaa3a2f974: 112 arrays, 1.5 MB stored; 2.0 s; peak memory 380 MiB.
+2026-10-28T06:15:22Z INFO [793/1000] ca79f933-3ef2-4a30-ac2c-fc80fdef9cb2: 112 arrays, 0.2 MB stored; 1.5 s; peak memory 380 MiB.
+2026-10-28T06:15:23Z INFO [794/1000] ca855c45-f74d-4a4b-88ec-0c8ff0bb69c4: 94 arrays, 0.0 MB stored; 1.5 s; peak memory 380 MiB.
+2026-10-28T06:15:24Z INFO [795/1000] ca8d872f-8f58-41eb-8ef2-5aaffd286427: 112 arrays, 0.7 MB stored; 1.9 s; peak memory 380 MiB.
+2026-10-28T06:15:24Z INFO [796/1000] ca87a5d5-610c-45d8-a137-e0ffb7ca45b7: 112 arrays, 0.9 MB stored; 2.3 s; peak memory 380 MiB.
+2026-10-28T06:15:24Z INFO [797/1000] ca8ffbd2-4a42-49cc-ae56-6c2cd682d865: 112 arrays, 1.0 MB stored; 2.1 s; peak memory 380 MiB.
+2026-10-28T06:15:24Z INFO [798/1000] ca9006aa-553f-4236-87bf-5f7bd2fe1f26: 112 arrays, 0.6 MB stored; 2.0 s; peak memory 380 MiB.
+2026-10-28T06:15:24Z INFO [799/1000] ca9c02a9-1abe-4bfc-a47d-1d1467d07167: 112 arrays, 0.6 MB stored; 1.9 s; peak memory 380 MiB.
+2026-10-28T06:15:24Z INFO [800/1000] ca977105-4305-4c50-b7b5-3813e733530b: 112 arrays, 0.6 MB stored; 1.9 s; peak memory 380 MiB.
+2026-10-28T06:15:24Z INFO [800/1000] ca977105-4305-4c50-b7b5-3813e733530b: checkpointed 800 new records.
+2026-10-28T06:15:24Z INFO [801/1000] ca8f7f48-63c1-410e-9afe-01cebf18a5bb: 112 arrays, 1.2 MB stored; 2.5 s; peak memory 380 MiB.
+2026-10-28T06:15:25Z INFO [802/1000] caa3b411-d547-4d44-9420-995fef9fd86a: 112 arrays, 1.3 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:15:25Z INFO [803/1000] caa41ee3-dbaa-45fa-bff0-9ac44310077f: 112 arrays, 0.3 MB stored; 1.5 s; peak memory 380 MiB.
+2026-10-28T06:15:26Z INFO [804/1000] cab7a55f-a444-4918-a46b-e57f4dc27d9a: 112 arrays, 0.2 MB stored; 1.7 s; peak memory 380 MiB.
+2026-10-28T06:15:26Z INFO [805/1000] caaa4b07-485c-468b-9cea-a9b9ec592e8f: 112 arrays, 1.3 MB stored; 1.9 s; peak memory 380 MiB.
+2026-10-28T06:15:26Z INFO [806/1000] caa98a00-e419-4148-9545-08ea07398b55: 112 arrays, 0.4 MB stored; 2.0 s; peak memory 380 MiB.
+2026-10-28T06:15:26Z INFO [807/1000] cabdf60a-eb5e-4391-8ac5-7a754100fe33: 112 arrays, 0.4 MB stored; 1.6 s; peak memory 380 MiB.
+2026-10-28T06:15:26Z INFO [808/1000] cab21a4e-cd25-41ce-a145-82a502b3bc12: 112 arrays, 0.8 MB stored; 2.3 s; peak memory 380 MiB.
+2026-10-28T06:15:26Z INFO [809/1000] cabd2842-6891-4344-9eaf-97911003607d: 112 arrays, 0.4 MB stored; 2.0 s; peak memory 380 MiB.
+2026-10-28T06:15:26Z INFO [810/1000] cabecc06-98d7-49f8-8f6a-1c7cd072ed09: 112 arrays, 0.6 MB stored; 1.6 s; peak memory 380 MiB.
+2026-10-28T06:15:27Z INFO [811/1000] cac5a57b-0b7c-4acc-b0f3-c39d4cf63303: 111 arrays, 2.0 MB stored; 1.5 s; peak memory 380 MiB.
+2026-10-28T06:15:27Z INFO [812/1000] cad1b3d7-e1fa-4b02-9082-3b12592372f0: 111 arrays, 0.5 MB stored; 1.7 s; peak memory 380 MiB.
+2026-10-28T06:15:28Z INFO [813/1000] cad3698d-b8a6-4347-be78-a84ee4a4f96d: 94 arrays, 0.3 MB stored; 1.9 s; peak memory 380 MiB.
+2026-10-28T06:15:28Z INFO [814/1000] cad1f024-8ae9-4398-8992-514c8daeb7fe: 112 arrays, 0.7 MB stored; 1.9 s; peak memory 380 MiB.
+2026-10-28T06:15:28Z INFO [815/1000] cad8343f-5366-4267-a1ab-3f03d3c4b478: 112 arrays, 0.4 MB stored; 1.6 s; peak memory 380 MiB.
+2026-10-28T06:15:28Z INFO [816/1000] cad1380a-628e-485d-af04-411c3feb974b: 112 arrays, 0.5 MB stored; 2.2 s; peak memory 380 MiB.
+2026-10-28T06:15:28Z INFO [817/1000] cadc1770-654c-4444-81fe-6b3cd8a4e9a0: 112 arrays, 0.5 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:15:28Z INFO [818/1000] cae1ec07-b287-4b0a-8934-2f9a7f429f8b: 112 arrays, 0.3 MB stored; 1.6 s; peak memory 380 MiB.
+2026-10-28T06:15:28Z INFO [819/1000] cad438a9-2169-47f4-b24e-33bfef59cc7f: 112 arrays, 0.8 MB stored; 2.1 s; peak memory 380 MiB.
+2026-10-28T06:15:29Z INFO [820/1000] cae239cb-70d6-468b-87aa-6a22712cac5b: 112 arrays, 0.8 MB stored; 1.7 s; peak memory 380 MiB.
+2026-10-28T06:15:30Z INFO [821/1000] cae98676-989f-4a88-b8ce-b14eb10dfbcf: 111 arrays, 0.5 MB stored; 1.9 s; peak memory 380 MiB.
+2026-10-28T06:15:30Z INFO [822/1000] cafb1b4f-73a1-42e9-a37d-26dcc30315c0: 110 arrays, 0.2 MB stored; 1.6 s; peak memory 380 MiB.
+2026-10-28T06:15:30Z INFO [823/1000] caf436b9-ee3a-4e19-a82a-5279b8b8c26b: 112 arrays, 1.1 MB stored; 2.0 s; peak memory 380 MiB.
+2026-10-28T06:15:30Z INFO [824/1000] cafbad02-35dd-488e-9da6-5ef8a210e182: 112 arrays, 0.7 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:15:30Z INFO [825/1000] caf21e9b-4716-4bbb-8de1-9822f0d70363: 112 arrays, 1.0 MB stored; 2.4 s; peak memory 380 MiB.
+2026-10-28T06:15:30Z INFO [826/1000] cb005c5f-a16e-47b4-aac9-cb8e9019f873: 112 arrays, 0.6 MB stored; 2.0 s; peak memory 380 MiB.
+2026-10-28T06:15:31Z INFO [827/1000] cafc9b99-dab1-4994-9255-a368d0798e71: 112 arrays, 0.6 MB stored; 2.4 s; peak memory 380 MiB.
+2026-10-28T06:15:31Z INFO [828/1000] cb08f0d5-8cfd-4e67-9426-f4b08221b950: 112 arrays, 0.6 MB stored; 1.6 s; peak memory 380 MiB.
+2026-10-28T06:15:31Z INFO [829/1000] cb0becfb-4c57-4e56-a519-d6382ba08dc1: 112 arrays, 0.5 MB stored; 1.7 s; peak memory 380 MiB.
+2026-10-28T06:15:31Z INFO [830/1000] cb0e0d7e-19fc-437f-9e3f-891b8b8c409c: 112 arrays, 0.5 MB stored; 1.9 s; peak memory 380 MiB.
+2026-10-28T06:15:32Z INFO [831/1000] cb168003-d1b5-4a41-b327-e294108eb079: 112 arrays, 0.8 MB stored; 1.7 s; peak memory 380 MiB.
+2026-10-28T06:15:32Z INFO [832/1000] cb154605-3be0-4574-b41b-68a2367efa6b: 112 arrays, 0.6 MB stored; 1.9 s; peak memory 380 MiB.
+2026-10-28T06:15:32Z INFO [833/1000] cb136339-a46e-4803-bf20-a1f9fa4d1b26: 112 arrays, 0.9 MB stored; 2.0 s; peak memory 380 MiB.
+2026-10-28T06:15:32Z INFO [834/1000] cb18b032-9f25-4568-a3ea-f799179c2816: 112 arrays, 0.5 MB stored; 1.7 s; peak memory 380 MiB.
+2026-10-28T06:15:32Z INFO [835/1000] cb174126-7a1a-4723-85c8-0fa7c8d95316: 111 arrays, 1.2 MB stored; 2.2 s; peak memory 380 MiB.
+2026-10-28T06:15:32Z INFO [836/1000] cb1f563b-0d47-4324-85db-3864b284db99: 112 arrays, 0.5 MB stored; 1.6 s; peak memory 380 MiB.
+2026-10-28T06:15:33Z INFO [837/1000] cb21ce11-8998-4647-bb58-f5f2383f072c: 112 arrays, 0.7 MB stored; 1.7 s; peak memory 380 MiB.
+2026-10-28T06:15:33Z INFO [838/1000] cb230961-c1f9-4882-b8af-f8049079ba44: 112 arrays, 0.4 MB stored; 1.7 s; peak memory 380 MiB.
+2026-10-28T06:15:34Z INFO [839/1000] cb441bfe-d021-4764-b06c-34e8646e22a5: 112 arrays, 0.4 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:15:34Z INFO [840/1000] cb3c3be8-221c-4f62-aca3-18c75cf660f6: 112 arrays, 0.5 MB stored; 1.9 s; peak memory 380 MiB.
+2026-10-28T06:15:34Z INFO [841/1000] cb3ace96-266d-4716-abe1-c5392706ed1b: 112 arrays, 0.5 MB stored; 2.0 s; peak memory 380 MiB.
+2026-10-28T06:15:34Z INFO [842/1000] cb45823a-4b8d-4c7b-850b-28a3792c7fda: 112 arrays, 0.5 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:15:34Z INFO [843/1000] cb47f6de-cc67-4259-a6d6-72127bed6178: 112 arrays, 0.7 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:15:34Z INFO [844/1000] cb49b03e-32a3-4ff7-9ccf-bb1669a4bd74: 112 arrays, 0.8 MB stored; 1.9 s; peak memory 380 MiB.
+2026-10-28T06:15:35Z INFO [845/1000] cb4cc600-2dd1-4a82-9554-e9fc3731f9a3: 112 arrays, 0.7 MB stored; 1.6 s; peak memory 380 MiB.
+2026-10-28T06:15:35Z INFO [846/1000] cb53830c-96d5-4309-b843-9f31d88f95ee: 112 arrays, 0.9 MB stored; 1.7 s; peak memory 380 MiB.
+2026-10-28T06:15:35Z INFO [847/1000] cb543b17-429e-47f2-8b92-a4f35828bfc1: 112 arrays, 1.0 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:15:35Z INFO [848/1000] cb6439ff-1710-47fa-bdbc-eaed6b580fde: 111 arrays, 0.0 MB stored; 1.7 s; peak memory 380 MiB.
+2026-10-28T06:15:36Z INFO [849/1000] cb5dc916-3686-4ad8-995d-1184d7c81af2: 112 arrays, 0.3 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:15:36Z INFO [850/1000] cb6ae8e4-d038-4d44-be4a-87c0cd075c26: 112 arrays, 0.3 MB stored; 1.7 s; peak memory 380 MiB.
+2026-10-28T06:15:36Z INFO [851/1000] cb6f2fee-6cd4-4a12-a51e-d3b2e405b36f: 112 arrays, 0.9 MB stored; 1.9 s; peak memory 380 MiB.
+2026-10-28T06:15:36Z INFO [852/1000] cb765102-e1bc-4817-8aa8-6050ae0a6d4b: 112 arrays, 1.0 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:15:36Z INFO [853/1000] cb7a45ce-941e-4bb3-97e1-3f2a5d1c18f2: 111 arrays, 0.4 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:15:37Z INFO [854/1000] cb80ce27-df0c-44ca-9e84-a934c029643b: 112 arrays, 1.3 MB stored; 1.9 s; peak memory 380 MiB.
+2026-10-28T06:15:37Z INFO [855/1000] cb88d29e-1157-4e76-bfbc-562417bdd055: 112 arrays, 0.6 MB stored; 1.6 s; peak memory 380 MiB.
+2026-10-28T06:15:37Z INFO [856/1000] cb86241c-1b03-476b-b8a2-d7d8354ce04e: 112 arrays, 0.3 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:15:37Z INFO [857/1000] cb8227e7-8458-4fc2-a163-c1033f58a020: 112 arrays, 0.6 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:15:38Z INFO [858/1000] cb88ec82-8f73-4548-93b1-66e086c5926d: 112 arrays, 0.4 MB stored; 2.1 s; peak memory 380 MiB.
+2026-10-28T06:15:38Z INFO [859/1000] cb98dcdb-0bbf-482a-9eaf-af15382ca26a: 112 arrays, 0.6 MB stored; 1.5 s; peak memory 380 MiB.
+2026-10-28T06:15:38Z INFO [860/1000] cb9276e1-0777-40f0-a95e-9729603f99e1: 94 arrays, 0.6 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:15:38Z INFO [861/1000] cb8ed544-f05b-408b-93e5-26f023f23d9b: 111 arrays, 0.8 MB stored; 2.0 s; peak memory 380 MiB.
+2026-10-28T06:15:38Z INFO [862/1000] cb9b914f-c5e5-420d-9958-d54984cabf5c: 114 arrays, 0.6 MB stored; 1.7 s; peak memory 380 MiB.
+2026-10-28T06:15:39Z INFO [863/1000] cb9f82f9-7210-4fba-a6aa-2363baca2f79: 111 arrays, 0.5 MB stored; 1.7 s; peak memory 380 MiB.
+2026-10-28T06:15:39Z INFO [864/1000] cba653bb-c58a-4f3a-9197-0ac9d7898936: 112 arrays, 0.6 MB stored; 1.7 s; peak memory 380 MiB.
+2026-10-28T06:15:39Z INFO [865/1000] cba1bb57-945a-452e-a232-9f39f8bfb57a: 112 arrays, 0.7 MB stored; 2.0 s; peak memory 380 MiB.
+2026-10-28T06:15:40Z INFO [866/1000] cba690f3-467b-42cd-a1d3-af0644909409: 112 arrays, 0.4 MB stored; 1.7 s; peak memory 380 MiB.
+2026-10-28T06:15:40Z INFO [867/1000] cbad848d-774c-4b0a-a1a8-a831a055427d: 112 arrays, 0.7 MB stored; 1.8 s; peak memory 380 MiB.
+2026-10-28T06:35:38Z WARNING 00588236-3fd2-46d9-849d-651fd90577c3: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-10-28T06:35:38Z WARNING [868/1000] 00588236-3fd2-46d9-849d-651fd90577c3: recorded the failure; a later run retries it.
+2026-10-28T06:35:38Z WARNING 011a04c3-e2c1-4abc-ad03-7c2858c2598c: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-10-28T06:35:38Z WARNING [869/1000] 011a04c3-e2c1-4abc-ad03-7c2858c2598c: recorded the failure; a later run retries it.
+2026-10-28T06:35:39Z WARNING 013708b0-9dff-494a-b857-5f4bac9d8b27: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-10-28T06:35:39Z WARNING [870/1000] 013708b0-9dff-494a-b857-5f4bac9d8b27: recorded the failure; a later run retries it.
+2026-10-28T06:35:39Z WARNING 01c61a89-fa1a-46a2-864f-9ba1caddd290: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-10-28T06:35:39Z WARNING [871/1000] 01c61a89-fa1a-46a2-864f-9ba1caddd290: recorded the failure; a later run retries it.
+2026-10-28T06:35:39Z WARNING 02001da1-c42b-42a7-890f-8ce6dd0abbef: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-10-28T06:35:39Z WARNING [872/1000] 02001da1-c42b-42a7-890f-8ce6dd0abbef: recorded the failure; a later run retries it.
+2026-10-28T06:35:39Z WARNING 02366416-a104-4f5a-9322-49a59a543094: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-10-28T06:35:39Z WARNING [873/1000] 02366416-a104-4f5a-9322-49a59a543094: recorded the failure; a later run retries it.
+2026-10-28T06:35:40Z WARNING 023ad5ed-83ee-4a44-88b0-72833397a8d0: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-10-28T06:35:40Z WARNING [874/1000] 023ad5ed-83ee-4a44-88b0-72833397a8d0: recorded the failure; a later run retries it.
+2026-10-28T06:35:40Z WARNING 029d6050-dc13-418b-97a3-bbfbd958e998: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-10-28T06:35:40Z WARNING [875/1000] 029d6050-dc13-418b-97a3-bbfbd958e998: recorded the failure; a later run retries it.
+2026-10-28T06:55:38Z WARNING 02fa7c00-efc5-4a80-9948-e8b676306bc2: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-10-28T06:55:38Z WARNING [876/1000] 02fa7c00-efc5-4a80-9948-e8b676306bc2: recorded the failure; a later run retries it.
+2026-10-28T06:55:38Z WARNING 0359ab7f-ead0-4d29-89a3-2d7b222ee960: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-10-28T06:55:38Z WARNING [877/1000] 0359ab7f-ead0-4d29-89a3-2d7b222ee960: recorded the failure; a later run retries it.
+2026-10-28T06:55:39Z WARNING 038e862e-af4c-41e5-b854-df32655313a2: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-10-28T06:55:39Z WARNING [878/1000] 038e862e-af4c-41e5-b854-df32655313a2: recorded the failure; a later run retries it.
+2026-10-28T06:55:39Z WARNING 03bdf982-6d4b-4f31-901c-ea3828450718: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-10-28T06:55:39Z WARNING [879/1000] 03bdf982-6d4b-4f31-901c-ea3828450718: recorded the failure; a later run retries it.
+2026-10-28T06:55:39Z WARNING 03ea64d7-28d9-401e-ac61-aa251cbffa71: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-10-28T06:55:39Z WARNING [880/1000] 03ea64d7-28d9-401e-ac61-aa251cbffa71: recorded the failure; a later run retries it.
+2026-10-28T06:55:40Z WARNING 0526a42c-d2a3-49bf-98ed-f858a216e6f0: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-10-28T06:55:40Z WARNING [881/1000] 0526a42c-d2a3-49bf-98ed-f858a216e6f0: recorded the failure; a later run retries it.
+2026-10-28T06:55:40Z WARNING 0582e94c-190b-46c7-bae4-28c684f396ff: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-10-28T06:55:40Z WARNING [882/1000] 0582e94c-190b-46c7-bae4-28c684f396ff: recorded the failure; a later run retries it.
+2026-10-28T06:55:40Z WARNING 061d20f7-c542-410c-b417-af7f5e173818: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-10-28T06:55:40Z WARNING [883/1000] 061d20f7-c542-410c-b417-af7f5e173818: recorded the failure; a later run retries it.
+2026-10-28T07:15:38Z WARNING 066ae256-4ec2-4da4-a5f2-c8e106beadcd: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-10-28T07:15:38Z WARNING [884/1000] 066ae256-4ec2-4da4-a5f2-c8e106beadcd: recorded the failure; a later run retries it.
+2026-10-28T07:15:38Z WARNING 0692764a-e11f-41da-ab34-15ef39583ecb: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-10-28T07:15:38Z WARNING [885/1000] 0692764a-e11f-41da-ab34-15ef39583ecb: recorded the failure; a later run retries it.
+2026-10-28T07:15:39Z WARNING 074e26b3-d11b-4463-bbf1-eb0f615c35fd: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-10-28T07:15:39Z WARNING [886/1000] 074e26b3-d11b-4463-bbf1-eb0f615c35fd: recorded the failure; a later run retries it.
+2026-10-28T07:15:39Z WARNING 07d636ff-4a82-47b8-a05f-bc9d57ab031a: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-10-28T07:15:39Z WARNING [887/1000] 07d636ff-4a82-47b8-a05f-bc9d57ab031a: recorded the failure; a later run retries it.
+2026-10-28T07:15:39Z WARNING 08b887e2-fe7d-4e7c-b37e-89f514576184: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-10-28T07:15:39Z WARNING [888/1000] 08b887e2-fe7d-4e7c-b37e-89f514576184: recorded the failure; a later run retries it.
+2026-10-28T07:15:40Z WARNING 09491397-1b85-4279-9774-9479ebbc7fd4: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-10-28T07:15:40Z WARNING [889/1000] 09491397-1b85-4279-9774-9479ebbc7fd4: recorded the failure; a later run retries it.
+2026-10-28T07:15:40Z WARNING 09a5b8c0-b6f7-444d-b547-c5674e07a72c: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-10-28T07:15:40Z WARNING [890/1000] 09a5b8c0-b6f7-444d-b547-c5674e07a72c: recorded the failure; a later run retries it.
+2026-10-28T07:15:40Z WARNING 0a0b6f72-1bd1-41e1-b915-1cb64dea4aa2: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-10-28T07:15:40Z WARNING [891/1000] 0a0b6f72-1bd1-41e1-b915-1cb64dea4aa2: recorded the failure; a later run retries it.
+2026-10-28T07:35:38Z WARNING 0a2610ed-e0a2-4938-9d17-4063b0b88607: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-10-28T07:35:38Z WARNING [892/1000] 0a2610ed-e0a2-4938-9d17-4063b0b88607: recorded the failure; a later run retries it.
+2026-10-28T07:35:39Z WARNING 0b2719b6-bdcd-4f90-b8b4-d6d5e30da392: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-10-28T07:35:39Z WARNING [893/1000] 0b2719b6-bdcd-4f90-b8b4-d6d5e30da392: recorded the failure; a later run retries it.
+2026-10-28T07:35:39Z WARNING 0c218002-08ab-4c8f-bfeb-7f4c06900275: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-10-28T07:35:39Z WARNING [894/1000] 0c218002-08ab-4c8f-bfeb-7f4c06900275: recorded the failure; a later run retries it.
+2026-10-28T07:35:39Z WARNING 0d0acda9-169f-4edf-8c8c-6dda82be5600: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-10-28T07:35:39Z WARNING [895/1000] 0d0acda9-169f-4edf-8c8c-6dda82be5600: recorded the failure; a later run retries it.
+2026-10-28T07:35:40Z WARNING 0d1582b5-d510-4f7e-8667-0a715b8ecd7e: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-10-28T07:35:40Z WARNING [896/1000] 0d1582b5-d510-4f7e-8667-0a715b8ecd7e: recorded the failure; a later run retries it.
+2026-10-28T07:35:40Z WARNING 0dcea441-5f9a-4c6a-b9c6-e0531d292d63: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-10-28T07:35:40Z WARNING [897/1000] 0dcea441-5f9a-4c6a-b9c6-e0531d292d63: recorded the failure; a later run retries it.
+2026-10-28T07:35:40Z WARNING 0e1f0418-4f62-4e7b-a51f-c9d88dd8f54a: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-10-28T07:35:40Z WARNING [898/1000] 0e1f0418-4f62-4e7b-a51f-c9d88dd8f54a: recorded the failure; a later run retries it.
+2026-10-28T07:35:41Z WARNING 0e9b7e34-890b-4ba1-8f68-7b9423fa0233: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-10-28T07:35:41Z WARNING [899/1000] 0e9b7e34-890b-4ba1-8f68-7b9423fa0233: recorded the failure; a later run retries it.
+2026-10-28T07:55:39Z WARNING 0fba2aba-e9cb-4023-9014-7da3b0cf788e: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-10-28T07:55:39Z WARNING [900/1000] 0fba2aba-e9cb-4023-9014-7da3b0cf788e: recorded the failure; a later run retries it.
+2026-10-28T07:55:39Z WARNING 105ebf58-b230-4dd4-bca4-6f3b6934d483: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-10-28T07:55:39Z WARNING [901/1000] 105ebf58-b230-4dd4-bca4-6f3b6934d483: recorded the failure; a later run retries it.
+2026-10-28T07:55:39Z WARNING 10c235fe-fa65-4faa-952b-371695417e89: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-10-28T07:55:39Z WARNING [902/1000] 10c235fe-fa65-4faa-952b-371695417e89: recorded the failure; a later run retries it.
+2026-10-28T07:55:40Z WARNING 10d5cebb-c6c5-45e9-9832-8127e2d639bf: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-10-28T07:55:40Z WARNING [903/1000] 10d5cebb-c6c5-45e9-9832-8127e2d639bf: recorded the failure; a later run retries it.
+2026-10-28T07:55:40Z WARNING 129f6704-2194-4365-b840-6150647d668a: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-10-28T07:55:40Z WARNING [904/1000] 129f6704-2194-4365-b840-6150647d668a: recorded the failure; a later run retries it.
+2026-10-28T07:55:40Z WARNING 13518f67-480e-4d51-8058-79c97618d23a: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-10-28T07:55:40Z WARNING [905/1000] 13518f67-480e-4d51-8058-79c97618d23a: recorded the failure; a later run retries it.
+2026-10-28T07:55:41Z WARNING 139f29a8-6673-4928-ba0a-b54f8d3a8030: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-10-28T07:55:41Z WARNING [906/1000] 139f29a8-6673-4928-ba0a-b54f8d3a8030: recorded the failure; a later run retries it.
+2026-10-28T07:55:41Z WARNING 13d90773-fbee-44fd-932b-c8c47e00010f: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-10-28T07:55:41Z WARNING [907/1000] 13d90773-fbee-44fd-932b-c8c47e00010f: recorded the failure; a later run retries it.
+2026-10-28T08:15:39Z WARNING 14726233-aa4c-457d-9e12-0de8b7375c6e: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-10-28T08:15:39Z WARNING [908/1000] 14726233-aa4c-457d-9e12-0de8b7375c6e: recorded the failure; a later run retries it.
+2026-10-28T08:15:39Z WARNING 15ec87d9-27ff-44bc-b101-ae3bcfe2e1bc: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-10-28T08:15:39Z WARNING [909/1000] 15ec87d9-27ff-44bc-b101-ae3bcfe2e1bc: recorded the failure; a later run retries it.
+2026-10-28T08:15:39Z WARNING 1744929a-b8eb-41f8-a4b9-60b028d477bc: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-10-28T08:15:39Z WARNING [910/1000] 1744929a-b8eb-41f8-a4b9-60b028d477bc: recorded the failure; a later run retries it.
+2026-10-28T08:15:40Z WARNING 18a09f71-8c41-48b2-ac98-5400f0f02a4c: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-10-28T08:15:40Z WARNING [911/1000] 18a09f71-8c41-48b2-ac98-5400f0f02a4c: recorded the failure; a later run retries it.
+2026-10-28T08:15:40Z WARNING 18ea8280-f581-4e76-a98f-efc80dfd4c57: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-10-28T08:15:40Z WARNING [912/1000] 18ea8280-f581-4e76-a98f-efc80dfd4c57: recorded the failure; a later run retries it.
+2026-10-28T08:15:40Z WARNING 1a0f9270-6260-40f3-8358-c2b8ae99d2f6: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-10-28T08:15:40Z WARNING [913/1000] 1a0f9270-6260-40f3-8358-c2b8ae99d2f6: recorded the failure; a later run retries it.
+2026-10-28T08:15:41Z WARNING 1a42235d-ca78-41e8-8f21-03c14f42aa3d: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-10-28T08:15:41Z WARNING [914/1000] 1a42235d-ca78-41e8-8f21-03c14f42aa3d: recorded the failure; a later run retries it.
+2026-10-28T08:15:41Z WARNING 1b105c8e-e77f-4661-a130-f26d7926a30a: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-10-28T08:15:41Z WARNING [915/1000] 1b105c8e-e77f-4661-a130-f26d7926a30a: recorded the failure; a later run retries it.
+2026-10-28T08:35:39Z WARNING 1dad4e80-3660-4017-a079-40aff450866f: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-10-28T08:35:39Z WARNING [916/1000] 1dad4e80-3660-4017-a079-40aff450866f: recorded the failure; a later run retries it.
+2026-10-28T08:35:39Z WARNING 1dfcd53e-884e-4154-852e-b7c76b946726: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-10-28T08:35:39Z WARNING [917/1000] 1dfcd53e-884e-4154-852e-b7c76b946726: recorded the failure; a later run retries it.
+2026-10-28T08:35:39Z WARNING 1e345d31-e33b-4e9f-845e-bf784a3e5531: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-10-28T08:35:39Z WARNING [918/1000] 1e345d31-e33b-4e9f-845e-bf784a3e5531: recorded the failure; a later run retries it.
+2026-10-28T08:35:40Z WARNING 1eb7d20d-356b-45f1-ad37-7ac5e5c37dbd: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-10-28T08:35:40Z WARNING [919/1000] 1eb7d20d-356b-45f1-ad37-7ac5e5c37dbd: recorded the failure; a later run retries it.
+2026-10-28T08:35:40Z WARNING 1ebe7044-7dda-4763-9f7a-6c00fa8db0e1: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-10-28T08:35:40Z WARNING [920/1000] 1ebe7044-7dda-4763-9f7a-6c00fa8db0e1: recorded the failure; a later run retries it.
+2026-10-28T08:35:40Z WARNING 1f052baa-fe9c-4a7a-ad73-e4b9eb3fa088: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-10-28T08:35:40Z WARNING [921/1000] 1f052baa-fe9c-4a7a-ad73-e4b9eb3fa088: recorded the failure; a later run retries it.
+2026-10-28T08:35:41Z WARNING 1f7a5854-dbef-42bb-a77c-931d6b7e96c0: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-10-28T08:35:41Z WARNING [922/1000] 1f7a5854-dbef-42bb-a77c-931d6b7e96c0: recorded the failure; a later run retries it.
+2026-10-28T08:35:41Z WARNING 216355c3-fb9c-492c-a166-5c37b5cded59: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-10-28T08:35:41Z WARNING [923/1000] 216355c3-fb9c-492c-a166-5c37b5cded59: recorded the failure; a later run retries it.
+2026-10-28T08:55:39Z WARNING 21702bde-fa75-4cb4-b36a-1cd6732fe50e: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-10-28T08:55:39Z WARNING [924/1000] 21702bde-fa75-4cb4-b36a-1cd6732fe50e: recorded the failure; a later run retries it.
+2026-10-28T08:55:39Z WARNING 21fd112d-3e19-41df-9166-9051a66784f8: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-10-28T08:55:39Z WARNING [925/1000] 21fd112d-3e19-41df-9166-9051a66784f8: recorded the failure; a later run retries it.
+2026-10-28T08:55:39Z WARNING 2272e935-fb62-4e84-8869-e0bddd4aed4a: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-10-28T08:55:39Z WARNING [926/1000] 2272e935-fb62-4e84-8869-e0bddd4aed4a: recorded the failure; a later run retries it.
+2026-10-28T08:55:40Z WARNING 22791d80-26dc-4495-b4c0-651fe10e3298: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-10-28T08:55:40Z WARNING [927/1000] 22791d80-26dc-4495-b4c0-651fe10e3298: recorded the failure; a later run retries it.
+2026-10-28T08:55:40Z WARNING 22833560-350d-4b1f-a5ac-4d3ae852ed54: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-10-28T08:55:40Z WARNING [928/1000] 22833560-350d-4b1f-a5ac-4d3ae852ed54: recorded the failure; a later run retries it.
+2026-10-28T08:55:41Z WARNING 22c96b2e-7b81-4e98-a408-63a2e3fd3ef6: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-10-28T08:55:41Z WARNING [929/1000] 22c96b2e-7b81-4e98-a408-63a2e3fd3ef6: recorded the failure; a later run retries it.
+2026-10-28T08:55:41Z WARNING 22fe8408-406a-4f76-a30a-817294f27ea8: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-10-28T08:55:41Z WARNING [930/1000] 22fe8408-406a-4f76-a30a-817294f27ea8: recorded the failure; a later run retries it.
+2026-10-28T08:55:41Z WARNING 2310125d-3596-445d-af64-583c7c236000: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-10-28T08:55:41Z WARNING [931/1000] 2310125d-3596-445d-af64-583c7c236000: recorded the failure; a later run retries it.
+2026-10-28T09:15:39Z WARNING 247e8be9-5607-4b54-95ea-631c2ccf648c: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-10-28T09:15:39Z WARNING [932/1000] 247e8be9-5607-4b54-95ea-631c2ccf648c: recorded the failure; a later run retries it.
+2026-10-28T09:15:39Z WARNING 250c54a3-fedc-40ae-a1d1-9a13742dd4c0: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-10-28T09:15:39Z WARNING [933/1000] 250c54a3-fedc-40ae-a1d1-9a13742dd4c0: recorded the failure; a later run retries it.
+2026-10-28T09:15:40Z WARNING 2539c107-4f11-496f-b6f7-d954737137ff: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-10-28T09:15:40Z WARNING [934/1000] 2539c107-4f11-496f-b6f7-d954737137ff: recorded the failure; a later run retries it.
+2026-10-28T09:15:40Z WARNING 255daa79-7ecb-4f95-a936-9a6806b3f741: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-10-28T09:15:40Z WARNING [935/1000] 255daa79-7ecb-4f95-a936-9a6806b3f741: recorded the failure; a later run retries it.
+2026-10-28T09:15:40Z WARNING 2570ebcf-425a-4593-ae71-e580aadbea77: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-10-28T09:15:40Z WARNING [936/1000] 2570ebcf-425a-4593-ae71-e580aadbea77: recorded the failure; a later run retries it.
+2026-10-28T09:15:41Z WARNING 258e1157-2c78-4ac3-9e8c-e017476832ec: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-10-28T09:15:41Z WARNING [937/1000] 258e1157-2c78-4ac3-9e8c-e017476832ec: recorded the failure; a later run retries it.
+2026-10-28T09:15:41Z WARNING 25c3f428-5685-4ac0-85ed-90c4b6b7d474: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-10-28T09:15:41Z WARNING [938/1000] 25c3f428-5685-4ac0-85ed-90c4b6b7d474: recorded the failure; a later run retries it.
+2026-10-28T09:15:41Z WARNING 26116641-d316-4e43-9d9f-8053e1e7c923: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-10-28T09:15:41Z WARNING [939/1000] 26116641-d316-4e43-9d9f-8053e1e7c923: recorded the failure; a later run retries it.
+2026-10-28T09:35:39Z WARNING 26852b7d-0b3b-4a69-bc97-127c69301340: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-10-28T09:35:39Z WARNING [940/1000] 26852b7d-0b3b-4a69-bc97-127c69301340: recorded the failure; a later run retries it.
+2026-10-28T09:35:39Z WARNING 282ee167-b9fc-4402-a0d6-01fff60608e5: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-10-28T09:35:39Z WARNING [941/1000] 282ee167-b9fc-4402-a0d6-01fff60608e5: recorded the failure; a later run retries it.
+2026-10-28T09:35:40Z WARNING 294ee382-dac1-4777-a7ce-19ab47b226a5: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-10-28T09:35:40Z WARNING [942/1000] 294ee382-dac1-4777-a7ce-19ab47b226a5: recorded the failure; a later run retries it.
+2026-10-28T09:35:40Z WARNING 2958571a-ebbd-441a-9701-165868fd749f: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-10-28T09:35:40Z WARNING [943/1000] 2958571a-ebbd-441a-9701-165868fd749f: recorded the failure; a later run retries it.
+2026-10-28T09:35:41Z WARNING 297fd6b9-4c28-48c4-8c86-e9ef2a0fb07d: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-10-28T09:35:41Z WARNING [944/1000] 297fd6b9-4c28-48c4-8c86-e9ef2a0fb07d: recorded the failure; a later run retries it.
+2026-10-28T09:35:41Z WARNING 2a36927f-3385-4466-9b18-b0ef944a9eb6: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-10-28T09:35:41Z WARNING [945/1000] 2a36927f-3385-4466-9b18-b0ef944a9eb6: recorded the failure; a later run retries it.
+2026-10-28T09:35:41Z WARNING 2aedc331-cc6d-4453-9a08-4745fc99aa1f: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-10-28T09:35:41Z WARNING [946/1000] 2aedc331-cc6d-4453-9a08-4745fc99aa1f: recorded the failure; a later run retries it.
+2026-10-28T09:35:41Z WARNING 2bdd5a4f-5f30-4742-a286-2d54f8671133: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-10-28T09:35:41Z WARNING [947/1000] 2bdd5a4f-5f30-4742-a286-2d54f8671133: recorded the failure; a later run retries it.
+2026-10-28T09:55:39Z WARNING 2da2bc28-f73f-4eb9-bf9b-b8ddcf7b41af: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-10-28T09:55:39Z WARNING [948/1000] 2da2bc28-f73f-4eb9-bf9b-b8ddcf7b41af: recorded the failure; a later run retries it.
+2026-10-28T09:55:39Z WARNING 2e7ea814-6c42-4fb9-b4e5-b280ec80958d: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-10-28T09:55:39Z WARNING [949/1000] 2e7ea814-6c42-4fb9-b4e5-b280ec80958d: recorded the failure; a later run retries it.
+2026-10-28T09:55:40Z WARNING 3096eb8b-ce71-44db-a7af-fcad51273109: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-10-28T09:55:40Z WARNING [950/1000] 3096eb8b-ce71-44db-a7af-fcad51273109: recorded the failure; a later run retries it.
+2026-10-28T09:55:40Z WARNING 30ee3109-05d5-4b38-a2b9-c87d277ea346: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-10-28T09:55:40Z WARNING [951/1000] 30ee3109-05d5-4b38-a2b9-c87d277ea346: recorded the failure; a later run retries it.
+2026-10-28T09:55:41Z WARNING 31bc1ceb-822d-4ba5-9729-0743fca2ad22: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-10-28T09:55:41Z WARNING [952/1000] 31bc1ceb-822d-4ba5-9729-0743fca2ad22: recorded the failure; a later run retries it.
+2026-10-28T09:55:41Z WARNING 324d793f-fa45-49c1-a624-18662611391f: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-10-28T09:55:41Z WARNING [953/1000] 324d793f-fa45-49c1-a624-18662611391f: recorded the failure; a later run retries it.
+2026-10-28T09:55:42Z WARNING 32b39e0e-de4d-4e1a-af2d-b65861e16ef9: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-10-28T09:55:42Z WARNING [954/1000] 32b39e0e-de4d-4e1a-af2d-b65861e16ef9: recorded the failure; a later run retries it.
+2026-10-28T09:55:42Z WARNING 32f8ae57-ca4a-4e8b-b54b-72f56cbcd77a: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-10-28T09:55:42Z WARNING [955/1000] 32f8ae57-ca4a-4e8b-b54b-72f56cbcd77a: recorded the failure; a later run retries it.
+2026-10-28T10:12:24Z WARNING The batch has run for its 240-minute limit while 8 items were still running, so it abandons them and writes what it has, rather than being killed with the job and losing it: 3458fa33-e987-42a9-8040-587aa98b21cb, 35c4a4ca-36dd-42c7-8d39-f059e35c1c3b, 368fa71e-4c93-4f7e-af15-06776ca07f34, 37fcc08c-5fc7-4063-8230-bbf29b797969, 386ad5fc-c3f8-4cd7-8bd3-d47691840fcf, 38e3d800-5d80-4695-9583-7c1fb3028b43, 38e53e31-103c-4639-b611-4abc58675a29, 39f14fa7-0509-4e68-9467-c1235dc9188a.
+2026-10-28T10:12:57Z INFO Wrote 193163 records to /tmp/derivatives/valid_nwb_file_to_array_sizes.zarr (867 new, 88 failed) in 240.0 min (peak memory 482 MiB).
+2026-10-28T10:12:57Z INFO Progress: 193,162 of 193,162 candidates recorded (100.0%).
+2026-10-28T10:12:57Z WARNING 3458fa33-e987-42a9-8040-587aa98b21cb: failed while reading the NWB file (ChildProcessError: the child process exited with code -15 without a result)
+2026-10-28T10:12:57Z WARNING 37fcc08c-5fc7-4063-8230-bbf29b797969: failed while reading the NWB file (ChildProcessError: the child process exited with code -15 without a result)
+2026-10-28T10:12:57Z WARNING 38e53e31-103c-4639-b611-4abc58675a29: failed while reading the NWB file (ChildProcessError: the child process exited with code -15 without a result)
+2026-10-28T10:12:57Z WARNING 35c4a4ca-36dd-42c7-8d39-f059e35c1c3b: failed while reading the NWB file (ChildProcessError: the child process exited with code -15 without a result)
+2026-10-28T10:12:57Z WARNING 39f14fa7-0509-4e68-9467-c1235dc9188a: failed while reading the NWB file (ChildProcessError: the child process exited with code -15 without a result)
+2026-10-28T10:12:57Z WARNING 386ad5fc-c3f8-4cd7-8bd3-d47691840fcf: failed while reading the NWB file (ChildProcessError: the child process exited with code -15 without a result)
+2026-10-28T10:12:57Z WARNING 38e3d800-5d80-4695-9583-7c1fb3028b43: failed while reading the NWB file (ChildProcessError: the child process exited with code -15 without a result)
