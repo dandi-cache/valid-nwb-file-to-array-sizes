@@ -1,0 +1,206 @@
+2026-11-08T13:42:08Z INFO Logging to /tmp/logs/update_2026-11-08T13-42-08Z.log.
+2026-11-08T13:42:08Z INFO Update valid-nwb-file-to-array-sizes (base directory /tmp).
+2026-11-08T13:44:47Z INFO Processing 387 items (198412 already recorded).
+2026-11-08T13:44:49Z INFO [1/387] 150743bf-56aa-42ff-92d6-95e8b7a2c394: 39 arrays, 1572.9 MB stored; 2.4 s; peak memory 390 MiB.
+2026-11-08T13:44:49Z INFO [2/387] 059b501d-69ba-4681-98ae-38f65a543075: 39 arrays, 1572.9 MB stored; 2.4 s; peak memory 390 MiB.
+2026-11-08T13:44:49Z INFO [3/387] 15b0413c-d3ee-46dc-a800-a53faa3aef02: 39 arrays, 1572.9 MB stored; 2.5 s; peak memory 390 MiB.
+2026-11-08T13:44:49Z INFO [4/387] 697fbf02-ffb0-4a43-9d59-c231818c14f3: 39 arrays, 1572.9 MB stored; 2.5 s; peak memory 390 MiB.
+2026-11-08T13:44:49Z INFO [5/387] 787a2c69-fc94-49b9-a471-47de3b3bd81f: 39 arrays, 1572.9 MB stored; 2.5 s; peak memory 390 MiB.
+2026-11-08T13:44:49Z INFO [6/387] 454eb89d-ad4c-421d-80f1-59126d39acc0: 39 arrays, 1572.9 MB stored; 2.5 s; peak memory 390 MiB.
+2026-11-08T13:44:49Z INFO [7/387] 2146b1e7-cc25-4896-97e5-687aa58b3db6: 39 arrays, 1572.9 MB stored; 2.5 s; peak memory 390 MiB.
+2026-11-08T13:44:49Z INFO [8/387] 5c58ebae-3b48-4d62-a479-78ea731bafaa: 39 arrays, 1572.9 MB stored; 2.6 s; peak memory 390 MiB.
+2026-11-08T13:44:51Z INFO [9/387] 9c245376-aa35-4736-9312-db061fbcd43d: 39 arrays, 1572.9 MB stored; 2.3 s; peak memory 390 MiB.
+2026-11-08T13:44:51Z INFO [10/387] a80f6977-14b0-4e97-a839-3e5b2db39769: 39 arrays, 1572.9 MB stored; 2.3 s; peak memory 390 MiB.
+2026-11-08T13:44:51Z INFO [11/387] 942e0679-ea8a-4a5f-8743-a8a7287c0533: 39 arrays, 1572.9 MB stored; 2.5 s; peak memory 390 MiB.
+2026-11-08T13:44:52Z INFO [12/387] c4ad0b48-81bb-4d8d-9ef4-e822a8d697ee: 39 arrays, 1572.9 MB stored; 2.4 s; peak memory 390 MiB.
+2026-11-08T13:44:52Z INFO [13/387] f254c02f-b6f4-4b57-99f2-f2388b2700fc: 39 arrays, 1572.9 MB stored; 2.4 s; peak memory 390 MiB.
+2026-11-08T13:44:52Z INFO [14/387] b40c9d27-e1f0-43e7-8013-c5d490eee4c5: 39 arrays, 1572.9 MB stored; 2.5 s; peak memory 390 MiB.
+2026-11-08T13:44:52Z INFO [15/387] f3fa2364-14f5-45f0-8708-a576742917a1: 39 arrays, 1572.9 MB stored; 2.4 s; peak memory 390 MiB.
+2026-11-08T13:44:52Z INFO [16/387] b8e534d0-67e9-4665-aa82-bf06a9ac785b: 39 arrays, 1572.9 MB stored; 2.5 s; peak memory 390 MiB.
+2026-11-08T14:04:51Z WARNING 8647b4f8-055d-433d-94a0-2dc2c8aa5bcf: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-11-08T14:04:51Z WARNING [17/387] 8647b4f8-055d-433d-94a0-2dc2c8aa5bcf: recorded the failure; a later run retries it.
+2026-11-08T14:04:52Z WARNING 86514d0a-d39a-4c0d-99b6-07718cdf5b3d: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-11-08T14:04:52Z WARNING [18/387] 86514d0a-d39a-4c0d-99b6-07718cdf5b3d: recorded the failure; a later run retries it.
+2026-11-08T14:04:52Z WARNING 87751d43-b044-445e-a8d9-d07b875af218: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-11-08T14:04:52Z WARNING [19/387] 87751d43-b044-445e-a8d9-d07b875af218: recorded the failure; a later run retries it.
+2026-11-08T14:04:52Z WARNING 8778ed71-ad60-40a9-bbe1-75fe057a6f33: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-11-08T14:04:52Z WARNING [20/387] 8778ed71-ad60-40a9-bbe1-75fe057a6f33: recorded the failure; a later run retries it.
+2026-11-08T14:04:52Z WARNING 87d20f6d-5177-432f-b6c7-471dc5da13b2: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-11-08T14:04:52Z WARNING [21/387] 87d20f6d-5177-432f-b6c7-471dc5da13b2: recorded the failure; a later run retries it.
+2026-11-08T14:04:52Z WARNING 8bb56f5d-6b2d-4bc0-a799-e37d3e1502a5: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-11-08T14:04:52Z WARNING [22/387] 8bb56f5d-6b2d-4bc0-a799-e37d3e1502a5: recorded the failure; a later run retries it.
+2026-11-08T14:04:52Z WARNING 8910596f-790e-4626-88fc-588b77f4e58e: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-11-08T14:04:52Z WARNING [23/387] 8910596f-790e-4626-88fc-588b77f4e58e: recorded the failure; a later run retries it.
+2026-11-08T14:04:52Z WARNING 8b485d56-2730-4aae-b807-eda99e8d7b34: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-11-08T14:04:52Z WARNING [24/387] 8b485d56-2730-4aae-b807-eda99e8d7b34: recorded the failure; a later run retries it.
+2026-11-08T14:24:52Z WARNING 8c843021-85de-4857-868f-6731fa1f40bd: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-11-08T14:24:52Z WARNING [25/387] 8c843021-85de-4857-868f-6731fa1f40bd: recorded the failure; a later run retries it.
+2026-11-08T14:24:52Z WARNING 8c9802e5-a113-40c0-ad0b-b5ba1e8887e6: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-11-08T14:24:52Z WARNING [26/387] 8c9802e5-a113-40c0-ad0b-b5ba1e8887e6: recorded the failure; a later run retries it.
+2026-11-08T14:24:52Z WARNING 8c9b4db0-cfe8-4013-ac14-6ca110080148: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-11-08T14:24:52Z WARNING [27/387] 8c9b4db0-cfe8-4013-ac14-6ca110080148: recorded the failure; a later run retries it.
+2026-11-08T14:24:52Z WARNING 8d29116c-b214-436f-9676-4b2d04075851: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-11-08T14:24:52Z WARNING [28/387] 8d29116c-b214-436f-9676-4b2d04075851: recorded the failure; a later run retries it.
+2026-11-08T14:24:52Z WARNING 8dfd37e0-af44-402d-a982-c44bfa317cd7: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-11-08T14:24:52Z WARNING [29/387] 8dfd37e0-af44-402d-a982-c44bfa317cd7: recorded the failure; a later run retries it.
+2026-11-08T14:24:52Z WARNING 8f57fd33-69fa-4ba2-90c5-80388fd3a835: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-11-08T14:24:52Z WARNING [30/387] 8f57fd33-69fa-4ba2-90c5-80388fd3a835: recorded the failure; a later run retries it.
+2026-11-08T14:24:52Z WARNING 8eda4240-0a42-40eb-930a-82f74579e6c5: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-11-08T14:24:52Z WARNING [31/387] 8eda4240-0a42-40eb-930a-82f74579e6c5: recorded the failure; a later run retries it.
+2026-11-08T14:24:53Z WARNING 9016f363-a91f-4905-ab13-710fff634ba7: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-11-08T14:24:53Z WARNING [32/387] 9016f363-a91f-4905-ab13-710fff634ba7: recorded the failure; a later run retries it.
+2026-11-08T14:44:52Z WARNING 90c78c50-3194-4d44-8be7-e696a061623c: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-11-08T14:44:52Z WARNING [33/387] 90c78c50-3194-4d44-8be7-e696a061623c: recorded the failure; a later run retries it.
+2026-11-08T14:44:52Z WARNING 914ba141-e845-4b60-9836-a48f4616c716: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-11-08T14:44:52Z WARNING [34/387] 914ba141-e845-4b60-9836-a48f4616c716: recorded the failure; a later run retries it.
+2026-11-08T14:44:52Z WARNING 93010b2b-64ee-4b75-879d-c6e6e7557516: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-11-08T14:44:52Z WARNING [35/387] 93010b2b-64ee-4b75-879d-c6e6e7557516: recorded the failure; a later run retries it.
+2026-11-08T14:44:53Z WARNING 93feed4b-2bf3-4961-a9a2-fab89fabcdd4: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-11-08T14:44:53Z WARNING [36/387] 93feed4b-2bf3-4961-a9a2-fab89fabcdd4: recorded the failure; a later run retries it.
+2026-11-08T14:44:53Z WARNING 9405d50c-7a8f-46ae-b20b-f808ee6d8d77: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-11-08T14:44:53Z WARNING [37/387] 9405d50c-7a8f-46ae-b20b-f808ee6d8d77: recorded the failure; a later run retries it.
+2026-11-08T14:44:53Z WARNING 95d7d763-269f-4061-b6f9-2ccf29af62eb: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-11-08T14:44:53Z WARNING [38/387] 95d7d763-269f-4061-b6f9-2ccf29af62eb: recorded the failure; a later run retries it.
+2026-11-08T14:44:53Z WARNING 95f21214-371d-4207-9f09-4d6f40e15182: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-11-08T14:44:53Z WARNING [39/387] 95f21214-371d-4207-9f09-4d6f40e15182: recorded the failure; a later run retries it.
+2026-11-08T14:44:53Z WARNING 96bdbcdd-4b59-472e-8fbd-e612fc3135e5: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-11-08T14:44:53Z WARNING [40/387] 96bdbcdd-4b59-472e-8fbd-e612fc3135e5: recorded the failure; a later run retries it.
+2026-11-08T15:04:52Z WARNING 9788b3cf-3b44-4e7e-8d17-6e8518cbac5f: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-11-08T15:04:52Z WARNING [41/387] 9788b3cf-3b44-4e7e-8d17-6e8518cbac5f: recorded the failure; a later run retries it.
+2026-11-08T15:04:52Z WARNING 980e6316-b072-48dd-876c-ff9648b520f9: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-11-08T15:04:52Z WARNING [42/387] 980e6316-b072-48dd-876c-ff9648b520f9: recorded the failure; a later run retries it.
+2026-11-08T15:04:53Z WARNING 98a50dda-ca38-4067-a191-c27759988d0d: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-11-08T15:04:53Z WARNING [43/387] 98a50dda-ca38-4067-a191-c27759988d0d: recorded the failure; a later run retries it.
+2026-11-08T15:04:53Z WARNING 990054bd-ad97-4635-be5c-ca1c0a566877: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-11-08T15:04:53Z WARNING [44/387] 990054bd-ad97-4635-be5c-ca1c0a566877: recorded the failure; a later run retries it.
+2026-11-08T15:04:53Z WARNING 995f4e8d-dd2f-4677-bc89-355e3ad2750c: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-11-08T15:04:53Z WARNING [45/387] 995f4e8d-dd2f-4677-bc89-355e3ad2750c: recorded the failure; a later run retries it.
+2026-11-08T15:04:53Z WARNING 9a8cab38-138b-4a75-8a23-fe5da425e677: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-11-08T15:04:53Z WARNING [46/387] 9a8cab38-138b-4a75-8a23-fe5da425e677: recorded the failure; a later run retries it.
+2026-11-08T15:04:53Z WARNING 9abf8d8f-888e-433a-ab1c-ac1059b9839c: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-11-08T15:04:53Z WARNING [47/387] 9abf8d8f-888e-433a-ab1c-ac1059b9839c: recorded the failure; a later run retries it.
+2026-11-08T15:04:53Z WARNING 9bd9bd10-6e2d-4645-8a22-f17c8d26f407: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-11-08T15:04:53Z WARNING [48/387] 9bd9bd10-6e2d-4645-8a22-f17c8d26f407: recorded the failure; a later run retries it.
+2026-11-08T15:24:52Z WARNING 9d453adb-9092-4096-ada8-46c2918697fe: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-11-08T15:24:52Z WARNING [49/387] 9d453adb-9092-4096-ada8-46c2918697fe: recorded the failure; a later run retries it.
+2026-11-08T15:24:52Z WARNING 9d666a14-ac93-47dc-935e-dfc9870e1c47: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-11-08T15:24:52Z WARNING [50/387] 9d666a14-ac93-47dc-935e-dfc9870e1c47: recorded the failure; a later run retries it.
+2026-11-08T15:24:53Z WARNING 9ed726cd-2076-4bac-ac5c-d8037952602c: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-11-08T15:24:53Z WARNING [51/387] 9ed726cd-2076-4bac-ac5c-d8037952602c: recorded the failure; a later run retries it.
+2026-11-08T15:24:53Z WARNING 9f09211a-3c4c-484f-a4ba-caa5eaac3346: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-11-08T15:24:53Z WARNING [52/387] 9f09211a-3c4c-484f-a4ba-caa5eaac3346: recorded the failure; a later run retries it.
+2026-11-08T15:24:53Z WARNING 9fed09ad-34bb-41d7-acd8-565ab3a13650: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-11-08T15:24:53Z WARNING [53/387] 9fed09ad-34bb-41d7-acd8-565ab3a13650: recorded the failure; a later run retries it.
+2026-11-08T15:24:53Z WARNING a0cdf76e-7920-48b7-822e-473c5cdb98f0: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-11-08T15:24:53Z WARNING [54/387] a0cdf76e-7920-48b7-822e-473c5cdb98f0: recorded the failure; a later run retries it.
+2026-11-08T15:24:54Z WARNING a18b9a3a-7eb9-4441-a447-bf506e44fca2: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-11-08T15:24:54Z WARNING [55/387] a18b9a3a-7eb9-4441-a447-bf506e44fca2: recorded the failure; a later run retries it.
+2026-11-08T15:24:54Z WARNING a1aeb959-1500-4f8d-b433-75d26df260ff: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-11-08T15:24:54Z WARNING [56/387] a1aeb959-1500-4f8d-b433-75d26df260ff: recorded the failure; a later run retries it.
+2026-11-08T15:44:52Z WARNING a2315375-dc06-44fe-ad19-df1ff45ede61: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-11-08T15:44:52Z WARNING [57/387] a2315375-dc06-44fe-ad19-df1ff45ede61: recorded the failure; a later run retries it.
+2026-11-08T15:44:53Z WARNING a23ad9a1-2e42-4394-97db-8bc11911002d: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-11-08T15:44:53Z WARNING [58/387] a23ad9a1-2e42-4394-97db-8bc11911002d: recorded the failure; a later run retries it.
+2026-11-08T15:44:53Z WARNING a31a1184-08cc-47b6-a5cd-940d7b6d1abd: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-11-08T15:44:53Z WARNING [59/387] a31a1184-08cc-47b6-a5cd-940d7b6d1abd: recorded the failure; a later run retries it.
+2026-11-08T15:44:53Z WARNING a5cae2ee-abe4-4b48-9dbd-33fac9fcf4a2: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-11-08T15:44:53Z WARNING [60/387] a5cae2ee-abe4-4b48-9dbd-33fac9fcf4a2: recorded the failure; a later run retries it.
+2026-11-08T15:44:53Z WARNING a611d989-3fcc-4950-b61b-e86039be9512: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-11-08T15:44:53Z WARNING [61/387] a611d989-3fcc-4950-b61b-e86039be9512: recorded the failure; a later run retries it.
+2026-11-08T15:44:54Z WARNING a61cbca2-6225-4d69-803b-0d9a2f495361: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-11-08T15:44:54Z WARNING [62/387] a61cbca2-6225-4d69-803b-0d9a2f495361: recorded the failure; a later run retries it.
+2026-11-08T15:44:54Z WARNING a82414dc-5973-45b9-a8c5-f8929b488e8f: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-11-08T15:44:54Z WARNING [63/387] a82414dc-5973-45b9-a8c5-f8929b488e8f: recorded the failure; a later run retries it.
+2026-11-08T15:44:54Z WARNING a656b41f-99f7-49e0-a13e-1b283b97a002: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-11-08T15:44:54Z WARNING [64/387] a656b41f-99f7-49e0-a13e-1b283b97a002: recorded the failure; a later run retries it.
+2026-11-08T16:04:52Z WARNING a87c74b4-8dbf-4ba5-a640-2a75215e70c6: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-11-08T16:04:52Z WARNING [65/387] a87c74b4-8dbf-4ba5-a640-2a75215e70c6: recorded the failure; a later run retries it.
+2026-11-08T16:04:53Z WARNING a8f2467e-0bdf-4730-9d10-59c2d19769cf: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-11-08T16:04:53Z WARNING [66/387] a8f2467e-0bdf-4730-9d10-59c2d19769cf: recorded the failure; a later run retries it.
+2026-11-08T16:04:53Z WARNING aa74e4d7-a79b-4179-adf3-497fb1237edc: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-11-08T16:04:53Z WARNING [67/387] aa74e4d7-a79b-4179-adf3-497fb1237edc: recorded the failure; a later run retries it.
+2026-11-08T16:04:53Z WARNING aa8f3c01-718b-47f2-9efd-415745523d07: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-11-08T16:04:53Z WARNING [68/387] aa8f3c01-718b-47f2-9efd-415745523d07: recorded the failure; a later run retries it.
+2026-11-08T16:04:54Z WARNING aaf4b8f9-4c83-4cad-809a-8b064d1764ff: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-11-08T16:04:54Z WARNING [69/387] aaf4b8f9-4c83-4cad-809a-8b064d1764ff: recorded the failure; a later run retries it.
+2026-11-08T16:04:54Z WARNING ab103954-d99f-46b1-98ac-e6f91a1e9313: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-11-08T16:04:54Z WARNING [70/387] ab103954-d99f-46b1-98ac-e6f91a1e9313: recorded the failure; a later run retries it.
+2026-11-08T16:04:54Z WARNING ab92aab6-790d-43c6-a82c-d7ca9e88da72: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-11-08T16:04:54Z WARNING [71/387] ab92aab6-790d-43c6-a82c-d7ca9e88da72: recorded the failure; a later run retries it.
+2026-11-08T16:04:54Z WARNING ac3b3475-cc8e-4391-bc8a-294dc6ab4f4f: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-11-08T16:04:54Z WARNING [72/387] ac3b3475-cc8e-4391-bc8a-294dc6ab4f4f: recorded the failure; a later run retries it.
+2026-11-08T16:24:52Z WARNING ad70c3d7-8bc5-471c-923d-c108f38926f6: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-11-08T16:24:52Z WARNING [73/387] ad70c3d7-8bc5-471c-923d-c108f38926f6: recorded the failure; a later run retries it.
+2026-11-08T16:24:53Z WARNING adb9eaa3-4ae1-42a7-92d3-b4e575484216: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-11-08T16:24:53Z WARNING [74/387] adb9eaa3-4ae1-42a7-92d3-b4e575484216: recorded the failure; a later run retries it.
+2026-11-08T16:24:53Z WARNING adc8a4f6-7d02-4c80-9373-5447cd272425: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-11-08T16:24:53Z WARNING [75/387] adc8a4f6-7d02-4c80-9373-5447cd272425: recorded the failure; a later run retries it.
+2026-11-08T16:24:54Z WARNING add4ae54-d401-40ac-9b6d-62596a8c8634: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-11-08T16:24:54Z WARNING [76/387] add4ae54-d401-40ac-9b6d-62596a8c8634: recorded the failure; a later run retries it.
+2026-11-08T16:24:54Z WARNING adee6283-78fa-4bae-9b19-5b4a4c7c6939: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-11-08T16:24:54Z WARNING [77/387] adee6283-78fa-4bae-9b19-5b4a4c7c6939: recorded the failure; a later run retries it.
+2026-11-08T16:24:54Z WARNING ae9d1ec2-452e-4ea7-9680-4f7ba8d957f6: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-11-08T16:24:54Z WARNING [78/387] ae9d1ec2-452e-4ea7-9680-4f7ba8d957f6: recorded the failure; a later run retries it.
+2026-11-08T16:24:54Z WARNING af92d24e-bfb2-4e0f-b5e0-b53043982af4: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-11-08T16:24:54Z WARNING [79/387] af92d24e-bfb2-4e0f-b5e0-b53043982af4: recorded the failure; a later run retries it.
+2026-11-08T16:24:54Z WARNING afc1d596-fa4f-480b-a654-13e978d7c619: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-11-08T16:24:54Z WARNING [80/387] afc1d596-fa4f-480b-a654-13e978d7c619: recorded the failure; a later run retries it.
+2026-11-08T16:44:53Z WARNING b000b849-f3b2-4591-a266-f8209313065f: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-11-08T16:44:53Z WARNING [81/387] b000b849-f3b2-4591-a266-f8209313065f: recorded the failure; a later run retries it.
+2026-11-08T16:44:53Z WARNING b073dd1f-3fde-44bc-92aa-4f3e43f9894c: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-11-08T16:44:53Z WARNING [82/387] b073dd1f-3fde-44bc-92aa-4f3e43f9894c: recorded the failure; a later run retries it.
+2026-11-08T16:44:54Z WARNING b080c738-17c9-4e0d-aee4-6d5371518f69: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-11-08T16:44:54Z WARNING [83/387] b080c738-17c9-4e0d-aee4-6d5371518f69: recorded the failure; a later run retries it.
+2026-11-08T16:44:54Z WARNING b0c4d9ae-631d-453d-ae8b-7762cae0d891: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-11-08T16:44:54Z WARNING [84/387] b0c4d9ae-631d-453d-ae8b-7762cae0d891: recorded the failure; a later run retries it.
+2026-11-08T16:44:54Z WARNING b1eb2813-c686-4a6c-b997-b3e0d1d1159c: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-11-08T16:44:54Z WARNING [85/387] b1eb2813-c686-4a6c-b997-b3e0d1d1159c: recorded the failure; a later run retries it.
+2026-11-08T16:44:54Z WARNING b24c9182-4620-4f8a-8db8-90d336d51507: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-11-08T16:44:54Z WARNING [86/387] b24c9182-4620-4f8a-8db8-90d336d51507: recorded the failure; a later run retries it.
+2026-11-08T16:44:55Z WARNING b2719d5a-c631-410f-95f4-1f73b5ec307d: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-11-08T16:44:55Z WARNING [87/387] b2719d5a-c631-410f-95f4-1f73b5ec307d: recorded the failure; a later run retries it.
+2026-11-08T16:44:55Z WARNING b2fdadb6-a115-4eed-8e7a-acbe6035ffbf: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-11-08T16:44:55Z WARNING [88/387] b2fdadb6-a115-4eed-8e7a-acbe6035ffbf: recorded the failure; a later run retries it.
+2026-11-08T17:04:53Z WARNING b35eb481-1ecf-4681-9f26-214f7c14ee49: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-11-08T17:04:53Z WARNING [89/387] b35eb481-1ecf-4681-9f26-214f7c14ee49: recorded the failure; a later run retries it.
+2026-11-08T17:04:53Z WARNING b39eb52a-0774-411b-b374-6eb08a73562e: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-11-08T17:04:53Z WARNING [90/387] b39eb52a-0774-411b-b374-6eb08a73562e: recorded the failure; a later run retries it.
+2026-11-08T17:04:54Z WARNING b3d7c5bb-e9a0-4ee5-9a0b-88f81226be34: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-11-08T17:04:54Z WARNING [91/387] b3d7c5bb-e9a0-4ee5-9a0b-88f81226be34: recorded the failure; a later run retries it.
+2026-11-08T17:04:54Z WARNING b3f179a1-0624-42fa-8f53-c3bba344a4a5: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-11-08T17:04:54Z WARNING [92/387] b3f179a1-0624-42fa-8f53-c3bba344a4a5: recorded the failure; a later run retries it.
+2026-11-08T17:04:54Z WARNING b44a9857-50c5-47ee-ab09-7691cdbc01d4: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-11-08T17:04:54Z WARNING [93/387] b44a9857-50c5-47ee-ab09-7691cdbc01d4: recorded the failure; a later run retries it.
+2026-11-08T17:04:55Z WARNING b57e4818-57c0-4754-950b-681f0e54d879: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-11-08T17:04:55Z WARNING [94/387] b57e4818-57c0-4754-950b-681f0e54d879: recorded the failure; a later run retries it.
+2026-11-08T17:04:55Z WARNING b5c7a8f3-8033-47d0-bdfa-52bcc7d5d96c: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-11-08T17:04:55Z WARNING [95/387] b5c7a8f3-8033-47d0-bdfa-52bcc7d5d96c: recorded the failure; a later run retries it.
+2026-11-08T17:04:55Z WARNING b8ef8a5b-e37c-434c-a233-a21cc58be109: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-11-08T17:04:55Z WARNING [96/387] b8ef8a5b-e37c-434c-a233-a21cc58be109: recorded the failure; a later run retries it.
+2026-11-08T17:24:53Z WARNING b9e6515a-8fc8-463f-9ad5-a1f108ff75c5: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-11-08T17:24:53Z WARNING [97/387] b9e6515a-8fc8-463f-9ad5-a1f108ff75c5: recorded the failure; a later run retries it.
+2026-11-08T17:24:53Z WARNING ba46508e-b012-4e09-95b4-9ec13ad1f201: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-11-08T17:24:53Z WARNING [98/387] ba46508e-b012-4e09-95b4-9ec13ad1f201: recorded the failure; a later run retries it.
+2026-11-08T17:24:54Z WARNING ba60b031-0444-48d3-ae38-62cdfdd68259: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-11-08T17:24:54Z WARNING [99/387] ba60b031-0444-48d3-ae38-62cdfdd68259: recorded the failure; a later run retries it.
+2026-11-08T17:24:54Z WARNING bad7ce88-1045-4c59-ba6f-66741c136dfe: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-11-08T17:24:54Z WARNING [100/387] bad7ce88-1045-4c59-ba6f-66741c136dfe: recorded the failure; a later run retries it.
+2026-11-08T17:24:54Z WARNING bcf3c0a3-15d1-45e0-8351-b9b5b37732bf: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-11-08T17:24:54Z WARNING [101/387] bcf3c0a3-15d1-45e0-8351-b9b5b37732bf: recorded the failure; a later run retries it.
+2026-11-08T17:24:55Z WARNING bd698846-cb37-41b9-9003-6daa82515cb1: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-11-08T17:24:55Z WARNING [102/387] bd698846-cb37-41b9-9003-6daa82515cb1: recorded the failure; a later run retries it.
+2026-11-08T17:24:55Z WARNING be2ca1fd-bce8-4ee0-a2b8-c600761469ee: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-11-08T17:24:55Z WARNING [103/387] be2ca1fd-bce8-4ee0-a2b8-c600761469ee: recorded the failure; a later run retries it.
+2026-11-08T17:24:55Z WARNING be711d5a-3be4-4ab5-aa28-70d0e8f9ceeb: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-11-08T17:24:55Z WARNING [104/387] be711d5a-3be4-4ab5-aa28-70d0e8f9ceeb: recorded the failure; a later run retries it.
+2026-11-08T17:44:47Z WARNING The batch has run for its 240-minute limit while 8 items were still running, so it abandons them and writes what it has, rather than being killed with the job and losing it: c10e457a-e1af-4f01-bc1e-b7cd8c3ab308, c23474c0-7948-4bdf-95b1-8fdd106d5dd1, c347b427-4d74-4caf-879d-43ed6a4a4972, c3ac692a-09f6-4644-9c9c-406e5376ed90, c3d41b23-2da7-4b72-a764-74aa45a9f7f2, c5413609-dc33-4f44-8772-cd2ab969df83, c6ac767a-2bdd-4bc5-ab81-0bca2fd8708a, c71b146d-4d7c-4c54-af9f-e11f622cbc4a.
+2026-11-08T17:44:53Z WARNING c10e457a-e1af-4f01-bc1e-b7cd8c3ab308: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-11-08T17:44:54Z WARNING c23474c0-7948-4bdf-95b1-8fdd106d5dd1: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-11-08T17:44:54Z WARNING c347b427-4d74-4caf-879d-43ed6a4a4972: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-11-08T17:44:55Z WARNING c3ac692a-09f6-4644-9c9c-406e5376ed90: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-11-08T17:44:55Z WARNING c3d41b23-2da7-4b72-a764-74aa45a9f7f2: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-11-08T17:44:55Z WARNING c5413609-dc33-4f44-8772-cd2ab969df83: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-11-08T17:44:55Z WARNING c6ac767a-2bdd-4bc5-ab81-0bca2fd8708a: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-11-08T17:44:55Z WARNING c71b146d-4d7c-4c54-af9f-e11f622cbc4a: failed while reading the NWB file (TimeoutError: exceeded 1200 s)
+2026-11-08T17:45:21Z INFO Wrote 198428 records to /tmp/derivatives/valid_nwb_file_to_array_sizes.zarr (16 new, 88 failed) in 240.0 min (peak memory 390 MiB).
+2026-11-08T17:45:21Z INFO Progress: 198,401 of 198,401 candidates recorded (100.0%).
