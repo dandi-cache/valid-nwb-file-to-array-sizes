@@ -3,6 +3,10 @@
 
 [cache]
 name = "valid-nwb-file-to-array-sizes"
+# The cache itself, and beside it the storage figures already read for files whose walks have not
+# finished yet, so a file too heavy for one 20-minute walk is finished over several runs. The second
+# holds one small entry per such file, a few hundred at most, and `null` once its walk succeeds.
+outputs = ["valid_nwb_file_to_array_sizes.jsonl", "valid_nwb_file_to_array_sizes_walk_progress.jsonl"]
 
 # At about 71 KB of JSON per file and about 118,000 valid NWB files, the whole cache is about 8.4 GB,
 # and about 360 MB compressed. Like every output it is kept as a Zarr store, in chunks of at most

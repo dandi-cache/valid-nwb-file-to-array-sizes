@@ -16,11 +16,18 @@ The per-file scalars derived from these rows are published by [`valid-nwb-file-t
 
 - Every array is visited once, by its HDF5 object address, through hard links.
   Soft and external links are not followed, so an array reachable by several paths gives one row, at the first path that reaches it.
-  This is `h5py`'s `visititems`, and it is the same tree [`valid-nwb-file-to-number-of-datasets`](https://github.com/dandi-cache/valid-nwb-file-to-number-of-datasets) counts, which is what makes `n_arrays` checkable against it.
+  This is the tree and the order `h5py`'s `visititems` gives, and it is the same tree [`valid-nwb-file-to-number-of-datasets`](https://github.com/dandi-cache/valid-nwb-file-to-number-of-datasets) counts, which is what makes `n_arrays` checkable against it.
+- The tree is listed from the links alone, with `visit_links`, and each address comes from its link.
+  `visititems` and `h5o.get_info` are not used, because both have HDF5 compute an object's `meta_size`, which for a chunked array means reading its whole chunk index.
 - The object's size comes from an S3 `HEAD` request on the blob.
-- `get_storage_size()` on a chunked array reads its chunk index over HTTP, which for a file with hundreds of thousands of chunks takes many minutes.
+- A chunked array's `storage_bytes` and `n_chunks` come from one read of its chunk index, with `chunk_iter`.
+  That read goes over HTTP, and for an array with hundreds of thousands of chunks it takes minutes.
   Each file is therefore walked in a child process with a 20-minute timeout.
   A file past it is recorded with `walk_status` `timeout` rather than holding up the run.
+- A walk that runs out of time keeps what it measured.
+  Each chunked array's figures are saved as soon as they are read, and a failed walk's are published in the second output, below.
+  The next attempt at that file reuses them and reads only the chunk indexes it has not read yet, so a file too heavy for one 20-minute walk is finished over several runs.
+  A finished walk publishes exactly the row a single uninterrupted walk would.
 - A run works through content IDs never tried before, in order, and then retries the ones recorded with a retryable failure (`timeout` or `error`).
   So a run only does work for content IDs absent from the cache or marked retryable, and a slow file cannot block the rest of the archive.
 - Eight files are walked at once, each in its own child process, and a run takes up to 1,000.
@@ -75,6 +82,14 @@ The nearest thing in the file, the superblock version, is not exposed by `h5py`.
 `logical_bytes` and `itemsize` match what `h5ls -v` reports as "logical bytes".
 For a variable-length type, HDF5's element size is the in-memory handle while the file stores a larger descriptor per element, so such an array can show more `storage_bytes` than `logical_bytes`.
 The data a variable-length element points at lives in the file's global heap, which neither figure counts.
+
+### Walk progress
+
+`derivatives/valid_nwb_file_to_array_sizes_walk_progress.zarr/` holds the progress of walks that have not finished.
+It is bookkeeping for the cache itself, not a result.
+Each entry maps a content ID to the chunked arrays already measured, as `{"<path>": [storage_bytes, n_chunks]}`.
+An entry becomes `null` once that file's walk succeeds.
+It holds one small entry per file still being retried, a few hundred at most.
 
 ## Dependencies
 
