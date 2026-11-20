@@ -1,0 +1,8 @@
+2026-11-20T02:56:43Z INFO Logging to /tmp/logs/testing_2026-11-20T02-56-43Z.log.
+2026-11-20T02:56:43Z INFO Update valid-nwb-file-to-array-sizes (base directory /tmp; testing mode).
+2026-11-20T02:56:45Z INFO Processing 2 items (2 already recorded).
+2026-11-20T02:56:47Z INFO [1/2] 0000e46c-3c99-4c3f-951f-fca17bb9a4fc: 48 arrays, 83.9 MB stored; 1.8 s; peak memory 201 MiB.
+2026-11-20T02:56:47Z INFO [2/2] 0000e748-2757-4444-a6eb-a7d39a439f91: 70 arrays, 14.5 MB stored; 2.2 s; peak memory 201 MiB.
+2026-11-20T02:56:47Z INFO Wrote 4 records to /tmp/derivatives/testing_valid_nwb_file_to_array_sizes.zarr (2 new, 0 failed) in 0.0 min (peak memory 201 MiB).
+2026-11-20T02:56:47Z INFO Batch summary: considered=2 new=2 failed=0 left=0 stopped=none
+2026-11-20T02:56:47Z INFO Progress: 4 of 220,916 candidates recorded (0.0%).
