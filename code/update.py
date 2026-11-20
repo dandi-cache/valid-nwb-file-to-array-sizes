@@ -9,9 +9,12 @@ which is the tree `visititems` visits. That is the same tree `valid-nwb-file-to-
 counts, so this cache's `n_arrays` can be checked against it entry for entry.
 
 The walk never calls `visititems` or `h5o.get_info`, though. Both ask HDF5 for an object's
-`meta_size`, and for a chunked array that reads its whole chunk index, which is what the storage
-size needs anyway. Reading the index once per array, through `chunk_iter`, is what makes the
-heaviest files possible at all: the walk used to read each index five times.
+`meta_size`, and for a chunked array that reads its whole chunk index, so with `get_num_chunks` and
+`get_storage_size` the walk used to read each index five times. Now each index is read once. One
+kept as a version 1 B-tree, which `h5py` writes by default, is read here, a level of nodes at a time
+with many ranged requests in flight. HDF5 reads one node at a time, at about 50 ms each, and an
+array with two million chunks has some 30,000 nodes. Any other kind of index is read by HDF5 with
+`chunk_iter`.
 
 What this cache does that its siblings do not:
 
@@ -37,6 +40,7 @@ import functools
 import json
 import math
 import pathlib
+import struct
 import tempfile
 import threading
 
@@ -74,6 +78,12 @@ WORKERS = 8
 #: Statuses a later run selects again. `not_hdf5` is not one: it is a Zarr asset, which this cache
 #: does not read, and retrying would only fail the same way.
 RETRYABLE = frozenset({"timeout", "error"})
+
+#: Concurrent ranged reads one file's chunk index is read with. A version 1 B-tree is a few levels of
+#: nodes, each a few kilobytes, and HDF5 reads them one after another: at about 50 ms a request, the
+#: 30,000 leaves of an array with two million chunks take 25 minutes. Read a level at a time, this
+#: many at once, they take about a minute.
+INDEX_READERS = 16
 
 #: The second output: for each file whose walk has not yet finished, the storage figures of the
 #: chunked arrays it has already measured, as `{path: [storage_bytes, n_chunks]}`. A file whose walk
@@ -131,12 +141,19 @@ def describe_filters(creation_properties) -> list[dict]:
     return filters
 
 
-def measure_chunks(array, /) -> tuple[int, int]:
+def measure_chunks(array, /, *, address: int | None = None, read_ranges=None) -> tuple[int, int]:
     """The bytes and the number of chunks a chunked array has allocated, from one read of its index.
 
-    `get_storage_size()` and `get_num_chunks()` each read the whole index, so asking both reads it
-    twice. `chunk_iter` reports every allocated chunk with its stored size in a single pass.
+    An index kept as a version 1 B-tree, which is what `h5py` writes by default, is read directly,
+    with `read_ranges` reading many nodes at once. Any other index is read by HDF5 through
+    `chunk_iter`, which reports every allocated chunk with its stored size in a single pass, where
+    `get_storage_size()` and `get_num_chunks()` would each read the whole index.
     """
+    if read_ranges is not None and address is not None:
+        totals = btree_chunk_totals(read_ranges, object_address=address, file_id=array.file.id)
+        if totals is not None:
+            return totals
+
     totals = [0, 0]
 
     def _count(chunk) -> None:
@@ -152,12 +169,157 @@ def measure_chunks(array, /) -> tuple[int, int]:
     return storage_bytes, n_chunks
 
 
-def describe_array(path: str, array, *, address: int, measured: tuple[int, int] | None = None) -> dict:
+class NotReadable(Exception):
+    """The object header or the index is not in a form `btree_chunk_totals` reads, so HDF5 should."""
+
+
+#: Entries in a full raw-data-chunk B-tree node unless the file chose otherwise, twice HDF5's
+#: default `K` of 32. A node is first read at this size, and read again if it holds more.
+_DEFAULT_ENTRIES = 64
+#: Nodes held in memory at once: a level of 30,000 leaves would otherwise take about 150 MB.
+_NODES_PER_READ = 1024
+_HEADER_GUESS_BYTES = 4096
+_UNDEFINED_ADDRESS = 0xFFFFFFFFFFFFFFFF
+_LAYOUT_MESSAGE = 0x0008
+_CONTINUATION_MESSAGE = 0x0010
+
+
+def btree_chunk_totals(read_ranges, /, *, object_address: int, file_id) -> tuple[int, int] | None:
+    """`(storage_bytes, n_chunks)` of a chunked array whose index is a version 1 B-tree, or `None`.
+
+    `read_ranges` takes a list of `(offset, length)` and returns their bytes in the same order. The
+    tree's leaf keys carry each chunk's stored size, so the sum over them is `get_storage_size()`
+    and their number `get_num_chunks()`. `None` means the index is of another kind, or the header
+    could not be read here, and HDF5 should read it instead.
+    """
+    if file_id.get_create_plist().get_sizes() != (8, 8):
+        return None
+    try:
+        layout = _chunk_layout(read_ranges, object_address=object_address)
+        if layout is None:
+            return None
+        btree_address, key_dimensions = layout
+        return _sum_btree(read_ranges, root=btree_address, key_dimensions=key_dimensions)
+    except (NotReadable, struct.error):
+        return None
+
+
+def _chunk_layout(read_ranges, /, *, object_address: int) -> tuple[int, int] | None:
+    """The B-tree address and key dimensionality from a version 3 layout message, else `None`."""
+    for message_type, data in _header_messages(read_ranges, object_address=object_address):
+        if message_type != _LAYOUT_MESSAGE:
+            continue
+        version, layout_class = data[0], data[1]
+        if version != 3 or layout_class != 2:
+            return None
+        key_dimensions = data[2]
+        (btree_address,) = struct.unpack_from("<Q", data, 3)
+        return btree_address, key_dimensions
+    return None
+
+
+def _header_messages(read_ranges, /, *, object_address: int):
+    """Yield `(type, data)` for each message of a version 1 object header, following continuations.
+
+    A version 2 header is written only with the newer file format, whose chunked arrays have
+    version 4 layouts and other kinds of index, so it is left to HDF5.
+    """
+    (header,) = read_ranges([(object_address, _HEADER_GUESS_BYTES)])
+    if len(header) < 16 or header[0] != 1:
+        raise NotReadable("not a version 1 object header")
+    (header_size,) = struct.unpack_from("<I", header, 8)
+    first = header[16 : 16 + header_size] if 16 + header_size <= len(header) else None
+    blocks = [(object_address + 16, header_size, first)]
+    while blocks:
+        offset, length, block = blocks.pop(0)
+        if block is None:
+            (block,) = read_ranges([(offset, length)])
+        if len(block) < length:
+            raise NotReadable("object header cut short")
+        position = 0
+        while position + 8 <= length:
+            message_type, size = struct.unpack_from("<HH", block, position)
+            data = block[position + 8 : position + 8 + size]
+            if message_type == _CONTINUATION_MESSAGE:
+                continuation_offset, continuation_length = struct.unpack_from("<QQ", data, 0)
+                blocks.append((continuation_offset, continuation_length, None))
+            yield message_type, data
+            position += 8 + size
+
+
+def _sum_btree(read_ranges, /, *, root: int, key_dimensions: int) -> tuple[int, int]:
+    """Walk a raw-data-chunk B-tree a level at a time, summing its leaf keys' chunk sizes."""
+    if root == _UNDEFINED_ADDRESS:
+        return 0, 0
+    key_bytes = 8 + 8 * key_dimensions
+    # The size of a full node at HDF5's default of 64 entries; a larger one is read again.
+    guess = 24 + _DEFAULT_ENTRIES * (key_bytes + 8) + key_bytes
+    storage_bytes = n_chunks = 0
+    level = [root]
+    while level:
+        children = []
+        for start in range(0, len(level), _NODES_PER_READ):
+            addresses = level[start : start + _NODES_PER_READ]
+            nodes = read_ranges([(address, guess) for address in addresses])
+            short = [index for index, node in enumerate(nodes) if len(node) < _node_bytes(node, key_bytes=key_bytes)]
+            rereads = read_ranges(
+                [(addresses[index], _node_bytes(nodes[index], key_bytes=key_bytes)) for index in short]
+            )
+            for index, node in zip(short, rereads):
+                nodes[index] = node
+            for node in nodes:
+                if node[:4] != b"TREE" or node[4] != 1:
+                    raise NotReadable("not a raw-data-chunk B-tree node")
+                node_level = node[5]
+                (entries,) = struct.unpack_from("<H", node, 6)
+                for entry in range(entries):
+                    key_offset = 24 + entry * (key_bytes + 8)
+                    if node_level == 0:
+                        (chunk_size,) = struct.unpack_from("<I", node, key_offset)
+                        storage_bytes += chunk_size
+                        n_chunks += 1
+                    else:
+                        (child,) = struct.unpack_from("<Q", node, key_offset + key_bytes)
+                        children.append(child)
+        level = children
+    return storage_bytes, n_chunks
+
+
+def _node_bytes(node: bytes, /, *, key_bytes: int) -> int:
+    """The size of a B-tree node from its header: every key and child, and the final key."""
+    if len(node) < 8:
+        raise NotReadable("B-tree node cut short")
+    (entries,) = struct.unpack_from("<H", node, 6)
+    return 24 + entries * (key_bytes + 8) + key_bytes
+
+
+def s3_range_reader(content_id: str, /):
+    """A `read_ranges` for one blob: ranged GETs, `INDEX_READERS` at a time."""
+    client = dandi_cache.s3.anonymous_client(max_pool_connections=INDEX_READERS)
+    key = dandi_cache.s3.blob_key(content_id)
+
+    def _read(byte_range: tuple[int, int]) -> bytes:
+        offset, length = byte_range
+        response = client.get_object(
+            Bucket=dandi_cache.s3.BUCKET, Key=key, Range=f"bytes={offset}-{offset + length - 1}"
+        )
+        return response["Body"].read()
+
+    def read_ranges(byte_ranges: list[tuple[int, int]]) -> list[bytes]:
+        return dandi_cache.s3.concurrent_map(_read, byte_ranges, max_workers=INDEX_READERS)
+
+    return read_ranges
+
+
+def describe_array(
+    path: str, array, *, address: int, measured: tuple[int, int] | None = None, read_ranges=None
+) -> dict:
     """One array's row: where it sits, its shape and type, and how its bytes are stored.
 
     `address` is passed in rather than read here, since `h5o.get_info` would read a chunked array's
     whole index for a figure the row does not use. `measured` is a chunked array's
-    `(storage_bytes, n_chunks)` from an earlier, interrupted walk of the same file.
+    `(storage_bytes, n_chunks)` from an earlier, interrupted walk of the same file, and `read_ranges`
+    reads the file's bytes directly, for `measure_chunks`.
     """
     parts = path.split("/")
     section = parts[0] if len(parts) > 1 and parts[0] in SECTIONS else "other"
@@ -175,7 +337,9 @@ def describe_array(path: str, array, *, address: int, measured: tuple[int, int] 
     layout = _LAYOUTS.get(creation_properties.get_layout(), "unknown")
     chunk_shape = list(array.chunks) if array.chunks is not None else None
     if layout == "chunked":
-        storage_bytes, n_chunks = measured if measured is not None else measure_chunks(array)
+        storage_bytes, n_chunks = (
+            measured if measured is not None else measure_chunks(array, address=address, read_ranges=read_ranges)
+        )
     else:
         storage_bytes, n_chunks = array.id.get_storage_size(), None
 
@@ -216,6 +380,7 @@ def walk_arrays(content_id: str, /, *, progress_path: str, measured: dict[str, l
     object_size_bytes = head["ContentLength"]
 
     arrays = []
+    read_ranges = s3_range_reader(content_id)
     h5py_file, _remote_file = dandi_cache.nwb.open_hdf5(dandi_cache.s3.blob_url(content_id))
     with h5py_file, open(progress_path, "a", encoding="utf-8") as progress:
         for path, address in hard_linked_objects(h5py_file):
@@ -223,7 +388,9 @@ def walk_arrays(content_id: str, /, *, progress_path: str, measured: dict[str, l
             if not isinstance(node, h5py.Dataset):
                 continue
             known = measured.get(f"/{path}")
-            row = describe_array(path, node, address=address, measured=tuple(known) if known else None)
+            row = describe_array(
+                path, node, address=address, measured=tuple(known) if known else None, read_ranges=read_ranges
+            )
             if row["layout"] == "chunked" and known is None:
                 progress.write(json.dumps({row["path"]: [row["storage_bytes"], row["n_chunks"]]}) + "\n")
                 progress.flush()

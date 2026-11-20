@@ -61,6 +61,7 @@ def local_walk(monkeypatch: pytest.MonkeyPatch, example_file: pathlib.Path) -> p
     """Point the walk at the local example file instead of the archive."""
     monkeypatch.setattr(update.dandi_cache.s3, "anonymous_client", lambda **_: _FakeClient())
     monkeypatch.setattr(update.dandi_cache.nwb, "open_hdf5", lambda url: (h5py.File(example_file, "r"), None))
+    monkeypatch.setattr(update, "s3_range_reader", lambda content_id: _local_reader(example_file))
     return example_file
 
 
@@ -98,7 +99,7 @@ def test_a_resumed_walk_reads_no_index_already_measured(
     complete = update.walk_arrays("content-id", progress_path=str(tmp_path / "first.jsonl"), measured={})
     measured = update.read_progress(tmp_path / "first.jsonl")
 
-    def _refuse(array, /):
+    def _refuse(array, /, **_):
         raise AssertionError(f"read the index of {array.name} again")
 
     monkeypatch.setattr(update, "measure_chunks", _refuse)
@@ -115,11 +116,11 @@ def test_progress_of_an_interrupted_walk_is_kept_and_resumed(
     measure_chunks = update.measure_chunks
     calls = []
 
-    def _stop_after_one(array, /):
+    def _stop_after_one(array, /, **kwargs):
         if calls:
             raise TimeoutError("exceeded 1200 s")
         calls.append(array.name)
-        return measure_chunks(array)
+        return measure_chunks(array, **kwargs)
 
     monkeypatch.setattr(update, "measure_chunks", _stop_after_one)
     dataset = _FakeDataset({})
@@ -135,9 +136,9 @@ def test_progress_of_an_interrupted_walk_is_kept_and_resumed(
 
     resumed_calls = []
 
-    def _count(array, /):
+    def _count(array, /, **kwargs):
         resumed_calls.append(array.name)
-        return measure_chunks(array)
+        return measure_chunks(array, **kwargs)
 
     monkeypatch.setattr(update, "measure_chunks", _count)
     next_run = update.WalkProgress(dataset)
@@ -246,3 +247,61 @@ def test_progress_survives_the_child_being_killed_at_its_timeout(tmp_path: pathl
     with pytest.raises(TimeoutError):
         update.dandi_cache.run_isolated(_measure_one_then_hang, arguments=(str(progress_path),), timeout_seconds=2)
     assert update.read_progress(progress_path) == {"/a": [10, 1]}
+
+
+def _local_reader(file_path: pathlib.Path, /):
+    def read_ranges(byte_ranges):
+        with open(file_path, "rb") as file:
+            chunks = []
+            for offset, length in byte_ranges:
+                file.seek(offset)
+                chunks.append(file.read(length))
+            return chunks
+
+    return read_ranges
+
+
+@pytest.mark.parametrize(
+    ("shape", "chunks", "compression"),
+    [
+        ((1000,), (7,), "gzip"),
+        ((100_000,), (3,), None),  # Several levels of B-tree nodes.
+        ((300, 40, 6), (2, 7, 5), "gzip"),
+        ((50, 8, 8, 4, 3), (2, 3, 3, 2, 1), "gzip"),
+    ],
+)
+def test_btree_totals_match_hdf5(tmp_path: pathlib.Path, shape: tuple, chunks: tuple, compression: str | None) -> None:
+    file_path = tmp_path / "btree.h5"
+    random = numpy.random.default_rng(0)
+    with h5py.File(file_path, "w") as h5py_file:
+        h5py_file.create_dataset(
+            "data", data=random.integers(0, 4, size=shape, dtype="int16"), chunks=chunks, compression=compression
+        )
+    with h5py.File(file_path, "r") as h5py_file:
+        array = h5py_file["data"]
+        totals = update.btree_chunk_totals(
+            _local_reader(file_path), object_address=h5py.h5o.get_info(array.id).addr, file_id=h5py_file.id
+        )
+        assert totals == (array.id.get_storage_size(), array.id.get_num_chunks())
+
+
+def test_btree_totals_of_an_unwritten_array_are_zero(tmp_path: pathlib.Path) -> None:
+    file_path = tmp_path / "empty.h5"
+    with h5py.File(file_path, "w") as h5py_file:
+        h5py_file.create_dataset("data", shape=(100,), chunks=(10,), dtype="f4")
+    with h5py.File(file_path, "r") as h5py_file:
+        address = h5py.h5o.get_info(h5py_file["data"].id).addr
+        totals = update.btree_chunk_totals(_local_reader(file_path), object_address=address, file_id=h5py_file.id)
+    assert totals == (0, 0)
+
+
+def test_other_indexes_are_left_to_hdf5(tmp_path: pathlib.Path) -> None:
+    file_path = tmp_path / "latest.h5"
+    with h5py.File(file_path, "w", libver="latest") as h5py_file:
+        h5py_file.create_dataset("data", data=numpy.arange(1000), chunks=(7,), maxshape=(None,))
+    with h5py.File(file_path, "r") as h5py_file:
+        array = h5py_file["data"]
+        address = h5py.h5o.get_info(array.id).addr
+        assert update.btree_chunk_totals(_local_reader(file_path), object_address=address, file_id=h5py_file.id) is None
+        measured = update.measure_chunks(array, address=address, read_ranges=_local_reader(file_path))
+        assert measured == (array.id.get_storage_size(), array.id.get_num_chunks())

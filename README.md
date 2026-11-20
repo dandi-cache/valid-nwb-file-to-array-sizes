@@ -20,8 +20,12 @@ The per-file scalars derived from these rows are published by [`valid-nwb-file-t
 - The tree is listed from the links alone, with `visit_links`, and each address comes from its link.
   `visititems` and `h5o.get_info` are not used, because both have HDF5 compute an object's `meta_size`, which for a chunked array means reading its whole chunk index.
 - The object's size comes from an S3 `HEAD` request on the blob.
-- A chunked array's `storage_bytes` and `n_chunks` come from one read of its chunk index, with `chunk_iter`.
-  That read goes over HTTP, and for an array with hundreds of thousands of chunks it takes minutes.
+- A chunked array's `storage_bytes` and `n_chunks` come from one read of its chunk index.
+  An index kept as a version 1 B-tree, which `h5py` writes by default, is read directly from the blob with ranged requests, 16 at a time, a level of the tree at a time.
+  Its leaf keys hold each chunk's stored size, which is exactly what `get_storage_size()` sums.
+  HDF5 reads the same nodes one at a time, about 50 ms each, so its read of an index of two million chunks takes about 25 minutes, where this one takes about 3.
+  Any other kind of index is read by HDF5, with `chunk_iter`.
+  For an array with hundreds of thousands of chunks either read still takes a minute or more.
   Each file is therefore walked in a child process with a 20-minute timeout.
   A file past it is recorded with `walk_status` `timeout` rather than holding up the run.
 - A walk that runs out of time keeps what it measured.
