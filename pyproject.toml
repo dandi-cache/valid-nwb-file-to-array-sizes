@@ -43,3 +43,7 @@ fixable = ["ALL"]
 
 [tool.ruff.lint.isort]
 relative-imports-order = "closest-to-furthest"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = ["ai_generated: a test written by an AI assistant"]
