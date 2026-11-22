@@ -1,0 +1,22 @@
+2026-11-22T07:09:35Z INFO Logging to /tmp/logs/update_2026-11-22T07-09-35Z.log.
+2026-11-22T07:09:35Z INFO Update valid-nwb-file-to-array-sizes (base directory /tmp).
+2026-11-22T07:12:20Z INFO Processing 16 items (221053 already recorded).
+2026-11-22T07:12:35Z INFO [1/16] 092f224b-4c84-414a-a468-e7d687c65e1f: 118 arrays, 0.4 MB stored; 14.3 s; peak memory 392 MiB.
+2026-11-22T07:12:35Z INFO [2/16] 1db0748a-a692-454b-9dfb-d0b7600e45f3: 118 arrays, 0.4 MB stored; 14.3 s; peak memory 392 MiB.
+2026-11-22T07:12:35Z INFO [3/16] 1e12a91d-f46c-42c5-8251-fd477f7ec5a4: 118 arrays, 0.2 MB stored; 14.3 s; peak memory 392 MiB.
+2026-11-22T07:12:35Z INFO [4/16] 0718ad42-6019-4b0d-9463-02c29c3ea3e7: 118 arrays, 0.3 MB stored; 14.5 s; peak memory 392 MiB.
+2026-11-22T07:12:35Z INFO [5/16] 1e19e715-3354-4a50-ab9d-1d8c40451c6d: 118 arrays, 0.3 MB stored; 14.5 s; peak memory 392 MiB.
+2026-11-22T07:12:35Z INFO [6/16] 1d8a1df7-08c5-4e1c-9737-4344b2365693: 118 arrays, 0.2 MB stored; 14.7 s; peak memory 392 MiB.
+2026-11-22T07:12:35Z INFO [7/16] 1e5cc810-d8a8-4a0b-85fe-0a50540aab03: 118 arrays, 0.3 MB stored; 15.1 s; peak memory 392 MiB.
+2026-11-22T07:12:36Z INFO [8/16] 0a0ffd40-cf9a-464d-866b-05e04a4d7856: 119 arrays, 0.5 MB stored; 15.3 s; peak memory 392 MiB.
+2026-11-22T07:12:42Z INFO [9/16] 4c1abae2-f8f6-4c06-a9b6-539112e1638a: 53 arrays, 59467.1 MB stored; 6.9 s; peak memory 392 MiB.
+2026-11-22T07:12:43Z INFO [10/16] edacdb07-6d66-4bbf-954d-ac8522bf9ac0: 56 arrays, 68432.9 MB stored; 8.3 s; peak memory 392 MiB.
+2026-11-22T07:12:49Z INFO [11/16] e70db933-efee-4294-9f9d-524cf626a686: 118 arrays, 0.3 MB stored; 14.4 s; peak memory 392 MiB.
+2026-11-22T07:12:49Z INFO [12/16] fee981a8-122f-4b95-9ec7-95f4660e48eb: 118 arrays, 0.2 MB stored; 13.6 s; peak memory 392 MiB.
+2026-11-22T07:12:49Z INFO [13/16] f5ab0923-9f2b-42fa-9ebd-5b60cb7367b9: 118 arrays, 0.4 MB stored; 13.9 s; peak memory 392 MiB.
+2026-11-22T07:12:49Z INFO [14/16] f4d87b52-a41e-4c5e-9805-8d0b3d05e9f9: 118 arrays, 0.5 MB stored; 14.3 s; peak memory 392 MiB.
+2026-11-22T07:12:50Z INFO [15/16] e184e380-1c23-47d8-b107-899bbd7ccd9e: 119 arrays, 0.2 MB stored; 15.2 s; peak memory 392 MiB.
+2026-11-22T07:13:09Z INFO [16/16] eebbf65f-dc8e-4ebd-b4dc-b5d2b1ec88de: 74 arrays, 70258.4 MB stored; 34.4 s; peak memory 392 MiB.
+2026-11-22T07:13:45Z INFO Wrote 221069 records to /tmp/derivatives/valid_nwb_file_to_array_sizes.zarr (16 new, 0 failed) in 0.8 min (peak memory 392 MiB).
+2026-11-22T07:13:45Z INFO Batch summary: considered=16 new=16 failed=0 left=0 stopped=none
+2026-11-22T07:13:46Z INFO Progress: 221,035 of 221,035 candidates recorded (100.0%).
