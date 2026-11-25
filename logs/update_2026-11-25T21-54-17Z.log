@@ -1,0 +1,6 @@
+2026-11-25T21:54:17Z INFO Logging to /tmp/logs/update_2026-11-25T21-54-17Z.log.
+2026-11-25T21:54:17Z INFO Update valid-nwb-file-to-array-sizes (base directory /tmp).
+2026-11-25T21:57:04Z INFO Processing 0 items (221735 already recorded).
+2026-11-25T21:57:40Z INFO Wrote 221735 records to /tmp/derivatives/valid_nwb_file_to_array_sizes.zarr (0 new, 0 failed) in 0.0 min (peak memory 390 MiB).
+2026-11-25T21:57:40Z INFO Batch summary: considered=0 new=0 failed=0 left=0 stopped=none
+2026-11-25T21:57:40Z INFO Progress: 221,700 of 221,700 candidates recorded (100.0%).
