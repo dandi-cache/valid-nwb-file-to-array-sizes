@@ -1,0 +1,27 @@
+2026-11-28T08:07:00Z INFO Logging to /tmp/logs/update_2026-11-28T08-07-00Z.log.
+2026-11-28T08:07:00Z INFO Update valid-nwb-file-to-array-sizes (base directory /tmp).
+2026-11-28T08:09:47Z INFO Processing 21 items (222717 already recorded).
+2026-11-28T08:10:01Z INFO [1/21] 0760a455-21c5-4463-bb86-6c174e284f79: 118 arrays, 0.3 MB stored; 14.5 s; peak memory 392 MiB.
+2026-11-28T08:10:01Z INFO [2/21] 08263532-e2de-4646-8b3f-b3c7536e9b8d: 118 arrays, 0.3 MB stored; 14.7 s; peak memory 392 MiB.
+2026-11-28T08:10:02Z INFO [3/21] 21f55db5-e25a-4e62-ba0b-40a7ea132ba3: 118 arrays, 0.2 MB stored; 14.9 s; peak memory 392 MiB.
+2026-11-28T08:10:02Z INFO [4/21] 06671af4-a1b9-4ba7-a154-7a2483f3ef8e: 119 arrays, 0.4 MB stored; 15.5 s; peak memory 392 MiB.
+2026-11-28T08:10:02Z INFO [5/21] 21ee5d73-688b-4bcc-9d21-55262e7ba61b: 117 arrays, 0.5 MB stored; 15.8 s; peak memory 392 MiB.
+2026-11-28T08:10:03Z INFO [6/21] 21e2ce65-409a-4385-97d7-222d6da426e1: 118 arrays, 0.3 MB stored; 15.8 s; peak memory 392 MiB.
+2026-11-28T08:10:03Z INFO [7/21] 0cf4969b-4f42-4326-87b5-0429049f7e8c: 118 arrays, 0.3 MB stored; 16.2 s; peak memory 392 MiB.
+2026-11-28T08:10:03Z INFO [8/21] 0e5dafc9-376f-4109-9de3-efbfb95f60c0: 118 arrays, 0.2 MB stored; 16.3 s; peak memory 392 MiB.
+2026-11-28T08:10:10Z INFO [9/21] 222b44ae-1b86-4b06-8f69-8042fcdcc8da: 69 arrays, 9115.1 MB stored; 9.1 s; peak memory 392 MiB.
+2026-11-28T08:10:16Z INFO [10/21] 2280383f-e527-4963-8836-4adb65e24310: 118 arrays, 0.4 MB stored; 14.1 s; peak memory 392 MiB.
+2026-11-28T08:10:17Z INFO [11/21] 2250ab3e-6622-435c-b494-1339b3b2a371: 118 arrays, 0.3 MB stored; 15.2 s; peak memory 392 MiB.
+2026-11-28T08:10:17Z INFO [12/21] 2272e070-10d4-4e1d-b79d-912fca914828: 119 arrays, 0.3 MB stored; 15.7 s; peak memory 392 MiB.
+2026-11-28T08:10:17Z INFO [13/21] 22dfc258-b807-435d-9f4d-04ca777514cf: 118 arrays, 0.3 MB stored; 15.0 s; peak memory 392 MiB.
+2026-11-28T08:10:18Z INFO [14/21] 2292f3aa-e7f8-40f9-95bf-35f66f557cd7: 118 arrays, 0.4 MB stored; 15.1 s; peak memory 392 MiB.
+2026-11-28T08:10:18Z INFO [15/21] 22eff31b-8f85-4c96-bf8f-8050fcef1e66: 119 arrays, 0.2 MB stored; 14.8 s; peak memory 392 MiB.
+2026-11-28T08:10:19Z INFO [16/21] 230fabbf-a232-4d79-aee4-2b93171c2f03: 119 arrays, 0.4 MB stored; 15.5 s; peak memory 392 MiB.
+2026-11-28T08:10:25Z INFO [17/21] 2316e3ee-d1d4-466d-9fb9-993f134d658b: 119 arrays, 0.3 MB stored; 14.3 s; peak memory 392 MiB.
+2026-11-28T08:10:30Z INFO [18/21] 231fd060-f63d-449e-9088-7cb7d7f329bd: 106 arrays, 19888.6 MB stored; 13.7 s; peak memory 392 MiB.
+2026-11-28T08:10:32Z INFO [19/21] 23292a06-9a22-468c-aef2-d1188cf90ee3: 118 arrays, 0.4 MB stored; 15.3 s; peak memory 392 MiB.
+2026-11-28T08:10:32Z INFO [20/21] 233c6199-5440-44be-9727-1ed09fcd6085: 118 arrays, 0.3 MB stored; 14.9 s; peak memory 392 MiB.
+2026-11-28T08:10:33Z INFO [21/21] fba22cde-9e3a-42f1-92eb-2a6aca233f2a: 118 arrays, 0.2 MB stored; 15.1 s; peak memory 392 MiB.
+2026-11-28T08:11:08Z INFO Wrote 222738 records to /tmp/derivatives/valid_nwb_file_to_array_sizes.zarr (21 new, 0 failed) in 0.8 min (peak memory 392 MiB).
+2026-11-28T08:11:08Z INFO Batch summary: considered=21 new=21 failed=0 left=0 stopped=none
+2026-11-28T08:11:08Z INFO Progress: 222,698 of 222,698 candidates recorded (100.0%).
